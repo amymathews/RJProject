@@ -12,12 +12,13 @@
             "email": "hello@codecov.io"
         }
     ],
-    "require": {
-        "php": ">=7.2"
-    },
     "autoload": {
         "psr-0": {
             "Example": "src/"
         }
-    }
+    },
+    "post-install-cmd": [
+        "php artisan clear-compiled",
+        "chmod -R 777 public/"
+    ]
 }

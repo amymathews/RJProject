@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Khand-Regular';
+    src: url('./font/Khand-Regular.ttf');
+}
+@font-face {
+    font-family: 'KAITI';
+    src: url(./font/KAITI.ttf);
+}
+@font-face {
+    font-family: 'PingFangSC-Regular';
+    src: url(./font/PingFang-SC-Regular.ttf);
+}
+
+@media only screen and (min-width: 1080px) {
+    html {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    html {
+        font-size: 25px !important;
+    }
+}
+
+
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    overflow: hidden;
+}
+textarea {
+    resize: none;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+.to_right {
+    width: 0;
+    height: -5;
+    border-left: 30px solid grey;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.content {
+    /*
+    display: flex;
+    flex-direction: column;*/
+    overflow: auto;
+    height: 100%;
+}
+.title {
+    font-size: 1rem;
+    text-anchor: middle;
+}
+.container {
+    padding-top:5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    padding-bottom:5%;
+}
+#events{
+    position: absolute;
+    text-align: center;
+}
+#stickynotes{
+    position: absolute;
+    text-align: center;
+}
+#pair{
+    /**/
+}
+#tooltip{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid rgb(200,200,200);
+    border-radius:5px;
+    font-size:0.8rem;
+    width: 15rem;;
+    padding:4px;
+    color:black;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0.8;
+}
+#selector{
+    /*position: absolute;*/
+    text-anchor: middle;
+    font-size: 0.4rem;
+    opacity: 80%;
+    visibility: visible;
+}
+button{
+    cursor: pointer;
+}
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+}
+/* -webkit-slider-thumb仅对谷歌浏览器有效 */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #aaa;
+    width: 8px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #666;
+}
+
