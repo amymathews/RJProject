@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<form action = "<?php $_PHP_SELF ?>" method = "POST">
     <div class="container">
         <p>Sharing what has happened and your feelings is an important part of making sense of the harm and healing.</p>
         <p>Please share what has happened in either way:</p>
@@ -31,17 +32,18 @@
             </div>
             <div style="position: absolute;margin-left:55%">
                 <p>Typing (write down what has happened)</p>
-                <textarea id="story" rows="8" cols="31"></textarea>
+                <textarea id="story" name="story" rows="8" cols="31"></textarea>
             </div>
         </div>
         <div style="margin-top:8%">
             <p>How do you feel? (e.g. sad😭 angry😠 awkward😓)</p>
-            <textarea id="feeling" rows="5" cols="60"></textarea>
+            <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
         </div>
        <!-- <button style="float:right; margin-top:15%" onclick="download()" type="button">next</button> -->
-        <button style="float:right; margin-top:15%" onclick="" type="button">next</button>
+       <button style="float:right; margin-top:15%"  type="submit">next</button>
+     
     </div>
-</body>
+
 <script>
   var fs = require('fs')
   
@@ -61,6 +63,10 @@
         window.location.href = './stickynote.html'
     }
 </script>
+
+</form>
+</body>
+</html>
 <?php
 
    // echo "Hi";
@@ -79,18 +85,30 @@
         die("Connection failed: " . mysqli_connect_error());
     }
     
-    echo "Connected successfully";
+    //echo "Connected successfully";
 
     //if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    $sql = "INSERT INTO heroku_3fa92357decd51e.userdet ( username, what_happened,feelings) VALUES ('Test23', 'bullied', 'happy')";
+    // if( $_POST["story"] || $_POST["feeling"] ) {
+     if( $_POST ) {
+       
+    // $sql = "INSERT INTO MyGuests (firstname, lastname, email)VALUES ('John', 'Doe', 'john@example.com')";
+     $story = $_POST['story'];
+     $feeling = $_POST['feeling'];
+    $sql = "INSERT INTO heroku_3fa92357decd51e.userdet ( username,what_happened,feelings) VALUES ('Test23', '$story','$feeling')";
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-    mysqli_close($conn);
+   
 
+     
+     // $highest_id = mysqli_fetch_row(mysqli_query($conn,'SELECT MAX(userId) FROM  heroku_3fa92357decd51e.userdet LIMIT 1'), 0);
+
+       mysqli_close($conn);
+      
+    header("Location: /stickynote.php?WACC=12");
+    exit;
+}
 
 ?>
-</html>
