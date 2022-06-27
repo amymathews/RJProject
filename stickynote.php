@@ -75,9 +75,9 @@
 		</div>
 
 	</div>
-
+	</form>
 <script src="js/StickyNote.js"></script>
-</form>
+
 </body>
 <?php
 
