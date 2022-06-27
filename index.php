@@ -1,8 +1,4 @@
-<?php
-    echo "Hi";
- 
-?>
-<html>
+s<html>
     <head>
         <meta charset="UTF-8">
         <title>Sense_making</title>
