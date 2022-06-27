@@ -71,7 +71,7 @@
 				<div class="to_right"></div>
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
-			<button style="float:right; margin-top:10%" id="done">Complete</button>
+			<button style="float:right; margin-top:10%" onclick="submitForms()"  id="done">Complete</button>
 		</div>
 
 	</div>

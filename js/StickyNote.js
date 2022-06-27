@@ -21,6 +21,12 @@ let drag;// d3.drag()
 let needs,stakeholders,actions;// array to be bound with datalist
 let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote layout and event layout
 
+submitForms = function(){
+  //  document.forms["form1"].submit();
+  //  document.forms["form2"].submit();
+  alert("here");
+}
+
 // double click deletion function on the sticky note
 function double_click(event, d){
     let r=confirm("Do you want to delete this sticky note?");
@@ -199,7 +205,8 @@ function main() {
         d3.select('#done').on("click",()=>{
             var content = JSON.stringify({"notes": notes});
             var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-            saveAs(blob, "user.json");
+            //saveAs(blob, "user.json");
+
         })
         d3.select('#needtype')
             .on('change',()=>{
