@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<form>
+
 	<div class="content">
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
@@ -75,7 +75,7 @@
 		</div>
 
 	</div>
-	</form>
+	
 <script src="js/StickyNote.js"></script>
 
 </body>
