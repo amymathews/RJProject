@@ -103,11 +103,11 @@
    
 
      
-     // $highest_id = mysqli_fetch_row(mysqli_query($conn,'SELECT MAX(userId) FROM  heroku_3fa92357decd51e.userdet LIMIT 1'), 0);
+     $highest_id = mysqli_fetch_row(mysqli_query($conn,'SELECT MAX(userId) FROM  heroku_3fa92357decd51e.userdet LIMIT 1'), 0);
 
        mysqli_close($conn);
       
-    header("Location: /stickynote.php?WACC=12");
+    header("Location: /stickynote.php?WACC=".$highest_id);
     exit;
 }
 
