@@ -82,7 +82,7 @@
 <?php
 
 echo($_POST);
-exit;
+//exit;
 
 ?>
 
