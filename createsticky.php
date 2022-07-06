@@ -31,12 +31,6 @@
 					<div id='selector' style="position: absolute;font-size:15px;width:20%">
 						<form>
 							<p id="note_type">Please choose the note type (stakeholder or need)</p>
-							<label for="notetype">Choose a type:</label>
-							<select name="notes" id="notetype">
-								<option value="stakeholder_category">stakeholder (category)</option>
-								<option value="stakeholder_individual">stakeholder (individual)</option>
-								<option value="need">need</option>
-							</select>
 							<br><br>
 							<p id="content">Please input the content you want to display on the note</p>
 							<input id="text_on_note">
