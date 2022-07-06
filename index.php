@@ -21,6 +21,12 @@
             <img style="float:right" src="images/support.png">
             <br/>
             <br/>
+                .button {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    margin-left: -104.5px; /*104.5px is half of the button's width*/
+                }
             <button style="float:right" onclick="window.location.href = './information.php'">next</button>
         </div>
     </body>
