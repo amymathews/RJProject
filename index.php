@@ -21,12 +21,19 @@
             <img style="float:right" src="images/support.png">
             <br/>
             <br/>
-                .button {
-                    position: absolute;
-                    bottom: 10px;
-                    left: 50%;
-                    margin-left: -104.5px; /*104.5px is half of the button's width*/
-                }
+            .next {
+                background-color : #31B0D5;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 4px;
+                border-color: #46b8da;
+            }
+
+            #mybutton {
+            position: fixed;
+            bottom: -4px;
+            right: 10px;
+            }
             <button style="float:right" onclick="window.location.href = './information.php'">next</button>
         </div>
     </body>
