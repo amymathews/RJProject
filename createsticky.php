@@ -22,6 +22,7 @@
         <div class="content">
 			<div class="container">
 				<div id='selector' style="position: absolute;font-size:15px;width:20%">
+				<div id='stickynotes'></div>
 					<form>
 						<br><br>
 						<p id="content">Please input the content you want to display on the note</p>
