@@ -21,7 +21,6 @@
 
         <div class="content">
 			<div class="container">
-				<div id='selector' style="position: absolute;font-size:15px;width:20%">
 					<form>
 						<br><br>
 						<p id="content">Please input the content you want to display on the note</p>
@@ -30,7 +29,6 @@
 						<button id="create" type="button">create new note</button>
 						<p id="remove_note">Remove: double click on the sticky note to remove it</p>
 					</form>
-				</div>
 			</div>
 		</div>
 
