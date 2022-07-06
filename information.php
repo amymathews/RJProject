@@ -42,7 +42,7 @@
        <button style="float:right; margin-top:15%"  onclick="window.location.href = './createsticky.php'">next</button>
     </div>
 
-<script>
+<!-- <script>
   var fs = require('fs')
   
   // Data which will write in a file.
@@ -60,7 +60,7 @@
         saveAs(blob, "user.txt");
         window.location.href = './stickynote.html'
     }
-</script>
+</script> -->
 
 </form>
 </body>
