@@ -12,14 +12,13 @@
     <body>
         <div class="container">
             
-            <h1>Welcome to the online harm restorative platform!</h1>
-            <p>This system is designed to help people make sense of what has happened in online harm and find ways to address the harm.</p>
+            <p>Hi, welcome to the system! The system is designed to help people make sense of what has happened in online harm and find ways to address the harm.</p>
             <p>In the system, you will go through the following processes:</p>
             <ul>
                 <li>Share a harm case you've experienced</li>
-                <li>Draw out an action plan to address the harm case</li>
+                <li>Draw out an action plan to address the harm </li>
             </ul>
-            <img src="images/support.png">
+            <img style="float:right" src="images/support.png">
             <br/>
             <br/>
             <button style="float:right" onclick="window.location.href = './information.php'">next</button>
