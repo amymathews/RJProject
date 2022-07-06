@@ -117,7 +117,9 @@
 
        mysqli_close($conn);
       
-    header("Location: /stickynote.php?WACC=".$highest_id);
+    // header("Location: /stickynote.php?WACC=".$highest_id);
+    header("Location: /createsticky.php?WACC=".$highest_id);
+
     exit;
 }
 
