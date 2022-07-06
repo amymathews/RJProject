@@ -15,7 +15,7 @@
         <p>Sharing what has happened and your feelings is an important part of making sense of the harm and healing.</p>
         <p>Please share what has happened in either way:</p>
         <div style="display: flex">
-            <div style="margin-left: 5%; margin-right: 5%">
+            <!-- <div style="margin-left: 5%; margin-right: 5%">
                 <p>Recording (talk about what has happened)</p>
                 <div id="record">
                     <div id="controls">
@@ -29,7 +29,7 @@
                     <script src="js/recorder.js"></script>
                     <script src="js/app.js"></script>
                 </div>
-            </div>
+            </div> -->
             <div style="position: absolute;margin-left:55%">
                 <p>Typing (write down what has happened)</p>
                 <textarea id="story" name="story" rows="8" cols="31"></textarea>
