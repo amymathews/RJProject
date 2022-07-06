@@ -21,19 +21,7 @@
             <img style="float:right" src="images/support.png">
             <br/>
             <br/>
-            .next {
-                background-color : #31B0D5;
-                color: white;
-                padding: 10px 20px;
-                border-radius: 4px;
-                border-color: #46b8da;
-            }
-
-            #mybutton {
-            position: fixed;
-            bottom: -4px;
-            right: 10px;
-            }
+    
             <button style="float:right" onclick="window.location.href = './information.php'">next</button>
         </div>
     </body>
