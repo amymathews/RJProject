@@ -32,6 +32,7 @@
 						<p id="remove_note">Remove: double click on the sticky note to remove it</p>
 					</form>
 				</div>
+				</div>
 			</div>
 		</div>
 
