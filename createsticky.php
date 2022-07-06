@@ -14,12 +14,7 @@
     <body>
 		<div class="content">
 				<div class="container">
-					<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
-						<p>stakeholder (category)</p>
-						<p style="margin-left:4%">stakeholder (individual)</p>
-						<p style="margin-left:10%">need</p>
-					</div>
-					<div id='stickynotes'></div>
+				<div id='stickynotes'></div>
 				<p>Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused.</p>
 				<p>   These can be the offender, online community members, moderators, etc. </p>
 				<br/>
