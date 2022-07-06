@@ -25,7 +25,6 @@
                     </div>
                     <p><strong>Recordings:</strong></p>
                     <ol id="recordingsList"></ol>
-                    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
                     <script src="js/recorder.js"></script>
                     <script src="js/app.js"></script>
                 </div>
