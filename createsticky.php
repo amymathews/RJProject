@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
  </head>
-    <body>
+<body>
         <p>Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused.</p>
         <p>   These can be the offender, online community members, moderators, etc. </p>
         <br/>
@@ -35,7 +35,7 @@
 		</div>
 
         <button style="float:right; margin-top:15%"  onclick="window.location.href = './stickynote.php'">next</button>
-
-    </body>
+<script src="js/StickyNote.js"></script>
+</body>
 
 </html>
