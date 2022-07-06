@@ -29,7 +29,7 @@
                     <script src="js/app.js"></script>
                 </div>
             </div> -->
-            <div style="position: absolute;margin-left:55%; margin: right 55px;">
+            <div style="position: absolute;margin-left:55%;">
                 <p>q1) Can you tell us what happened in the harm?</p>
                 <textarea id="story" name="story" rows="8" cols="31"></textarea>
             </div>
