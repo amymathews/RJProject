@@ -12,32 +12,46 @@
 	
 </head>
     <body>
-		<div class="content">
-				<div class="container">
-				<div id='stickynotes'></div>
-				<p>Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused.</p>
-				<p>   These can be the offender, online community members, moderators, etc. </p>
-				<br/>
-				<p>q3) Who do you think can help you address the harm?   </p>
-				<p>q4) Who do you think has responsibility for helping you address the harm?</p>
-				<br/>
-				<p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
-				<div id='stickynotes'></div>
-					<div id='selector' style="position: absolute;font-size:15px;width:20%">
-						<form>
-							<p id="note_type">Please choose the note type (stakeholder or need)</p>
-							<br><br>
-							<p id="content">Please input the content you want to display on the note</p>
-							<input id="text_on_note">
-							<br><br>
-							<button id="create" type="button">create new note</button>
-							<p id="remove_note">Remove: double click on the sticky note to remove it</p>
-						</form>
+	<div class="content">
+			<div class="container">
+				<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
+					<p>stakeholder (category)</p>
+					<p style="margin-left:4%">stakeholder (individual)</p>
+					<p style="margin-left:10%">need</p>
 				</div>
-				<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
+				<div id='stickynotes'></div>
+        <p>Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused.</p>
+        <p>   These can be the offender, online community members, moderators, etc. </p>
+        <br/>
+        <p>q3) Who do you think can help you address the harm?   </p>
+        <p>q4) Who do you think has responsibility for helping you address the harm?</p>
+        <br/>
+        <p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
+        <div id='stickynotes'></div>
+			<div id='selector' style="position: absolute;font-size:15px;width:20%">
+				<form>
+					<p id="note_type">Please choose the note type (stakeholder or need)</p>
+					<label for="notetype">Choose a type:</label>
+					<select name="notes" id="notetype">
+						<option value="stakeholder_category">stakeholder (category)</option>
+						<option value="stakeholder_individual">stakeholder (individual)</option>
+						<option value="need">need</option>
+					</select>
+					<br><br>
+					<p id="content">Please input the content you want to display on the note</p>
+					<input id="text_on_note">
+					<br><br>
+					<button id="create" type="button">create new note</button>
+					<p id="remove_note">Remove: double click on the sticky note to remove it</p>
+				</form>
 			</div>
+			<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
 		</div>
-	<button style="float:right; margin-top:15%"  onclick="window.location.href = './stickynote.php'">next</button>
+
+        
+
+
+        <button style="float:right; margin-top:15%"  onclick="window.location.href = './stickynote.php'">next</button>
 
     </body>
 
