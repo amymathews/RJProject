@@ -16,8 +16,7 @@ body {
     padding: 16px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    color: #FFFF00;
+    box-shadow: 0 0 7px rgb(255, 255, 143);
     resize: none;
     font-family: sans-serif;
     font-size: 16px;
@@ -40,8 +39,7 @@ body {
     padding: 16px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    color: #097969;
+    box-shadow: 0 0 7px rgb(144, 238, 144);
     resize: none;
     font-family: sans-serif;
     font-size: 16px;
@@ -64,8 +62,7 @@ body {
     padding: 16px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    color: #BF40BF;
+    box-shadow: 0 0 7px rgb(191, 64, 191);
     resize: none;
     font-family: sans-serif;
     font-size: 16px;
