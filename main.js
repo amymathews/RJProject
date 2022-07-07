@@ -6,17 +6,17 @@ const notesContainer3 = document.getElementById("app3");
 const addNoteButton = notesContainer.querySelector(".add-note");
 
 getNotes().forEach(note => {
-    const noteElement = createNoteElement(note.id, note.content);
+    const noteElement = createNoteElement(note.app, note.content);
     notesContainer.insertBefore(noteElement, addNoteButton);
 });
 
 getNotes().forEach(note => {
-    const noteElement = createNoteElement(note.id, note.content);
+    const noteElement = createNoteElement(note.app2, note.content);
     notesContainer2.insertBefore(noteElement, addNoteButton);
 });
 
 getNotes().forEach(note => {
-    const noteElement = createNoteElement(note.id, note.content);
+    const noteElement = createNoteElement(note.app3, note.content);
     notesContainer3.insertBefore(noteElement, addNoteButton);
 });
 addNoteButton.addEventListener("click", () => addNote());
@@ -30,7 +30,7 @@ function saveNotes(notes) {
     localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
 }
 
-function createNoteElement(id, content) {
+function createNoteElement(app, content) {
 
     const element = document.createElement("textarea");
 
@@ -39,14 +39,59 @@ function createNoteElement(id, content) {
     element.placeholder = "Empty Sticky Note";
 
     element.addEventListener("change", () => {
-        updateNote(id, element.value);
+        updateNote(app, element.value);
 
     });
 
     element.addEventListener("dblclick", () => {
         const doDelete = confirm ("Are you sure you wish to delete this sticky note? ");
         if(doDelete) {
-            deleteNote(id, element);
+            deleteNote(app, element);
+        }
+    });
+    return element;
+
+}
+function createNoteElement(app2, content) {
+
+    const element = document.createElement("textarea");
+
+    element.classList.add("note");
+    element.value = content;
+    element.placeholder = "Empty Sticky Note";
+
+    element.addEventListener("change", () => {
+        updateNote(app2, element.value);
+
+    });
+
+    element.addEventListener("dblclick", () => {
+        const doDelete = confirm ("Are you sure you wish to delete this sticky note? ");
+        if(doDelete) {
+            deleteNote(app2, element);
+        }
+    });
+    return element;
+
+}
+
+function createNoteElement(app3, content) {
+
+    const element = document.createElement("textarea");
+
+    element.classList.add("note");
+    element.value = content;
+    element.placeholder = "Empty Sticky Note";
+
+    element.addEventListener("change", () => {
+        updateNote(app3, element.value);
+
+    });
+
+    element.addEventListener("dblclick", () => {
+        const doDelete = confirm ("Are you sure you wish to delete this sticky note? ");
+        if(doDelete) {
+            deleteNote(app3, element);
         }
     });
     return element;
@@ -56,10 +101,10 @@ function createNoteElement(id, content) {
 function addNote() {
 const notes = getNotes();
 const noteObject = {
-    id: Math.floor(Math.random()*1),
+    app: Math.floor(Math.random()*1),
     content: ""
  };
- const noteElement = createNoteElement(noteObject.id, noteObject.content);
+ const noteElement = createNoteElement(noteObject.app, noteObject.content);
  notesContainer.insertBefore(noteElement, addNoteButton);
 
  notes.push(noteObject);
@@ -69,10 +114,10 @@ const noteObject = {
 function addNote() {
     const notes = getNotes();
     const noteObject = {
-        id: Math.floor(Math.random()*1),
+        app2: Math.floor(Math.random()*1),
         content: ""
      };
-     const noteElement = createNoteElement(noteObject.id, noteObject.content);
+     const noteElement = createNoteElement(noteObject.app2, noteObject.content);
      notesContainer2.insertBefore(noteElement, addNoteButton);
     
      notes.push(noteObject);
@@ -82,38 +127,55 @@ function addNote() {
     function addNote() {
         const notes = getNotes();
         const noteObject = {
-            id: Math.floor(Math.random()*1),
+            app3: Math.floor(Math.random()*1),
             content: ""
          };
-         const noteElement = createNoteElement(noteObject.id, noteObject.content);
+         const noteElement = createNoteElement(noteObject.app3, noteObject.content);
          notesContainer3.insertBefore(noteElement, addNoteButton);
         
          notes.push(noteObject);
          saveNotes(notes);
         }
 
-function updateNote(id, newContent){
+function updateNote(app, newContent){
 
    const notes = getNotes();
-   const targetNote = notes.filter(note => note.id == id)[0];
+   const targetNote = notes.filter(note => note.app == app)[0];
 
    targetNote.content = newContent;
    saveNotes(notes);
 
-
 }
+function updateNote(app2, newContent){
+
+    const notes = getNotes();
+    const targetNote = notes.filter(note => note.app2 == app2)[0];
+ 
+    targetNote.content = newContent;
+    saveNotes(notes);
+ 
+ }
+ function updateNote(id, newContent){
+
+    const notes = getNotes();
+    const targetNote = notes.filter(note => note.app3 == app3)[0];
+ 
+    targetNote.content = newContent;
+    saveNotes(notes);
+ 
+ }
 function deleteNote(app,element){
-    const notes = getNotes().filter(note => note.id != id);
+    const notes = getNotes().filter(note => note.app != app);
     saveNotes(notes);
     notesContainer.removeChild(element);
 }
 function deleteNote(app2,element){
-    const notes = getNotes().filter(note => note.id != id);
+    const notes = getNotes().filter(note => note.app2 != app2);
     saveNotes(notes);
     notesContainer.removeChild(element);
 }
 function deleteNote(app3,element){
-    const notes = getNotes().filter(note => note.id != id);
+    const notes = getNotes().filter(note => note.app3 != app3);
     saveNotes(notes);
     notesContainer.removeChild(element);
 }
