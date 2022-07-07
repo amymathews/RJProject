@@ -10,18 +10,19 @@
 		<script src = "./main.js" defer></script>
     </head>
     <body>
-	<p>Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused.</p>
+	<p>Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affected you when gauging the harm caused.</p>
 			<p>   These can be the offender, online community members, moderators, etc. </p>
 			<br/>
 			<p>q3) Who do you think can help you address the harm?   </p>
 			<p>q4) Who do you think has responsibility for helping you address the harm?</p>
 			<br/>
 			<p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
+			<p> if yuo wish to delete the sticky note just double click </p>
 		<div id = "app">
 		
-			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note1">Some sample text</textarea>
 
-			<button class = "add-note" type = "button">+</button>
+			<button class = "add-note1" type = "button">+</button>
 
 		</div>
 
@@ -31,9 +32,9 @@
         
 		<div id = "app">
 		
-			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note2">Some sample text</textarea>
 
-			<button class = "add-note" type = "button">+</button>
+			<button class = "add-note2" type = "button">+</button>
 
 		</div>
 		</br>
@@ -42,9 +43,9 @@
 
 		<div id = "app">
 		
-			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note3">Some sample text</textarea>
 
-			<button class = "add-note" type = "button">+</button>
+			<button class = "add-note3" type = "button">+</button>
 
 		</div>
 
