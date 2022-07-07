@@ -1,4 +1,8 @@
-const notesContainer = document.getElementsByClassName("app");
+const notesContainer = document.getElementById("app");
+const notesContainer2 = document.getElementById("app2");
+const notesContainer3 = document.getElementById("app3");
+
+
 const addNoteButton = notesContainer.querySelector(".add-note");
 
 getNotes().forEach(note => {
@@ -6,6 +10,15 @@ getNotes().forEach(note => {
     notesContainer.insertBefore(noteElement, addNoteButton);
 });
 
+getNotes().forEach(note => {
+    const noteElement = createNoteElement(note.id, note.content);
+    notesContainer2.insertBefore(noteElement, addNoteButton);
+});
+
+getNotes().forEach(note => {
+    const noteElement = createNoteElement(note.id, note.content);
+    notesContainer3.insertBefore(noteElement, addNoteButton);
+});
 addNoteButton.addEventListener("click", () => addNote());
 
 function getNotes(){
@@ -53,6 +66,32 @@ const noteObject = {
  saveNotes(notes);
 }
 
+function addNote() {
+    const notes = getNotes();
+    const noteObject = {
+        id: Math.floor(Math.random()*1),
+        content: ""
+     };
+     const noteElement = createNoteElement(noteObject.id, noteObject.content);
+     notesContainer2.insertBefore(noteElement, addNoteButton);
+    
+     notes.push(noteObject);
+     saveNotes(notes);
+    }
+
+    function addNote() {
+        const notes = getNotes();
+        const noteObject = {
+            id: Math.floor(Math.random()*1),
+            content: ""
+         };
+         const noteElement = createNoteElement(noteObject.id, noteObject.content);
+         notesContainer3.insertBefore(noteElement, addNoteButton);
+        
+         notes.push(noteObject);
+         saveNotes(notes);
+        }
+
 function updateNote(id, newContent){
 
    const notes = getNotes();
@@ -63,7 +102,17 @@ function updateNote(id, newContent){
 
 
 }
-function deleteNote(id,element){
+function deleteNote(app,element){
+    const notes = getNotes().filter(note => note.id != id);
+    saveNotes(notes);
+    notesContainer.removeChild(element);
+}
+function deleteNote(app2,element){
+    const notes = getNotes().filter(note => note.id != id);
+    saveNotes(notes);
+    notesContainer.removeChild(element);
+}
+function deleteNote(app3,element){
     const notes = getNotes().filter(note => note.id != id);
     saveNotes(notes);
     notesContainer.removeChild(element);
