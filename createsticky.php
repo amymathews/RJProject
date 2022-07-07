@@ -24,8 +24,29 @@
 			<button class = "add-note" type = "button">+</button>
 
 		</div>
-        
 
+		<br/>
+
+		<p>q5) As the victim, how would you want tot feel? Please write on the stickynotes. </p>
+        
+		<div id = "app">
+		
+			<textarea class = "note">Some sample text</textarea>
+
+			<button class = "add-note" type = "button">+</button>
+
+		</div>
+		</br>
+
+		<p> A the victim, what are some desired outcomes for adressing the harm? </p>
+
+		<div id = "app">
+		
+			<textarea class = "note">Some sample text</textarea>
+
+			<button class = "add-note" type = "button">+</button>
+
+		</div>
 
         <button style="float:right; margin-top:15%"  onclick="window.location.href = './stickynote.php'">next</button>
 
