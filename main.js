@@ -1,4 +1,5 @@
 const notesContainer = document.querySelectorAll("#one, #two, #three");
+console.log(notesContainer);
 const addNoteButton = notesContainer.querySelector(".add-note");
 
 getNotes().forEach(note => {
