@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width,intial-scale=1.0">
         <title>Sense_makings</title>
 		
-		<link rel = "stylesheet" href = "phptest/main.css">
-		<script src = "phptest/main.js" defer></script>
+		<link rel = "stylesheet" href = "./main.css">
+		<script src = "./main.js" defer></script>
     </head>
     <body>
 		<div id = "app">
