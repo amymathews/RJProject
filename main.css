@@ -10,7 +10,7 @@ body {
     gap: 24px;
 }
 
-.note1 {
+.note {
     height: 200px;
     box-sizing: border-box;
     padding: 16px;
@@ -22,7 +22,7 @@ body {
     font-size: 16px;
 }
 
-.add-note1 {
+.add-note {
     height: 200px;
     border: none;
     outline: none;
@@ -68,7 +68,7 @@ body {
     font-size: 16px;
 }
 
-.add-note3 {
+.add-note3{
     height: 200px;
     border: none;
     outline: none;
