@@ -10,7 +10,7 @@ body {
     gap: 24px;
 }
 
-.note1 {
+.note {
     height: 200px;
     box-sizing: border-box;
     padding: 16px;
@@ -33,7 +33,7 @@ body {
     cursor: pointer;
 }
 
-.note2 {
+.note {
     height: 200px;
     box-sizing: border-box;
     padding: 16px;
@@ -56,7 +56,7 @@ body {
     cursor: pointer;
 }
 
-.note3 {
+.note {
     height: 200px;
     box-sizing: border-box;
     padding: 16px;

@@ -20,7 +20,7 @@
 			<p> if yuo wish to delete the sticky note just double click </p>
 		<div id = "app">
 		
-			<textarea class = "note1">Some sample text</textarea>
+			<textarea class = "note">Some sample text</textarea>
 
 			<button class = "add-note" type = "button">+</button>
 
@@ -32,7 +32,7 @@
         
 		<div id = "app">
 		
-			<textarea class = "note2">Some sample text</textarea>
+			<textarea class = "note">Some sample text</textarea>
 
 			<button class = "add-note" type = "button">+</button>
 
@@ -43,7 +43,7 @@
 
 		<div id = "app">
 		
-			<textarea class = "note3">Some sample text</textarea>
+			<textarea class = "note">Some sample text</textarea>
 
 			<button class = "add-note" type = "button">+</button>
 
