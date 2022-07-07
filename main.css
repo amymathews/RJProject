@@ -1,12 +1,22 @@
-body{
+body {
     margin: 0;
     background: #75FF33;
 }
-#app{
+
+#app {
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
     padding: 24px;
     gap: 24px;
+}
 
-
+.note {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    font-size: 120px;
+    cursor: pointer;
 }

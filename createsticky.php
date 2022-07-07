@@ -15,6 +15,10 @@
         <p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
 		<div id = "app">
 			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note">Some sample text</textarea>
+
 			<button class = "add-note" type = "button">+</button>
 
 		</div>
