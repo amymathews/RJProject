@@ -17,9 +17,9 @@
 			<p>q4) Who do you think has responsibility for helping you address the harm?</p>
 			<br/>
 			<p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
-			<p> if yuo wish to delete the sticky note just double click </p>
+			<p> if you wish to delete the sticky note, just double click. </p>
 
-		<div id = "app">
+		<div class = "app">
 		
 			<textarea class = "note">Some sample text</textarea>
 
@@ -31,7 +31,7 @@
 
 		<p>q5) As the victim, how would you want tot feel? Please write on the stickynotes. </p>
         
-		<!-- <div id = "app">
+		<div class = "app">
 		
 			<textarea class = "note">Some sample text</textarea>
 
@@ -40,15 +40,15 @@
 		</div>
 		</br>
 
-		<p> A the victim, what are some desired outcomes for adressing the harm? </p>
+		<p> q6) As the victim, what are some desired outcomes for adressing the harm? </p>
 
-		<div id = "app">
+		<div class = "app">
 		
 			<textarea class = "note">Some sample text</textarea>
 
 			<button class = "add-note" type = "button">+</button>
 
-		</div> -->
+		</div>
 
         <button style="float:right; margin-top:15%"  onclick="window.location.href = './stickynote.php'">next</button>
 
