@@ -1,5 +1,5 @@
 const notesContainer = document.getElementById("app3");
-const addNoteButton = notesContainer.querySelector(".add-note");
+const addNoteButton = notesContainer.querySelector(".add-note3");
 
 getNotes().forEach((note) => {
   const noteElement = createNoteElement(note.id, note.content);

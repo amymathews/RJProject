@@ -36,9 +36,9 @@
         
 		<div id = "app2">
 		
-			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note2">Some sample text</textarea>
 
-			<button class = "add-note" type = "button">+</button>
+			<button class = "add-note2" type = "button">+</button>
 
 		</div>
 		</br>
@@ -47,9 +47,9 @@
 
 		<div id = "app3">
 		
-			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note3">Some sample text</textarea>
 
-			<button class = "add-note" type = "button">+</button>
+			<button class = "add-note3" type = "button">+</button>
 
 		</div>
 
