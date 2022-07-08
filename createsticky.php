@@ -19,7 +19,7 @@
 			<p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
 			<p> if yuo wish to delete the sticky note just double click </p>
 
-		<div id = "app1">
+		<div id = "app">
 		
 			<textarea class = "note">Some sample text</textarea>
 
