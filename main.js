@@ -1,4 +1,4 @@
-var notesContainer = document.getElementById("app1");
+const notesContainer = document.getElementById("app1");
 const addNoteButton = notesContainer.querySelector(".add-note");
 
 getNotes().forEach((note) => {
