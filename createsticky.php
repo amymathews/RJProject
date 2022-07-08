@@ -9,6 +9,8 @@
 		<link rel = "stylesheet" href = "./main1.css">
 
 		<script src = "./main1.js" defer></script>
+		<script src = "./main2.js" defer></script>
+		<script src = "./main3.js" defer></script>
     </head>
     <body>
 	<p>Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affected you when gauging the harm caused.</p>
