@@ -19,30 +19,28 @@
 			<p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
 			<p> if yuo wish to delete the sticky note just double click </p>
 
-		<div class = "app">
+		<div id = "app">
 		
 			<textarea class = "note">Some sample text</textarea>
 
 			<button class = "add-note" type = "button">+</button>
 
-		</div>
+		
 
 		<br/>
 
 		<p>q5) As the victim, how would you want tot feel? Please write on the stickynotes. </p>
         
-		<div class = "app">
+
 		
 			<textarea class = "note">Some sample text</textarea>
 
 			<button class = "add-note" type = "button">+</button>
 
-		</div>
 		</br>
 
 		<p> A the victim, what are some desired outcomes for adressing the harm? </p>
 
-		<div class = "app">
 		
 			<textarea class = "note">Some sample text</textarea>
 

@@ -1,8 +1,8 @@
-const notesContainer = document.getElementsByClassName("app");
+var notesContainer = document.getElementById("app");
 const addNoteButton = notesContainer.querySelector(".add-note");
 
 getNotes().forEach((note) => {
-  const noteElement = createNoteElement(note.class, note.content);
+  const noteElement = createNoteElement(note.id, note.content);
   notesContainer.insertBefore(noteElement, addNoteButton);
 });
 
@@ -16,7 +16,7 @@ function saveNotes(notes) {
   localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
 }
 
-function createNoteElement(app, content) {
+function createNoteElement(id, content) {
   const element = document.createElement("textarea");
 
   element.classList.add("note");
@@ -24,7 +24,7 @@ function createNoteElement(app, content) {
   element.placeholder = "Empty Sticky Note";
 
   element.addEventListener("change", () => {
-    updateNote(app, element.value);
+    updateNote(id, element.value);
   });
 
   element.addEventListener("dblclick", () => {
@@ -33,7 +33,7 @@ function createNoteElement(app, content) {
     );
 
     if (doDelete) {
-      deleteNote(app, element);
+      deleteNote(id, element);
     }
   });
 
@@ -43,28 +43,46 @@ function createNoteElement(app, content) {
 function addNote() {
   const notes = getNotes();
   const noteObject = {
-  class: Math.floor(Math.random() * 100000),
+    id: Math.floor(Math.random() * 100000),
     content: ""
   };
 
-  const noteElement = createNoteElement(noteObject.class, noteObject.content);
+  const noteElement = createNoteElement(noteObject.id, noteObject.content);
   notesContainer.insertBefore(noteElement, addNoteButton);
 
   notes.push(noteObject);
   saveNotes(notes);
 }
 
-function updateNote(app, newContent) {
+function updateNote(id, newContent) {
   const notes = getNotes();
-  const targetNote = notes.filter((note) => note.class == app)[0];
+  const targetNote = notes.filter((note) => note.id == id)[0];
 
   targetNote.content = newContent;
   saveNotes(notes);
 }
 
-function deleteNote(app, element) {
-  const notes = getNotes().filter((note) => note.class != app);
+function deleteNote(id, element) {
+  const notes = getNotes().filter((note) => note.id != id);
 
   saveNotes(notes);
   notesContainer.removeChild(element);
 }
+
+/*
+<div id=“app1”>
+<div id=“app2”>
+<div id=“app3”>
+
+function (app, 1)
+function (app, 2)
+
+function(id, num)
+{
+actual_id = id + number
+(id = “app1”)
+}
+use div in input. 
+
+fucntion that gets parent div
+*/
