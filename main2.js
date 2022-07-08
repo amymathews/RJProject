@@ -1,9 +1,9 @@
-const notesContainer = document.getElementById("app2");
-const addNoteButton = notesContainer.querySelector(".add-note2");
+const notesContainer2 = document.getElementById("app2");
+const addNoteButton = notesContainer2.querySelector(".add-note2");
 
 getNotes().forEach((note) => {
   const noteElement = createNoteElement(note.id, note.content);
-  notesContainer.insertBefore(noteElement, addNoteButton);
+  notesContainer2.insertBefore(noteElement, addNoteButton);
 });
 
 addNoteButton.addEventListener("click", () => addNote());
@@ -48,7 +48,7 @@ function addNote() {
   };
 
   const noteElement = createNoteElement(noteObject.id, noteObject.content);
-  notesContainer.insertBefore(noteElement, addNoteButton);
+  notesContainer2.insertBefore(noteElement, addNoteButton);
 
   notes.push(noteObject);
   saveNotes(notes);
@@ -66,5 +66,5 @@ function deleteNote(id, element) {
   const notes = getNotes().filter((note) => note.id != id);
 
   saveNotes(notes);
-  notesContainer.removeChild(element);
+  notesContainer2.removeChild(element);
 }
