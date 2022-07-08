@@ -8,7 +8,6 @@
 		
 		<link rel = "stylesheet" href = "./main1.css">
 
-		<script src = "./main1.js" defer></script>
 		<script src = "./main2.js" defer></script>
 		<script src = "./main3.js" defer></script>
     </head>
@@ -23,6 +22,8 @@
 			<p> if yuo wish to delete the sticky note just double click </p>
 
 		<div id = "app">
+			<script src = "./main1.js" defer></script>
+
 		
 			<textarea class = "note">Some sample text</textarea>
 
