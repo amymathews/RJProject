@@ -7,7 +7,8 @@
         <title>Sense_makings</title>
 		
 		<link rel = "stylesheet" href = "./main1.css">
-		<script src = "./main1.js" defer></script>
+		
+		<script src = "./main2.js" defer></script>
 		<script src = "./main3.js" defer></script>
     </head>
     <body>
@@ -22,7 +23,7 @@
 
 		<div id = "app">
 
-		
+		<script src = "./main1.js" defer></script>
 			<textarea class = "note">Some sample text</textarea>
 
 			<button class = "add-note" type = "button">+</button>
@@ -30,10 +31,10 @@
 		</div>
 
 		<br/>
-<!-- 
+
 		<p>q5) As the victim, how would you want tot feel? Please write on the stickynotes. </p>
         
-		<div id = "app2"><script src = "./main2.js" defer></script>
+		<div id = "app2">
 
 		
 			<textarea class = "note2">Some sample text</textarea>
@@ -51,7 +52,7 @@
 
 			<button class = "add-note3" type = "button">+</button>
 
-		</div> -->
+		</div>
 
         <button style="float:right; margin-top:15%"  onclick="window.location.href = './stickynote.php'">next</button>
 
