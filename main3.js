@@ -1,12 +1,12 @@
 const notesContainer3 = document.getElementById("app3");
-const addNoteButton = notesContainer3.querySelector(".add-note3");
+const addNoteButton3 = notesContainer3.querySelector(".add-note3");
 
 getNotes().forEach((note) => {
   const noteElement = createNoteElement(note.id, note.content);
-  notesContainer3.insertBefore(noteElement, addNoteButton);
+  notesContainer3.insertBefore(noteElement, addNoteButton3);
 });
 
-addNoteButton.addEventListener("click", () => addNote());
+addNoteButton3.addEventListener("click", () => addNote());
 
 function getNotes() {
     alert('Test');
@@ -50,7 +50,7 @@ function addNote() {
 
   const noteElement = createNoteElement(noteObject.id, noteObject.content);
   notesContainer3
-.insertBefore(noteElement, addNoteButton);
+.insertBefore(noteElement, addNoteButton3);
 
   notes.push(noteObject);
   saveNotes(notes);

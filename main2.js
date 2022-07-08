@@ -1,12 +1,13 @@
 const notesContainer2 = document.getElementById("app2");
-const addNoteButton = notesContainer2.querySelector(".add-note2");
+const addNoteButton2 = notesContainer2.querySelector(".add-note2");
 
 getNotes().forEach((note) => {
   const noteElement = createNoteElement(note.id, note.content);
-  notesContainer2.insertBefore(noteElement, addNoteButton);
+  notesContainer2.insertBefore(noteElement, addNoteButton2
+);
 });
 
-addNoteButton.addEventListener("click", () => addNote());
+addNoteButton2.addEventListener("click", () => addNote());
 
 function getNotes() {
   return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
@@ -48,7 +49,8 @@ function addNote() {
   };
 
   const noteElement = createNoteElement(noteObject.id, noteObject.content);
-  notesContainer2.insertBefore(noteElement, addNoteButton);
+  notesContainer2.insertBefore(noteElement, addNoteButton2
+);
 
   notes.push(noteObject);
   saveNotes(notes);
