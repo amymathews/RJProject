@@ -24,7 +24,7 @@
 
 		<div id = "app">
 		
-			<textarea class = "note">Some sample text</textarea>
+			<textarea class = "note1">Some sample text</textarea>
 
 			<button class = "add-note" type = "button">+</button>
 
