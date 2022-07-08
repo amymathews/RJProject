@@ -7,8 +7,6 @@
         <title>Sense_makings</title>
 		
 		<link rel = "stylesheet" href = "./main1.css">
-
-		<script src = "./main2.js" defer></script>
 		<script src = "./main3.js" defer></script>
     </head>
     <body>
@@ -35,7 +33,8 @@
 
 		<p>q5) As the victim, how would you want tot feel? Please write on the stickynotes. </p>
         
-		<div id = "app2">
+		<div id = "app2"><script src = "./main2.js" defer></script>
+
 		
 			<textarea class = "note2">Some sample text</textarea>
 
