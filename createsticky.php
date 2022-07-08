@@ -20,7 +20,7 @@
 			<p>q4) Who do you think has responsibility for helping you address the harm?</p>
 			<br/>
 			<p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
-			<p> if yuo wish to delete the sticky note just double click </p>
+			<p> if you wish to delete the sticky note just double click </p>
 
 		<div id = "app">
 

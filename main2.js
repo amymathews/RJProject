@@ -42,7 +42,7 @@ function createNoteElement(id, content) {
 }
 
 function addNote() {
-  const notes = getNotes();
+  const notes2 = getNotes();
   const noteObject = {
     id: Math.floor(Math.random() * 100000),
     content: ""
@@ -52,20 +52,20 @@ function addNote() {
   notesContainer2.insertBefore(noteElement, addNoteButton2
 );
 
-  notes.push(noteObject);
-  saveNotes(notes);
+  notes2.push(noteObject);
+  saveNotes(notes2);
 }
 
 function updateNote(id, newContent) {
-  const notes = getNotes();
-  const targetNote = notes.filter((note) => note.id == id)[0];
+  const notes2 = getNotes();
+  const targetNote = notes2.filter((note) => note.id == id)[0];
 
   targetNote.content = newContent;
-  saveNotes(notes);
+  saveNotes(notes2);
 }
 
 function deleteNote(id, element) {
-  const notes = getNotes().filter((note) => note.id != id);
+  const notes2 = getNotes().filter((note) => note.id != id);
 
   saveNotes(notes);
   notesContainer2.removeChild(element);
