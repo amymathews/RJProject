@@ -3,13 +3,13 @@ const addNoteButton = notesContainer3.querySelector(".add-note3");
 
 getNotes().forEach((note) => {
   const noteElement = createNoteElement(note.id, note.content);
-  notesContainer3
-.insertBefore(noteElement, addNoteButton);
+  notesContainer3.insertBefore(noteElement, addNoteButton);
 });
 
 addNoteButton.addEventListener("click", () => addNote());
 
 function getNotes() {
+    alert('Test');
   return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
 }
 
