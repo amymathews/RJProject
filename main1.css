@@ -10,7 +10,7 @@ body {
     gap: 24px;
 }
 
-/* #app2 {
+#app2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
     padding: 24px;
@@ -22,7 +22,7 @@ body {
     grid-template-columns: repeat(auto-fill, 200px);
     padding: 24px;
     gap: 24px;
-} */
+}
 
 .note {
     height: 200px;
