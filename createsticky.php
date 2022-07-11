@@ -30,7 +30,7 @@
 	<p> q5) As the victim, how would you want to feel? Please write on the stickynotes. </p>
 
 
-	<textarea class = "note">Some sample text</textarea>
+	<textarea class = "note2">Some sample text</textarea>
 	<button class = "add-note2"  id="2" onClick="button_click(this.id)" type = "button">+</button>
 	
 

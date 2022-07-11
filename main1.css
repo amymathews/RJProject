@@ -30,11 +30,11 @@ body {
     
     .note {
     height: 200px;
-    color: aqua;
     box-sizing: border-box;
     padding: 16px;
     border: none;
     border-radius: 10px;
+    fill: aquamarine;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
     resize: none;
     font-family: sans-serif;
