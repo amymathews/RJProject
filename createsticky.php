@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width,intial-scale=1.0">
 <title>Sense_makings</title>
 <link rel = "stylesheet" href = "./main1.css">
-<link rel="stylesheet" href="css/style.css">
 
 <script src = "./main1.js" defer></script>
 <!-- <script src = "./main2.js" defer></script>
