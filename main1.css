@@ -72,6 +72,7 @@ body {
     border: none;
     outline: none;
     background: rgba(0, 0, 0, 0.1);
+    background-color: #ffbcd9;
     border-radius: 10px;
     font-size: 120px;
     color: rgba(0, 0, 0, 0.5);
@@ -96,6 +97,7 @@ body {
     border: none;
     outline: none;
     background: rgba(0, 0, 0, 0.1);
+    background-color: #FF7F50;
     border-radius: 10px;
     font-size: 120px;
     color: rgba(0, 0, 0, 0.5);
