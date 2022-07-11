@@ -34,7 +34,7 @@ body {
     padding: 16px;
     border: none;
     border-radius: 10px;
-    fill: aquamarine;
+    background-color: blueviolet;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
     resize: none;
     font-family: sans-serif;
