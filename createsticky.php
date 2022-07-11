@@ -41,7 +41,7 @@
 
 <textarea class = "note3">Some sample text</textarea>
 
-<button class = "add-note2" id="3" onClick="button_click(this.id)" type = "button">+</button>
+<button class = "add-note3" id="3" onClick="button_click(this.id)" type = "button">+</button>
 
 </div>
 
