@@ -30,6 +30,7 @@ body {
     
     .note {
     height: 200px;
+    color: aqua;
     box-sizing: border-box;
     padding: 16px;
     border: none;
