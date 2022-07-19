@@ -37,8 +37,6 @@
 			<button class = "add-note2"  id="2" onClick="button_click(this.id)" type = "button">+</button>
 			
 
-
-
 			<p> q6) As the victim, what are some desired outcomes for adressing the harm? </p>
 
 
@@ -48,7 +46,7 @@
 
 		</div>
 
-	<button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
+	<button style="float:right; margin-top:15%" onclick="window.location.href = './movesticky.php'">next</button>
 
 	</body>
 
