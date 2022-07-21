@@ -1,8 +1,4 @@
-/*
-********************************************************************************
-! - type out an exclamation point to get a starting structure to write html code.
-********************************************************************************
-*/
+
 <html>
     <head>
         <meta charset="UTF-8">
