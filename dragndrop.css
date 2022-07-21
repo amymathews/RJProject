@@ -1,0 +1,26 @@
+body{
+    background: darkmagenta;
+}
+
+.fill{
+
+    background-image: url(https://i.pinimg.com/564x/a0/4a/d9/a04ad90d6e411b74977964133134f3f9.jpg/150x150);
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.empty{
+
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: 3px powderblue;
+    background-color: white;
+
+
+}

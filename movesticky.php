@@ -1,21 +1,24 @@
+/*
+********************************************************************************
+! - type out an exclamation point to get a starting structure to write html code.
+********************************************************************************
+*/
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Sense_making</title>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/d3.v6.min.js"></script>
-        <script src="js/FileSaver.js"></script>
+        <title>DragnDrop</title>
+        <script src = "./dragndrop.js" ></script>    
 
-        <link rel=stylesheet" href="css/w3.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/dragndrop.css">
     </head>
     <body>
-        <div class="container">
-            
-            <p>You'll be moving around stickynotes here... more instructions to come! </p>
-        
-            <br/>
-            <br/>
+        <div class="empty">
+            <div class="fill" draggable = "true" ></div>
+        </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
     
             <button style="float:right" onclick="window.location.href = './stickynote.php'">next</button>
         </div>
