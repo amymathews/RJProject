@@ -4,7 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type = "text/javascript">  
+    <script type = "text/javascript"> 
+        const fill = document.querySelector('.fill');
+        const empties = document.querySelectorAll('.empty');
+
+        //Fill Listeners
+
+        fill.addEventListener('dragstart', dragStart);
+        fill.addEventListener('dragend', dragEnd);
+
+        //Loop through empties and call drag events
+        for(const empty of empties) {
+            empty.addEventListener('dragover', dragOver);
+            empty.addEventListener('dragenter', dragEnter);
+            empty.addEventListener('dragleave', dragLeave);
+            empty.addEventListener('drop', dragDrop);
+        }
+
+        //Drag Functions
+        function dragStart() {
+            console.log('here');
+            alert('here');
+            this.className += ' hold';
+            setTimeout(() => this.className = 'invisible', 0);
+        }
+
+        function dragEnd() {
+            // when we let go it still exists
+            this.className = 'fill';
+
+        }
+        function dragOver(e) {
+            e.preventDefault();
+        }
+
+        function dragEnter(e) {
+            e.preventDefault();
+            this.className += ' hovered';
+        }
+        function dragLeave() {
+            this.className = 'empty';
+        }
+
+        function dragDrop() {
+            this.className = 'empty';
+            this.append(fill);
+        } 
         function button_click() {
             alert('here');
         }
