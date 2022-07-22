@@ -46,7 +46,7 @@
 
 		</div>
 
-	<button style="float:right; margin-top:15%" onclick="window.location.href = './dragndrop.php'">next</button>
+	<button style="float:right; margin-top:15%" onclick="window.location.href = './dragndrop.html'">next</button>
 
 	</body>
 
