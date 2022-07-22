@@ -4,7 +4,7 @@ body{
 
 .fill{
 
-    background-image: url(https://i.pinimg.com/564x/a0/4a/d9/a04ad90d6e411b74977964133134f3f9.jpg/150x150);
+    background-image: url('images/cat.png');
     position: relative;
     height: 150px;
     width: 150px;
@@ -13,7 +13,7 @@ body{
     cursor: pointer;
 }
 
-.empty{
+.empty {
 
     display: inline-block;
     height: 160px;
@@ -22,5 +22,17 @@ body{
     border: 3px powderblue;
     background-color: white;
 
+}
 
+.hold {
+    border: solid #ccc 4px
+}
+
+.hover{
+    background: lightblue;
+    border-style: dashed;
+}
+
+.invisible {
+    display: none;
 }
