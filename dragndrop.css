@@ -28,7 +28,7 @@ body{
     border: solid #ccc 4px
 }
 
-.hover{
+.hovered {
     background: lightblue;
     border-style: dashed;
 }
