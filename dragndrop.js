@@ -43,7 +43,4 @@ function dragDrop() {
     this.className = 'empty';
     this.append(fill);
 }
-function button_click()
-{
-      alert('here');
-}
+
