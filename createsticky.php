@@ -8,8 +8,6 @@
 <link rel = "stylesheet" href = "./main1.css">
 
 <script src = "./main1.js" defer></script>
-<!-- <script src = "./main2.js" defer></script>
-<script src = "./main3.js" defer></script> -->
 </head>
 	<body>
 	<div class="container">
