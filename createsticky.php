@@ -20,7 +20,8 @@
 		<p> For q3 and q4, write down the name of the stakeholders on the sticky notes below. </p>
 		<p> if you wish to delete the sticky note, just double click </p>
 
-	</div>
+
+	
 		<div id = "app">
 		
 			<textarea class = "note">Some sample text</textarea>
@@ -45,7 +46,7 @@
 		</div>
 
 	<button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
-
+	</div>
 	</body>
 
 </html>
