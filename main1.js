@@ -17,6 +17,7 @@ function saveNotes(notes) {
 localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
 }
 
+// take the class name as well. 
 function createNoteElement(id, content) {
 const element = document.createElement("textarea");
 
@@ -41,6 +42,8 @@ deleteNote(id, element);
 return element;
 }
 
+//add the class to be able to specify the note to know the parent. 
+//to specify the note to knwo the class of the parent. 
  function button_click(clicked_id)
   {
         this.buttonClickedid = clicked_id;
@@ -48,19 +51,19 @@ return element;
   }
 
 function addNote() {
-const notes = getNotes();
-const noteObject = {
-id: Math.floor(Math.random() * 100000),
-content: ""
-};
+      const notes = getNotes();
+      const noteObject = {
+      id: Math.floor(Math.random() * 100000),
+      content: ""
+      };
 
-const noteElement = createNoteElement(noteObject.id, noteObject.content);
-addNoteButton =  document.getElementById(buttonClickedid);
+      const noteElement = createNoteElement(noteObject.id, noteObject.content);
+      addNoteButton =  document.getElementById(buttonClickedid);
 
-notesContainer.insertBefore(noteElement, addNoteButton);
+      notesContainer.insertBefore(noteElement, addNoteButton);
 
-notes.push(noteObject);
-saveNotes(notes);
+      notes.push(noteObject);
+      saveNotes(notes);
 }
 
 function updateNote(id, newContent) {
