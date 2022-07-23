@@ -16,22 +16,27 @@ for(const empty of empties) {
 
 //Drag Functions
 function dragStart() {
-    console.log('here');
-    alert('here');
+    console.log("HERE")
     this.className += ' hold';
     setTimeout(() => this.className = 'invisible', 0);
 }
 
 function dragEnd() {
+    console.log("HERE2")
+
     // when we let go it still exists
     this.className = 'fill';
 
 }
 function dragOver(e) {
+    console.log("HERE3")
+
     e.preventDefault();
 }
 
 function dragEnter(e) {
+    console.log("HERE4")
+
     e.preventDefault();
     this.className += ' hovered';
 }

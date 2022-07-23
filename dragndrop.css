@@ -1,10 +1,11 @@
 body{
-    background: darkred;
+    background: lightpink;
 }
 
 .fill{
+    
 
-    background-image: url('https://source.unsplash.com/random/150x150');
+    background-image: url('images/cat.png');
     position: relative;
     height: 150px;
     width: 150px;
