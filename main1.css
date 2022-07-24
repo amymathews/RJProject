@@ -43,6 +43,7 @@ body {
     
     .add-note {
     height: 200px;
+    box-sizing: border-box;
     border: none;
     outline: none;
     padding: 16px;
