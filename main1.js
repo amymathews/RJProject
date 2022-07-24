@@ -51,7 +51,7 @@ return element;
         this.addNote();
   }
 
-function addNote(buttonClickedClass) {
+function addNote() {
       const notes = getNotes();
       const noteObject = {
       id: Math.floor(Math.random() * 100000),
