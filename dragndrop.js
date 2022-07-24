@@ -16,7 +16,7 @@ for(const empty of empties) {
 
 //Drag Functions
 function dragStart() {
-    console.log("HERE")
+   
     this.className += ' hold';
     setTimeout(() => this.className = 'invisible', 0);
 }
@@ -29,13 +29,12 @@ function dragEnd() {
 
 }
 function dragOver(e) {
-    console.log("HERE3")
+    
 
     e.preventDefault();
 }
 
 function dragEnter(e) {
-    console.log("HERE4")
 
     e.preventDefault();
     this.className += ' hovered';
