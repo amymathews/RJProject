@@ -44,9 +44,9 @@ return element;
 
 //add the class to be able to specify the note to know the parent. 
 //to specify the note to knwo the class of the parent. 
- function button_click(clicked_id)
+ function button_click(clicked_id,className)
   {
-        this.buttonClickedid = clicked_id;
+        this.buttonClickedid = className;
         this.addNote();
   }
 
