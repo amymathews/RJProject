@@ -2,6 +2,7 @@ const notesContainer = document.getElementById("app");
 var addNoteButton = notesContainer.querySelector(".add-note");
 
 var buttonClickedid;
+var buttonClickedClass = document.getElementsByClassName;
 getNotes().forEach((note) => {
 const noteElement = createNoteElement(note.id, note.content);
 notesContainer.insertBefore(noteElement, addNoteButton);
@@ -44,13 +45,13 @@ return element;
 
 //add the class to be able to specify the note to know the parent. 
 //to specify the note to knwo the class of the parent. 
- function button_click(clicked_id,className)
+ function button_click(clicked_id)
   {
-        this.buttonClickedid = className;
+        this.buttonClickedid = clicked_id;
         this.addNote();
   }
 
-function addNote() {
+function addNote(buttonClickedClass) {
       const notes = getNotes();
       const noteObject = {
       id: Math.floor(Math.random() * 100000),
