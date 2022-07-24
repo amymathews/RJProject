@@ -44,12 +44,20 @@ body {
     .add-note {
     height: 200px;
     box-sizing: border-box;
-    border: none;
-    outline: none;
     padding: 16px;
-    resize: none;
-    background: rgba(0, 0, 0, 0.1);
+    border: none;
     border-radius: 10px;
+    background-color: #AFE1AF;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    resize: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    
+   
+    outline: none;
+    
+    background: rgba(0, 0, 0, 0.1);
+    
     font-size: 120px;
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
