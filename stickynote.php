@@ -31,11 +31,11 @@
 					</select>
 					<br><br>
 					<p id="question">  q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?  </p>
-					<p id="content">Please input the content you want to display on the note</p>
+					<p id="content"> <em> Please input the content you want to display on the note </em> </p>
 					<input id="text_on_note">
 					<br><br>
 					<button id="create" type="button">create new note</button>
-					<p id="remove_note">Remove: double click on the sticky note to remove it</p>
+					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 				</form>
 			</div>
 			<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
