@@ -22,22 +22,22 @@
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 				<form>
 					<p> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc.</p>
-					<p id="note_type">q3) Who do you think can help you address the harm?  </p>
+					<p id="note_type1">q3) Who do you think can help you address the harm?  </p>
 					<p>q4) Who do you think has responsibility for helping you address the harm?</p>
 					<!-- <label for="notetype">Choose a type:</label> -->
-					<select name="notes" id="notetype">
+					<select name="notes1" id="notetype1">
 						<option value="stakeholder">stakeholder</option>
 						<!-- <option value="feeling">feeling</option>
 						<option value="action">action</option> -->
 					</select>
 					<br><br>
 					<!-- <p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p> -->
-					<p id="content">Please input the content you want to display on the note</p>
+					<p id="content1">Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
-					<button id="create" type="button">create new note</button>
+					<button id="create1" type="button">create new note</button>
 					
-					// 2nd question part.
+					/* 2nd question */
 
 					<p id="note_type"> q5) As the victim, how would you want tot feel? Please write on the stickynotes. </p>
 
