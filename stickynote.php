@@ -23,6 +23,8 @@
 				<form>
 					<p> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc.</p>
 					<p id="note_type"> Answer the following questions: </p>
+					<div id = "notetype"  value="stakeholder">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</div>
+
 					
 					<label for="notetype">Question</label>
 					<select name="notes" id="notetype">
