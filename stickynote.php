@@ -22,12 +22,13 @@
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 				<form>
 					<p> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc.</p>
-					<p id="note_type">Please choose the note type (stakeholder, feeling, or action)</p>
-					<label for="notetype">Choose a type:</label>
+					<p id="note_type">q3) Who do you think can help you address the harm?  </p>
+					<p>q4) Who do you think has responsibility for helping you address the harm?</p>
+					<!-- <label for="notetype">Choose a type:</label> -->
 					<select name="notes" id="notetype">
 						<option value="stakeholder">stakeholder</option>
-						<option value="feeling">feeling</option>
-						<option value="action">action</option>
+						<!-- <option value="feeling">feeling</option>
+						<option value="action">action</option> -->
 					</select>
 					<br><br>
 					<p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p>
