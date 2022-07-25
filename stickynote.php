@@ -22,7 +22,7 @@
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 				<form>
 					<p> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc.</p>
-					<p id="note_type">Please answer each of the question below by toggling the drop down box</p>
+					<p id="note_type">Please answer each of the question below by toggling the drop down box: </p>
 					<label for="notetype">Choose a question</label>
 					<select name="notes" id="notetype">
 						<option value="stakeholder">q3</option>
@@ -30,7 +30,7 @@
 						<option value="action">q5</option>
 					</select>
 					<br><br>
-					<p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p>
+					<p id="question"> <em> q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <em> </p>
 					<p id="content">Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
