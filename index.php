@@ -22,8 +22,8 @@
             <br/>
             <br/>
     
-            <button style="float:right" onclick="window.location.href = './stickynote.php'">next</button>
-        </div>
+            <button style="float:right" onclick="window.location.href = './information.php'">next</button>
+            </div>
     </body>
 </html>
 
