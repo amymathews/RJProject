@@ -35,9 +35,9 @@
 					<p id="content1">Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
-					<button id="create1" type="button">create new note</button>
+					<button id="create" type="button">create new note</button>
 					
-					/* 2nd question */
+					
 
 					<p id="note_type"> q5) As the victim, how would you want tot feel? Please write on the stickynotes. </p>
 
