@@ -26,7 +26,7 @@
 					
 					<label for="notetype">Question</label>
 					<select name="notes" id="notetype">
-						<option value="stakeholder">Who do you think</option>
+						<option value="stakeholder">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</option>
 						<option value="feeling">4</option>
 						<option value="action">5</option>
 					</select>
