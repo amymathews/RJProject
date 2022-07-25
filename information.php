@@ -34,8 +34,7 @@
                 <textarea id="story" name="story" rows="8" cols="31"></textarea>
             </div>
         </div>
-        </div>
-        <div style="margin-top:25%">
+        <div style="margin-top:8%">
             <p>q2) How do you feel after the harm? (e.g. sad😭 angry😠 awkward😓)</p>
             <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
         </div>
