@@ -23,9 +23,10 @@
 				<form>
 					<p> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc.</p>
 					<p id="note_type"> Answer the following questions: </p>
+					
 					<label for="notetype">Question</label>
 					<select name="notes" id="notetype">
-						<option value="stakeholder">3</option>
+						<option value="stakeholder">Who do you think</option>
 						<option value="feeling">4</option>
 						<option value="action">5</option>
 					</select>
