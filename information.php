@@ -38,7 +38,6 @@
             <p>q2) How do you feel after the harm? (e.g. sad😭 angry😠 awkward😓)</p>
             <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
         </div>
-       
        <button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
     </div>
 
