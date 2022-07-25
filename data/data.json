@@ -17,9 +17,9 @@
         }
     ],
     "questions": {
-        "stakeholder": "who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?",
-        "feeling": "As the victim, how would you want to feel?",
-        "action": "As the victim, what are some desired outcomes for addressing the harm?"
+        "stakeholder": "q3) who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?",
+        "feeling": "q4) As the victim, how would you want to feel?",
+        "action": "q5) As the victim, what are some desired outcomes for addressing the harm?"
     },
     "prompts": {
         "stakeholders": [
