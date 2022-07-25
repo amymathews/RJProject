@@ -35,7 +35,7 @@
 					<p id="content1">Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
-					<button id="create" type="button">create new note</button>
+					<button id="create1" type="button">create new note</button>
 					
 					
 
@@ -51,7 +51,7 @@
 					<p id="content">Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
-					<button id="create" type="button">create new note</button>
+					<button id="create2" type="button">create new note</button>
 					<p id="remove_note">Remove: double click on the sticky note to remove it</p>
 
 
