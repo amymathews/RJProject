@@ -163,28 +163,6 @@ function main() {
                 .call(drag).on("click", ()=>{})
                 .on("dblclick", double_click);
         })
-        d3.select('#create').on('click',()=> {
-            let new_note = {"type": "","content": "","index": 0};
-            new_note["type"] = document.getElementById("notetype").value;
-            new_note["index"] = stickyNoteCount[new_note["type"]];
-            stickyNoteCount[new_note["type"]] += 1;
-            new_note["content"] = document.getElementById("text_on_note").value;
-            notes.push(new_note);
-            note = d3.select('#stickynotes')
-                .selectAll("textarea")
-                .data(notes)
-                .enter()
-                .append("textarea")
-                .style("margin-left", xScale(new_note["type"])+'px')
-                .style("margin-top", yScale(new_note["index"])+'px')
-                .attr("rows",3)
-                .attr("cols",18)
-                .style('background-color', colorScale(new_note["type"]))
-                .text(new_note["content"])
-                .style('color',"black")
-                .call(drag).on("click", ()=>{})
-                .on("dblclick", double_click);
-        })
         // create combined sticky notes
         d3.select('#combine').on('click',()=> {
             let new_note = {"type": "event","content": "","index": 0}
