@@ -30,7 +30,7 @@
 						<option value="action">5</option>
 					</select>
 					<br><br>
-					<p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p>
+					<!-- <p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p> -->
 					<p id="content">Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
