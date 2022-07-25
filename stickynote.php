@@ -31,12 +31,30 @@
 						<option value="action">action</option> -->
 					</select>
 					<br><br>
-					<p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p>
+					<!-- <p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p> -->
+					<p id="content">Please input the content you want to display on the note</p>
+					<input id="text_on_note">
+					<br><br>
+					<button id="create" type="button">create new note</button>
+					
+					// 2nd question part.
+
+					<p id="note_type"> q5) As the victim, how would you want tot feel? Please write on the stickynotes. </p>
+
+					<!-- <label for="notetype">Choose a type:</label> -->
+					<select name="notes" id="notetype">
+						<option value="feeling">feeling</option>
+						<!-- <option value="action">action</option> -->
+					</select>
+					<br><br>
+					<!-- <p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p> -->
 					<p id="content">Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
 					<button id="create" type="button">create new note</button>
 					<p id="remove_note">Remove: double click on the sticky note to remove it</p>
+
+
 				</form>
 			</div>
 			<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
