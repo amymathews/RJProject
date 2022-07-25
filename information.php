@@ -33,11 +33,8 @@
                 <p>q1) Can you tell us what happened in the harm?</p>
                 <textarea id="story" name="story" rows="8" cols="31"></textarea>
             </div>
-</div>
         </div>
         </div>
-    <div class="container">
-
         <div style="margin-top:25%">
             <p>q2) How do you feel after the harm? (e.g. sad😭 angry😠 awkward😓)</p>
             <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
@@ -45,7 +42,6 @@
        
        <button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
     </div>
-    
 
 <!-- <script>
   var fs = require('fs')
