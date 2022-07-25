@@ -25,9 +25,9 @@
 					<p id="note_type">Please choose the note type (stakeholder, feeling, or action)</p>
 					<label for="notetype">Choose a type:</label>
 					<select name="notes" id="notetype">
-						<option value="stakeholder">stakeholder</option>
-						<option value="feeling">feeling</option>
-						<option value="action">action</option>
+						<option value="q3">stakeholder</option>
+						<option value="q4">feeling</option>
+						<option value="q5">action</option>
 					</select>
 					<br><br>
 					<p id="question">Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?</p>
