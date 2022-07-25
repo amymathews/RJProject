@@ -36,7 +36,7 @@
         </div>
         <br><br>
         <br><br>
-        <div style="margin-top:20%">
+        <div style="margin-top:10px;">
             <p>q2) How do you feel after the harm? (e.g. sad😭 angry😠 awkward😓)</p>
             <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
         </div>
