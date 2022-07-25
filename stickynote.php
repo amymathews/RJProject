@@ -25,7 +25,7 @@
 					<p id="note_type">Please choose the note type (stakeholder, feeling, or action)</p>
 					<label for="notetype">Choose a type:</label>
 					<select name="notes" id="notetype">
-						<option value="stakeholder">stakeholder</option>
+						<option value="stakeholder">3</option>
 						<option value="feeling">feeling</option>
 						<option value="action">action</option>
 					</select>
