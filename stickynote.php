@@ -76,8 +76,9 @@
 </body>
 <?php
 
-//echo($_POST);
-//exit;
+echo($_POST);
+echo($_GET);
+exit;
 
 ?>
 
