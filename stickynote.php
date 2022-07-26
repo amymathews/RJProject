@@ -22,7 +22,7 @@
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 				<form>
 					<p id="note_type"> <strong> Please answer each of the questions below by toggling the drop down box: </strong></p>
-					<label for="notetype">Choose a question</label>
+					<!-- <label for="notetype">Choose a question</label> -->
 					<!-- <select name="notes" id="notetype">
 						<option value="stakeholder">q3</option>
 						<option value="feeling">q4</option>
