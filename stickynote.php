@@ -23,11 +23,12 @@
 				<form>
 					<p id="note_type"> <strong> Please answer each of the questions below by toggling the drop down box: </strong></p>
 					<label for="notetype">Choose a question</label>
-					<select name="notes" id="notetype">
+					<p id="notetype" value = "feeling"> q4) As the victim, how would you want to feel? </p>
+					<!-- <select name="notes" id="notetype">
 						<option value="stakeholder">q3</option>
 						<option value="feeling">q4</option>
 						<option value="action">q5</option>
-					</select>
+					</select> -->
 					<br><br>
 					<p id="question">  q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?  </p>
 					<p id="content"> <em> Please input the content you want to display on the note </em> </p>
