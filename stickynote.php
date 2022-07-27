@@ -36,9 +36,17 @@
 					<br><br>
 					<button id="create" type="button">create new note</button>
 					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
+					<button style="float:right; margin-top:50%" name="next" id="next" value="next" type="button">Next</button>
+					<?php
+						if(isset($_POST['next'])) {
+						echo($_POST);
+						exit;
+						}
+					?>
+
 				</form>
 			</div>
-			<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
+			
 		</div>
 	<form method="POST" enctype="multipart/form-data">
 		<div class="container" id='pair'>
@@ -67,7 +75,7 @@
 				<div class="to_right"></div>
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
-			<button style="float:right; margin-top:10%"  onclick="this.double_click_form()">Complete</button>
+			<button style="float:right; margin-top:10%" >Complete</button>
 			
 		</div>
 
@@ -75,14 +83,7 @@
 	</form>
 <script src="js/StickyNote.js"></script>
 </body>
-<?php
-
-echo($_POST);
-echo "--------";
-echo($GET);
-exit;
-
-?>
 
 
+</html>
 
