@@ -1,3 +1,14 @@
+<?php
+phpinfo();
+	if( $_POST )  {
+		echo($_POST);
+		echo "here";
+		exit;
+		}
+	else{
+		echo "not hitting the code";
+	}
+?>
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
@@ -78,16 +89,4 @@
 	</form>
 <script src="js/StickyNote.js"></script>
 </body>
-
-
 </html>
-<?php
-	if( $_POST )  {
-		echo($_POST);
-		echo "here";
-		exit;
-		}
-	else{
-		echo "not hitting the code";
-	}
-?>
