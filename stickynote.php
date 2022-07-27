@@ -37,12 +37,7 @@
 					<button id="create" type="button">create new note</button>
 					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 					<button style="float:right; margin-top:50%" name="next" id="next" value="next" type="button">Next</button>
-					<?php
-						if(isset($_POST['next'])) {
-						echo($_POST);
-						exit;
-						}
-					?>
+					
 
 				</form>
 			</div>
@@ -86,4 +81,10 @@
 
 
 </html>
-
+<?php
+	if( $_POST )  {
+						echo($_POST);
+						echo "here";
+						exit;
+						}
+?>
