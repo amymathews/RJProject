@@ -12,7 +12,7 @@
 
 <body>
 	<form>
-		<div class="content">
+	<div class="content">
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:5%">stakeholders</p>
@@ -21,7 +21,7 @@
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
-				
+				<form>
 					<p> <em> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc. </em></p>
 					<p id="note_type"> <strong> Please answer each of the questions below by toggling the drop down box: </strong></p>
 					<label for="notetype">Choose a question</label>
@@ -37,7 +37,7 @@
 					<br><br>
 					<button id="create" type="button">create new note</button>
 					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
-				
+				</form>
 			</div>
 			<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
 		</div>
