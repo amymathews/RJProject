@@ -20,7 +20,7 @@
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
-				<form>
+				<form  method="POST" enctype="multipart/form-data">
 					<p> <em> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc. </em></p>
 					<p id="note_type"> <strong> Please answer each of the questions below by toggling the drop down box: </strong></p>
 					<label for="notetype">Choose a question</label>
@@ -83,8 +83,11 @@
 </html>
 <?php
 	if( $_POST )  {
-						echo($_POST);
-						echo "here";
-						exit;
-						}
+		echo($_POST);
+		echo "here";
+		exit;
+		}
+	else{
+		echo "not hitting the code";
+	}
 ?>
