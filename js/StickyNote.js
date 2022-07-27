@@ -221,6 +221,7 @@ function main() {
 //Callback handler for form submit event
 function double_click_form()
 {
+    alert('here');
     //$("#multiform").submit(); //Submit the form
     var formObj = $(this);
     var formURL = formObj.attr("action");
