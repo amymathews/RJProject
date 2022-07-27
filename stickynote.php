@@ -68,6 +68,7 @@
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
 			<button style="float:right; margin-top:10%" >Complete</button>
+			<input type="hidden" value="Amy Mathews" />
 		</div>
 
 		</div>
@@ -77,6 +78,7 @@
 <?php
 
 echo($_POST);
+echo "--------";
 echo($_POST);
 exit;
 
