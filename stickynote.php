@@ -1,5 +1,5 @@
 <?php
-phpinfo();
+//phpinfo();
 	if( $_POST )  {
 		echo($_POST);
 		echo "here";
