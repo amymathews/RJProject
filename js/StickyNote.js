@@ -219,9 +219,9 @@ function main() {
 }
 //Begin
 //Callback handler for form submit event
-$("#multiform").submit(function(e)
+function double_click_form()
 {
- 
+    //$("#multiform").submit(); //Submit the form
     var formObj = $(this);
     var formURL = formObj.attr("action");
     var formData = new FormData(this);
@@ -244,7 +244,7 @@ $("#multiform").submit(function(e)
     });
     e.preventDefault(); //Prevent Default action. 
     e.unbind();
-}); 
-$("#multiform").submit(); //Submit the form
+}
+
 // End
 main()

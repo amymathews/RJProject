@@ -67,8 +67,8 @@
 				<div class="to_right"></div>
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
-			<button style="float:right; margin-top:10%" >Complete</button>
-			<input type="hidden" value="Amy Mathews" />
+			<button style="float:right; margin-top:10%"  onclick="this.double_click_form()">Complete</button>
+			
 		</div>
 
 		</div>
