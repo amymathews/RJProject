@@ -40,7 +40,7 @@
 			</div>
 			<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
 		</div>
-	
+	<form method="POST" enctype="multipart/form-data">
 		<div class="container" id='pair'>
 			<p>Pair your emotional needs and desired outcomes to the stakeholders:</p>
 			<br/>
@@ -72,13 +72,14 @@
 		</div>
 
 		</div>
+	</form>
 <script src="js/StickyNote.js"></script>
 </body>
 <?php
 
 echo($_POST);
 echo "--------";
-echo($_GET);
+echo($GET);
 exit;
 
 ?>

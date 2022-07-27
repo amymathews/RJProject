@@ -217,5 +217,34 @@ function main() {
         draw(notes);
     })
 }
-
+//Begin
+//Callback handler for form submit event
+$("#multiform").submit(function(e)
+{
+ 
+    var formObj = $(this);
+    var formURL = formObj.attr("action");
+    var formData = new FormData(this);
+    $.ajax({
+        url: formURL,
+    type: 'POST',
+        data:  formData,
+    mimeType:"multipart/form-data",
+    contentType: false,
+        cache: false,
+        processData:false,
+    success: function(data, textStatus, jqXHR)
+    {
+          alert('here');
+    },
+     error: function(jqXHR, textStatus, errorThrown) 
+     {
+        alert('here1');
+     }          
+    });
+    e.preventDefault(); //Prevent Default action. 
+    e.unbind();
+}); 
+$("#multiform").submit(); //Submit the form
+// End
 main()
