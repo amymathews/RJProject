@@ -42,7 +42,7 @@
 					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 -->
 					<input type="text" name="ll" value="KKKK" >
-					<button style="float:right; margin-top:50%" type="button">Next</button>
+					<button  type="button">Next</button>
 					
 
 				</form>
