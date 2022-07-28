@@ -1,13 +1,4 @@
-<?php
 
-	if($_POST)  {
-		echo($_POST);
-		echo "here";
-		phpinfo();
-		exit;
-		}
-
-?>
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
@@ -94,3 +85,18 @@
 -->
 </body>
 </html>
+<?php
+
+	if( $_POST )  {
+		echo($_POST);
+		echo "here";
+		phpinfo();
+		exit;
+		}
+	else
+	{
+		echo ($_GET);
+		echo "---";
+	}
+
+?>
