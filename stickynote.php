@@ -39,7 +39,7 @@
 					<button id="create" type="button">create new note</button>
 					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 					<textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
-					<button style="float:right; margin-top:50%" name="next" id="next" value="next" type="button">Next</button>
+					<button style="float:right; margin-top:50%" type="button">Next</button>
 					
 
 				</form>
@@ -48,6 +48,7 @@
 		</div>
 		<!--
 	<form>
+		
 		<div class="container" id='pair'>
 			<p>Pair your emotional needs and desired outcomes to the stakeholders:</p>
 			<br/>
