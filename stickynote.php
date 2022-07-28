@@ -12,10 +12,11 @@
 <head>
 	<meta charset="utf-8">
 	<title> Sense_making </title>
+	<!--
 	<script src="js/jquery.min.js"></script>
 	<script src="js/d3.v6.min.js"></script>
 	<script src="js/FileSaver.js"></script>
-
+	-->
 	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -46,6 +47,7 @@
 					<br><br>
 					<button id="create" type="button">create new note</button>
 					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
+					<textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
 					<button style="float:right; margin-top:50%" name="next" id="next" value="next" type="button">Next</button>
 					
 
@@ -87,7 +89,8 @@
 
 		</div>
 	</form>
-	-->
+	
 <script src="js/StickyNote.js"></script>
+-->
 </body>
 </html>
