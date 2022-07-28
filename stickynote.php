@@ -100,8 +100,8 @@
 		}
 	else
 	{
-		echo ($_GET);
-		echo "---";
+	//	echo ($_GET);
+	//	echo "---";
 	}
 
 ?>
