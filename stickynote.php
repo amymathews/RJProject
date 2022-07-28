@@ -37,9 +37,8 @@
 						<button id="create" type="button">create new note</button>
 						<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 						<button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
-						</div>
-					
 					</form>
+				</div>
 				
 		
 
