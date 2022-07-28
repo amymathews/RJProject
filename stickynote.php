@@ -1,8 +1,9 @@
 <?php
-//phpinfo();
+
 	if($_POST)  {
 		echo($_POST);
 		echo "here";
+		phpinfo();
 		exit;
 		}
 
@@ -52,6 +53,7 @@
 			</div>
 			
 		</div>
+		<!--
 	<form>
 		<div class="container" id='pair'>
 			<p>Pair your emotional needs and desired outcomes to the stakeholders:</p>
@@ -85,6 +87,7 @@
 
 		</div>
 	</form>
+	-->
 <script src="js/StickyNote.js"></script>
 </body>
 </html>
