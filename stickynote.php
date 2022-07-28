@@ -41,7 +41,7 @@
 					<button id="create" type="button">create new note</button>
 					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 -->
-					<textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
+					<input type="text" name="ll" value="KKKK" >
 					<button style="float:right; margin-top:50%" type="button">Next</button>
 					
 
