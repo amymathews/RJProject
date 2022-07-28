@@ -13,6 +13,7 @@
 </head>
 
 <body>
+	<!--
 	<div class="content">
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
@@ -22,7 +23,7 @@
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
-				<form  method="POST" action = "<?php $_PHP_SELF ?>" >
+				<form  method="POST"  >
 					<p> <em> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc. </em></p>
 					<p id="note_type"> <strong> Please answer each of the questions below by toggling the drop down box: </strong></p>
 					<label for="notetype">Choose a question</label>
@@ -46,6 +47,7 @@
 			</div>
 			
 		</div>
+-->
 		<!--
 	<form>
 		
