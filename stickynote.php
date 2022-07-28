@@ -36,9 +36,40 @@
 						<br><br>
 						<button id="create" type="button">create new note</button>
 						<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
-						<input type="text" name="ll" value="KKKK" >
 						<button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
 					</form>
+				</div>
+		
+
+			<div class="container" id='pair'>
+				<form method = "POST">
+					<p>Pair your emotional needs and desired outcomes to the stakeholders:</p>
+					<br/>
+					<label for="stakeholdertype">I hope</label>
+					<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
+					<datalist id="stakeholder">
+					</datalist>
+					<label for="outcometype">can achieve</label>
+					<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
+					<datalist id="outcome">
+					</datalist>
+					<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
+					<br/>
+					<div id="events"></div>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/><br/>
+					<p>Put the sticky notes onto the timeline:</p>
+					<p>Note: drag to put them onto the timeline one by one</p>
+					<div id="timelines">
+					</div>
+					<div style="margin-top:103px;display:flex">
+						<HR width="80%" style="margin-top:27px;border:3px solid grey">
+						<div class="to_right"></div>
+						<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
+					</div>
+					<button style="float:right; margin-top:10%" >Complete</button>
+				</form>
 			</div>
 		</div>
 	</body>
