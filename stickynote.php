@@ -86,11 +86,11 @@
 </body>
 </html>
 <?php
-
+phpinfo();
 	if( $_POST )  {
 		echo($_POST);
 		echo "here";
-		phpinfo();
+		
 		exit;
 		}
 	else
