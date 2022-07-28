@@ -8,15 +8,13 @@
 
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
 </head>
 <body>
 <form action = "<?php $_PHP_SELF ?>" method = "POST">
     <div class="container">
         <p>Sharing what has happened and your feelings is an important part of making sense of the harm and healing.</p>
         
-        <!-- <div style="display: flex"> -->
+        <div style="display: flex">
             <!-- <div style="margin-left: 5%; margin-right: 5%">
                 <p>Recording (talk about what has happened)</p>
                 <div id="record">
@@ -31,14 +29,13 @@
                     <script src="js/app.js"></script>
                 </div>
             </div> -->
-            <!-- <div style="position: absolute;margin-left:55%;"> -->
-            <div class = "row">
+            <div style="position: absolute;margin-left:55%;">
+             
                 <p>q1) Can you tell us what happened in the harm?</p>
                 <textarea id="story" name="story" rows="8" cols="31"></textarea>
             </div>
-        <!-- </div> -->
-        <!-- <div style="margin-top:8%"> -->
-        <div class = "row">
+        </div>
+        <div style="margin-top:8%">
             <p>q2) How do you feel after the harm? (e.g. sad😭 angry😠 awkward😓)</p>
             <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
         </div>
@@ -66,7 +63,6 @@
 </script> -->
 
 </form>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
 <?php
