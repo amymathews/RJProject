@@ -1,6 +1,6 @@
 <?php
 //phpinfo();
-	if( $_POST )  {
+	if($_POST)  {
 		echo($_POST);
 		echo "here";
 		exit;
@@ -29,7 +29,7 @@
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
-				<form  method="POST" enctype="multipart/form-data">
+				<form  method="POST" action = "<?php $_PHP_SELF ?>" >
 					<p> <em> Reflect on your feeling and experiences, we want you to think about the people who may positively or negatively affect you when gauging the harm caused. These can be the offender, online community members, moderators, etc. </em></p>
 					<p id="note_type"> <strong> Please answer each of the questions below by toggling the drop down box: </strong></p>
 					<label for="notetype">Choose a question</label>
@@ -52,7 +52,7 @@
 			</div>
 			
 		</div>
-	<form method="POST" enctype="multipart/form-data">
+	<form>
 		<div class="container" id='pair'>
 			<p>Pair your emotional needs and desired outcomes to the stakeholders:</p>
 			<br/>
