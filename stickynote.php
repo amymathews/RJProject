@@ -5,9 +5,7 @@
 		echo "here";
 		exit;
 		}
-	else{
-		echo "not hitting the code";
-	}
+
 ?>
 <!DOCTYPE html>
 <head>
