@@ -34,6 +34,8 @@
 					<br>
 					<p id="question"> q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
 					<img style="float:right" src=images/next.png onclick="clickFunc()">
+					<img style="float:left" src=images/back.png onclick="backClick()">
+
 					<br><br>
 					<p id="content"> Please input the content you want to display on the note</p>
 					<input id="text_on_note">

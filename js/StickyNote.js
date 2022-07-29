@@ -48,6 +48,7 @@ function double_click(event, d){
     }
 }
 
+
 function clickFunc(event, d){
     // if(nextCounter==1){ 
     //     let type = 'stakeholder';
@@ -72,6 +73,32 @@ function clickFunc(event, d){
         alert("end of questions!");
     }
     nextCounter++;
+    
+}
+function backClick(event, d){
+    if(nextCounter==1){ 
+        let type = 'stakeholder';
+        d3.select("#question")
+            .text(data.questions[type]);
+        
+    }
+    if(nextCounter==2){ 
+        let type = 'feeling';
+        myOption = 'feeling';
+        d3.select("#question")
+            .text(data.questions[type]);
+       
+    }
+    else if(nextCounter==3){ 
+        let type = 'action';
+        myOption = 'action';
+        d3.select("#question")
+            .text(data.questions[type]);       
+    }
+    else if(nextCounter >3){
+        alert("end of questions!");
+    }
+    nextCounter--;
     
 }
 
