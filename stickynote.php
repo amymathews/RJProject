@@ -31,12 +31,10 @@
 						<option value="action">q5</option>
 					</select>
 					-->
-					<br><br>
+					<br>
 					<p id="question"> q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
 					<img style="float:right" src=images/next.png onclick="clickFunc()">
 					<br><br>
-					<br><br>
-					
 					<p id="content"> Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
@@ -50,23 +48,28 @@
 		</div>
 
 		<div class="container" id='pair'>
-			<p>Pair your emotional needs and desired outcomes to the stakeholders:</p>
+			<p>Please match the need to the stakeholder:</p>
 			<br/>
-			<label for="stakeholdertype">I hope</label>
-			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
-			<datalist id="stakeholder">
 			</datalist>
-			<label for="outcometype">can achieve</label>
+			<label for="outcometype">Need:</label>
 			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
 			<datalist id="outcome">
 			</datalist>
+			<label for="stakeholdertype">Stakeholder: </label>
+			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
+			<datalist id="stakeholder">
+			<!-- </datalist>
+			<label for="outcometype">Need:</label>
+			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
+			<datalist id="outcome">
+			</datalist> -->
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
 			<div id="events"></div>
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			<br/><br/><br/><br/><br/>
-			<p>Put the sticky notes onto the timeline:</p>
+			<p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened. <br> Put the stickynotes onto the timeline one by one to illsturate the time order you hope to achieve the needs.</p>
 			<p>Note: drag to put them onto the timeline one by one</p>
 			<div id="timelines">
 			</div>
