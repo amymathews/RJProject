@@ -12,7 +12,9 @@
 <body>
 <form action = "<?php $_PHP_SELF ?>" method = "POST">
     <div class="container">
-        <p>Sharing what has happened and your feelings is an important part of making sense of the harm and healing.</p>
+        <p>First, we would like to ask you to share about online harm that you have experienced. 
+            Sharing what has happened and reflect on your feelings is an important part of making sense of the harm.
+</p>
         
         <div style="display: flex">
             <!-- <div style="margin-left: 5%; margin-right: 5%">
@@ -30,14 +32,17 @@
                 </div>
             </div> -->
             <div style="position: absolute;margin-left:55%;">
-             
-                <p>q1) Can you tell us what happened in the harm?</p>
-                <textarea id="story" name="story" rows="8" cols="31"></textarea>
+                <p>q1) Using several sentences, can you tell us what has happened in the harm?</p>
+                <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
+                <!-- <p>q1) Can you tell us what happened in the harm?</p>
+                <textarea id="story" name="story" rows="8" cols="31"></textarea> -->
             </div>
         </div>
         <div style="margin-top:8%">
-            <p>q2) How do you feel after the harm? (e.g. sad😭 angry😠 awkward😓)</p>
-            <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
+            <p>q2) How would you describe your feelings after the harm has happened? (e.g. sad😭 angry😠 awkward😓)</p>
+            <textarea id="story" name="story" rows="8" cols="31"></textarea>
+            <!-- <p>q2) How do you feel after the harm? (e.g. sad😭 angry😠 awkward😓)</p>
+            <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea> -->
         </div>
        <button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
     </div>
