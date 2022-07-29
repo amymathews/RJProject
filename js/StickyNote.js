@@ -76,28 +76,26 @@ function clickFunc(event, d){
     
 }
 function backClick(event, d){
-    if(nextCounter==1){ 
+    if(nextCounter==4){ 
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
         
     }
-    if(nextCounter==2){ 
+    if(nextCounter== 3){ 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
        
     }
-    else if(nextCounter==3){ 
+    else if(nextCounter==2){ 
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
             .text(data.questions[type]);       
     }
-    else if(nextCounter >3){
-        alert("end of questions!");
-    }
+    
     nextCounter--;
     
 }
