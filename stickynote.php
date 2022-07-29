@@ -50,19 +50,14 @@
 		<div class="container" id='pair'>
 			<p>Please match the need to the stakeholder:</p>
 			<br/>
-			</datalist>
-			<label for="outcometype">Need:</label>
-			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
-			<datalist id="outcome">
-			</datalist>
 			<label for="stakeholdertype">Stakeholder: </label>
 			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="stakeholder">
-			<!-- </datalist>
+			</datalist>
 			<label for="outcometype">Need:</label>
 			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
 			<datalist id="outcome">
-			</datalist> -->
+			</datalist>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
 			<div id="events"></div>
