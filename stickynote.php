@@ -72,7 +72,7 @@
 				<div class="to_right"></div>
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
-			<button style="float:right; margin-top:10%" >Complete</button>
+			<button style="float:right; margin-top:10%" onclick="window.location.href = './complete.html'" >Complete</button>
 		</div>
 
 	</div>
