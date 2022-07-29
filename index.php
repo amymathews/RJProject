@@ -12,13 +12,13 @@
     <body>
         <div class="container">
             
-            <p>Hi, welcome to the system! The system is designed to help people make sense of what has happened in online harm and find ways to address the harm.</p>
-            <p>In the system, you will go through the following processes:</p>
-            <ul>
+            <p>Welcome to our experiment system! Our system is designed to help people who have experienced online harm such as harassment, and bullying to address the harm.</p>
+            <p>In the system, you will first share an online harm case that you've experienced, and then come up with an action plan to address the harm </p>
+            <!-- <ul>
                 <li>Share a harm case you've experienced</li>
                 <li>Draw out an action plan to address the harm </li>
-            </ul>
-            <img style="float:right" src="images/support.png">
+            </ul> -->
+            <img style="float:left" src="images/support.png">
             <br/>
             <br/>
     
@@ -26,4 +26,5 @@
             </div>
     </body>
 </html>
+
 
