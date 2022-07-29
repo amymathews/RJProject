@@ -20,6 +20,8 @@ let note;// the html object, d3.select('#stickynotes')
 let drag;// d3.drag()
 let feelings,stakeholders,actions;// array to be bound with datalist
 let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote layout and event layout
+let nextCounter=2;
+let myOption='stakeholder';
 
 // double click deletion function on the sticky note
 function double_click(event, d){
@@ -44,6 +46,33 @@ function double_click(event, d){
             })
             .remove();
     }
+}
+
+function clickFunc(event, d){
+    // if(nextCounter==1){ 
+    //     let type = 'stakeholder';
+    //     d3.select("#question")
+    //         .text(data.questions[type]);
+        
+    // }
+    if(nextCounter==2){ 
+        let type = 'feeling';
+        myOption = 'feeling';
+        d3.select("#question")
+            .text(data.questions[type]);
+       
+    }
+    else if(nextCounter==3){ 
+        let type = 'action';
+        myOption = 'action';
+        d3.select("#question")
+            .text(data.questions[type]);       
+    }
+    else if(nextCounter >3){
+        alert("end of questions!");
+    }
+    nextCounter++;
+    
 }
 
 // draw the predefined sticky notes
@@ -143,7 +172,8 @@ function main() {
         // create new sticky notes
         d3.select('#create').on('click',()=> {
             let new_note = {"type": "","content": "","index": 0};
-            new_note["type"] = document.getElementById("notetype").value;
+            //new_note["type"] = document.getElementById("notetype").value;
+            new_note["type"] = myOption;
             new_note["index"] = stickyNoteCount[new_note["type"]];
             stickyNoteCount[new_note["type"]] += 1;
             new_note["content"] = document.getElementById("text_on_note").value;

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
@@ -24,13 +23,19 @@
 				<form>
 					<p id="note_type"> <strong> Please answer each of the questions below by toggling the drop down box: </strong></p>
 					<label for="notetype">Choose a question</label>
+					<!--
 					<select name="notes" id="notetype">
 						<option value="stakeholder">q3</option>
 						<option value="feeling">q4</option>
 						<option value="action">q5</option>
 					</select>
+					-->
 					<br><br>
 					<p id="question">  q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?  </p>
+					<img style="float:right" src="images/Next arrow.png" onclick="clickFunc()">
+					<br><br>
+					<br><br>
+					
 					<p id="content"> Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
