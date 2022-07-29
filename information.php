@@ -12,9 +12,9 @@
 <body>
 <form action = "<?php $_PHP_SELF ?>" method = "POST">
     <div class="container">
-        <p>First, we would like to ask you to share about online harm that you have experienced. 
-            Sharing what has happened and reflect on your feelings is an important part of making sense of the harm.
-</p>
+        <p>First, we would like to ask you to share about online harm that you have experienced.</p> 
+        <p> Sharing what has happened and reflect on your feelings is an important part of making sense of the harm. </p>
+
         
         <div style="display: flex">
             <!-- <div style="margin-left: 5%; margin-right: 5%">

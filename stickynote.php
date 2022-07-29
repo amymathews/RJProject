@@ -21,8 +21,9 @@
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 				<form>
-					<p id="note_type"> <strong> Please answer each of the questions below by toggling the drop down box: </strong></p>
-					<label for="notetype">Choose a question</label>
+					<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
+					<p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p>
+					<!-- <label for="notetype">Choose a question</label> -->
 					<!--
 					<select name="notes" id="notetype">
 						<option value="stakeholder">q3</option>
