@@ -72,6 +72,7 @@ function clickFunc(event, d){
     }
     else if(nextCounter >3){
         alert("end of questions!");
+        nextCounter=1;
     }
     nextCounter++;
     
@@ -93,6 +94,7 @@ function backClick(event, d){
     }
     else if(backCounter >3){
         alert("you have reached the beginning of the questions!");
+        backCounter=2;
     }
     
     
