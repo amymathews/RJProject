@@ -38,7 +38,7 @@
             </div>
         </div>
         <div style="margin-top:8%">
-            <p>q2) How would you describe your feelings after the harm has happened? </p>
+            <p>q2) Using several sentences, can you tell us what has happened in the harm? </p>
             <textarea id="feeling" name="feeling" rows="5" cols="60"></textarea>
         </div>
        <button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
