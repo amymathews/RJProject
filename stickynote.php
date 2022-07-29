@@ -32,7 +32,7 @@
 					</select>
 					-->
 					<br><br>
-					<p id="question"> q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
+					<p id="question"> q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
 					<img style="float:right" src="images/Next arrow.png" onclick="clickFunc()">
 					<br><br>
 					<br><br>
