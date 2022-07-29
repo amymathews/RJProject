@@ -91,12 +91,10 @@ function backClick(event, d){
             .text(data.questions[type]);
        
     }
-    // else if(nextCounter==1){ 
-    //     let type = 'action';
-    //     myOption = 'action';
-    //     d3.select("#question")
-    //         .text(data.questions[type]);       
-    // }
+    else if(backCounter >3){
+        alert("you have reached the beginning of the questions!");
+    }
+    
     
     backCounter++;
     
