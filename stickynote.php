@@ -16,7 +16,7 @@
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:5%">stakeholders</p>
 				<p style="margin-left:17%">feelings</p>
-				<p style="margin-left:18%">actions</p>
+				<p style="margin-left:18%">desired outcomes</p>
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
@@ -40,11 +40,13 @@
 					<p id="content"> Please input the content you want to display on the note</p>
 					<input id="text_on_note">
 					<br><br>
-					<button id="create" type="button">create new note</button>
+					<button id="create" type="button">create a sticky note</button>
 					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
+					<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
+
 				</form>
 			</div>
-			<button style="float:right; margin-top:50%" id="next" type="button">Next</button>
+			<!-- <button style="float:right; margin-top:50%" id="next" type="button">Next</button> -->
 		</div>
 
 		<div class="container" id='pair'>
