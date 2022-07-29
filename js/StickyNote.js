@@ -21,7 +21,7 @@ let drag;// d3.drag()
 let feelings,stakeholders,actions;// array to be bound with datalist
 let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote layout and event layout
 let nextCounter=2;
-let backCounter =1;
+let backCounter =2;
 let myOption='stakeholder';
 
 // double click deletion function on the sticky note
@@ -79,25 +79,26 @@ function clickFunc(event, d){
 function backClick(event, d){
     if(backCounter==3){ 
         let type = 'stakeholder';
+        myOption = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
         
     }
-    if(backCounter== 2){ 
+    if(backCounter==2){ 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
        
     }
-    else if(backCounter==1){ 
-        let type = 'action';
-        myOption = 'action';
-        d3.select("#question")
-            .text(data.questions[type]);       
-    }
+    // else if(nextCounter==1){ 
+    //     let type = 'action';
+    //     myOption = 'action';
+    //     d3.select("#question")
+    //         .text(data.questions[type]);       
+    // }
     
-    nextCounter++;
+    backCounter++;
     
 }
 
