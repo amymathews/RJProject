@@ -46,7 +46,7 @@
 				</form>
 			</div>
 			<!-- <button style="float:right; margin-top:50%" id="next" type="button">Next</button> -->
-		</div>
+		
 
 		<div class="container" id='pair'>
 			<p>Please match the need to the stakeholder:</p>
@@ -77,7 +77,7 @@
 			</div>
 			<button style="float:right; margin-top:10%" onclick="window.location.href = './complete.html'" >Complete</button>
 		</div>
-
+		</div>
 	</div>
 
 <script src="js/StickyNote.js"></script>
