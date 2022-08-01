@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 		<body>
-			<div class="content">
+			<div class="container">
 					<form method="POST">
 						<br><br>
 						<p id="content"> Please input the content you want to display on the note</p>
