@@ -50,20 +50,20 @@ textarea {
     display: flex;
     flex-direction: column;*/
     overflow: auto;
-    max-height: calc(100vh - 120px)
+    height: 100%;
 }
 .title {
     font-size: 1rem;
     text-anchor: middle;
 }
 .container {
-    box-sizing: border-box;
+    padding-top:5%;
     padding-left: 10%;
     padding-right: 10%;
     position: relative;
     overflow: auto;
     height: 100%;
-    
+    padding-bottom:5%;
 }
 #events{
     position: absolute;
