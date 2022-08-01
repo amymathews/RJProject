@@ -83,9 +83,11 @@
 <script src="js/StickyNote.js"></script>
 </body>
 <?php
-    if( $_POST )  {
+    if( $_POST )
+	{
         echo($_POST);
         echo "here";
         exit;
         }
 ?>
+</html>
