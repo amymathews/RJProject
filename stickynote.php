@@ -41,7 +41,7 @@
                     <br><br>
                     <button id="create" type="button">create a sticky note</button>
                     <p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
-                    <button id="next" type="button">Next</button>
+                    <button id="next" type="submit">Next</button>
 
                 </form>
             </div>
