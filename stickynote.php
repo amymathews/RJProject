@@ -11,8 +11,8 @@
 </head>
 
 <body>
-	<form method="post">
     <div class="content">
+	<form method="post">
 			<div class="container">
 				<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 					<p style="margin-left:5%">stakeholders</p>
@@ -35,6 +35,7 @@
 						<button id="next" name="bu1" type="submit">Next</button>
 				</div> 
 			</div>
+	</form>
 			<div class="container" id='pair'>
 				<p>Please match the need to the stakeholder:</p>
 				<br/>
@@ -63,8 +64,7 @@
 					<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 				</div>
             	<button style="float:right; margin-top:10%" onclick="window.location.href = './complete.html'" >Complete</button>
-        	</div>
-		</form>	
+			</div>
      </div>
 
 
