@@ -9,10 +9,7 @@
 		<link rel="stylesheet" href="css/style.css"> -->
 	</head>
 	<body>
-		<div class="content">
-			<div class="container">
 				<!--   -->
-				<div id='stickynotes'></div>
 				<div id='selector' style="position: absolute;font-size:15px;width:20%">
 					<form method="POST">
 						<br><br>
@@ -25,8 +22,6 @@
 					</form>
 				</div>
 				<!-- <button style="float:right; margin-top:50%" id="next" type="button">Next</button> -->
-			</div>
-					</div>
 	<!--	<script src="js/StickyNote.js"></script> -->
 	</body>
 </html>
