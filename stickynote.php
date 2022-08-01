@@ -20,20 +20,12 @@
 				</div>
 				<div id='stickynotes'></div>
 				<div id='selector' style="position: absolute;font-size:15px;width:20%">
-					<form method="POST"; action=''>
-						<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
-						<p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p>
-						<!-- <label for="notetype">Choose a question</label> -->
-						<!--
-						<select name="notes" id="notetype">
-							<option value="stakeholder">q3</option>
-							<option value="feeling">q4</option>
-							<option value="action">q5</option>
-						</select>
-						-->
-						<p id="question"> q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
+					<form method="POST">
+						<!-- <p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
+						<p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p> -->
+						<!-- <p id="question"> q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
 						<img style="float:right" src=images/next.png onclick="clickFunc()">
-						<img style="float:left" src=images/back.png onclick="backClick()">
+						<img style="float:left" src=images/back.png onclick="backClick()"> -->
 
 						<br><br>
 						<p id="content"> Please input the content you want to display on the note</p>
