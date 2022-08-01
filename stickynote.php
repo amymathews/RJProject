@@ -11,7 +11,6 @@
 	</head>
 		<body>
 			<div class="content">
-				<div class="container">
 					<form method="POST">
 						<br><br>
 						<p id="content"> Please input the content you want to display on the note</p>
@@ -21,7 +20,6 @@
 						<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 						<button id="next" name="bu1" type="submit">Next</button>
 					</form>
-				</div>
 			</div>
 		</body>
 <?php
