@@ -80,7 +80,7 @@
         -->
     </div>
 
-<script src="js/StickyNote.js"></script>
+<!-- <script src="js/StickyNote.js"></script> -->
 </body>
 <?php
     if( $_POST )
