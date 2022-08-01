@@ -8,9 +8,7 @@
 		<link rel="stylesheet" href="css/w3.css">
 		<link rel="stylesheet" href="css/style.css"> -->
 	</head>
-	<body>
-				<!--   -->
-				<div id='selector' style="position: absolute;font-size:15px;width:20%">
+		<body>
 					<form method="POST">
 						<br><br>
 						<p id="content"> Please input the content you want to display on the note</p>
@@ -20,10 +18,7 @@
 						<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 						<button id="next" type="submit">Next</button>
 					</form>
-				</div>
-				<!-- <button style="float:right; margin-top:50%" id="next" type="button">Next</button> -->
-	<!--	<script src="js/StickyNote.js"></script> -->
-	</body>
+		</body>
 </html>
 <?php
     if( $_POST )  {
