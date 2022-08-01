@@ -31,7 +31,7 @@
 						<br><br>
 						<p id="question">  q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm?  </p>
 						<p id="content"> Please input the content you want to display on the note</p>
-						<input id="text_on_note">
+						<input id="text_on_note" value="iiiiii">
 						<br><br>
 						<button id="create" type="button">create new note</button>
 						<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
@@ -61,8 +61,7 @@
 					<br/><br/><br/><br/><br/>
 					<p>Put the sticky notes onto the timeline:</p>
 					<p>Note: drag to put them onto the timeline one by one</p>
-					<div id="timelines">
-					</div>
+					<div id="timelines"></div>
 					<div style="margin-top:103px;display:flex">
 						<HR width="80%" style="margin-top:27px;border:3px solid grey">
 						<div class="to_right"></div>
