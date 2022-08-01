@@ -60,7 +60,7 @@ textarea {
     box-sizing: border-box;
     padding-left: 10%;
     padding-right: 10%;
-    position: relative;
+    /* position: relative; */
     overflow: auto;
     height: 100%;
     
