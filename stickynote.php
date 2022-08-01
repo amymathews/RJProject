@@ -38,7 +38,7 @@
 						<button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
 					</form>
 				</div>
-				
+			</div>	
 		
 
 			 <div class="container" id='pair'>
@@ -70,7 +70,7 @@
 					</div>
 					<button style="float:right; margin-top:10%" >Complete</button>
 				</form>
-			</div>
+			
 		</div>
 	</body>
 </html>
