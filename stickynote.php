@@ -34,6 +34,7 @@
 							<button id="next" name="bu1" type="submit">Next</button>
 						</div>
 					</div>
+			</form>
 					<div class="container" id='pair'>
 						<p>Please match the need to the stakeholder:</p>
 						<br/>
@@ -64,7 +65,6 @@
 				
 					</div>
 				</div>
-			</form>
 			<script src="js/StickyNote.js"></script>
 		</body>
 <?php
