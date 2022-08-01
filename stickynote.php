@@ -11,7 +11,6 @@
 </head>
 
 <body>
-	
     <div class="content">
 			<div class="container">
 				<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
@@ -38,16 +37,24 @@
 				</form>	
 			</div>
      </div>
-
-
 <script src="js/StickyNote.js"></script>
 </body>
 <?php
-    if( $_POST )  {
+    if( $_POST ){
         echo($_POST);
         echo "here";
+		foreach ($_POST as $key => $value) {
+			echo "<tr>";
+			echo "<td>";
+			echo $key;
+			echo "</td>";
+			echo "<td>";
+			echo $value;
+			echo "</td>";
+			echo "</tr>";
         exit;
         }
+	}
 ?>
 </html>
 
