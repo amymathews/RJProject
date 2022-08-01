@@ -36,6 +36,35 @@
 							<button id="next" name="bu1" type="submit">Next</button>
 					</div> 
 			</div>
+			<div class="container" id='pair'>
+				<p>Please match the need to the stakeholder:</p>
+				<br/>
+				<label for="outcometype">Need:</label>
+				<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
+				<datalist id="outcome">
+				</datalist>
+				<label for="stakeholdertype">Stakeholder: </label>
+				<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
+				<datalist id="stakeholder">
+				</datalist>
+				
+				<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
+				<br/>
+				<div id="events"></div>
+				<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				<br/><br/><br/><br/><br/>
+				<p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened. <br> Put the stickynotes onto the timeline one by one to illsturate the time order you hope to achieve the needs.</p>
+				<p>Note: drag to put them onto the timeline one by one</p>
+				<div id="timelines">
+				</div>
+				<div style="margin-top:103px;display:flex">
+					<HR width="80%" style="margin-top:27px;border:3px solid grey">
+					<div class="to_right"></div>
+					<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
+				</div>
+            	<button style="float:right; margin-top:10%" onclick="window.location.href = './complete.html'" >Complete</button>
+        </div>
      </div>
 </form>	
 <script src="js/StickyNote.js"></script>
