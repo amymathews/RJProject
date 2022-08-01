@@ -11,8 +11,8 @@
 </head>
 
 <body>
+	<form method="post">
     <div class="content">
-		<form method="POST">
 			<div class="container">
 				<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 					<p style="margin-left:5%">stakeholders</p>
