@@ -41,7 +41,7 @@
 			</div>	
 		
 
-			 <div class="container" id='pair'>
+			<div class="container" id='pair'>
 				<form method = "POST">
 					<p>Pair your emotional needs and desired outcomes to the stakeholders:</p>
 					<br/>
@@ -70,7 +70,7 @@
 					</div>
 					<button style="float:right; margin-top:10%" >Complete</button>
 				</form>
-			
+			</div>
 		</div>
 	</body>
 </html>
