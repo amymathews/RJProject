@@ -70,7 +70,7 @@
 					</div>
 					<button style="float:right; margin-top:10%" >Complete</button>
 				</form>
-			</div>
+			
 		</div>
 	</body>
 </html>
