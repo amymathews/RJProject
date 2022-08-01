@@ -20,7 +20,7 @@
 				</div>
 				<div id='stickynotes'></div>
 				<div id='selector' style="position: absolute;font-size:15px;width:20%">
-					<form method="POST" action=''>
+					<form method="POST"; action=''>
 						<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
 						<p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p>
 						<!-- <label for="notetype">Choose a question</label> -->
@@ -48,7 +48,7 @@
 				<!-- <button style="float:right; margin-top:50%" id="next" type="button">Next</button> -->
 			</div>
 
-			<div class="container" id='pair'>
+			<!-- <div class="container" id='pair'>
 				<p>Please match the need to the stakeholder:</p>
 				<br/>
 				<label for="outcometype">Need:</label>
@@ -76,7 +76,7 @@
 					<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 				</div>
 				<button style="float:right; margin-top:10%" onclick="window.location.href = './complete.html'" >Complete</button>
-			</div>
+			</div> -->
 
 		</div>
 
