@@ -94,7 +94,7 @@ function backClick(event, d){
     }
     else if(backCounter >3){
         alert("you have reached the beginning of the questions!");
-        backCounter=2;
+        
     }
     
     
