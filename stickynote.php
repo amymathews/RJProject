@@ -10,7 +10,8 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 		<body>
-					<form method="POST">
+			<form method="POST">
+				<div class = "container">
 						<br><br>
 						<p id="content"> Please input the content you want to display on the note</p>
 						<input id="text_on_note" name="text_on_note" style="height: 50px ;" />
@@ -18,7 +19,8 @@
 						<button id="create" type="button">create a sticky note</button>
 						<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
 						<button id="next" name="bu1" type="submit">Next</button>
-					</form>
+				</div>
+			</form>
 		</body>
 <?php
     if( $_POST ){
