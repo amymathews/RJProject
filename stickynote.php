@@ -12,18 +12,18 @@
 					<form method="POST">
 						<br><br>
 						<p id="content"> Please input the content you want to display on the note</p>
-						<input id="text_on_note" style="height: 50px ;">
+						<input id="text_on_note" style="height: 50px ;"/>
 						<br><br>
 						<button id="create" type="button">create a sticky note</button>
 						<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
-						<button id="next" type="submit">Next</button>
+						<button id="next" name="bu1" type="submit">Next</button>
 					</form>
 		</body>
-</html>
 <?php
-    if( $_POST )  {
+    if( $_POST ){
         echo($_POST);
         echo "here";
         exit;
         }
 ?>
+</html>
