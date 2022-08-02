@@ -25,24 +25,34 @@ let backCounter =2;
 let myOption='stakeholder';
 
 function createwacc () {
-    alert("I am here");
+
     var url_string = window.location.href
     var url = new URL(url_string);
     var userid = url.searchParams.get("WACC");
-    alert(userid); 
-    alert(document.getElementById('question').value);
-    alert(document.getElementById('content').value);
+    var contentvar = myOption;
+    var textonnote = document.getElementById("text_on_note").value;
+    var stakeholderop;
+    var feelingop;
+    var actionop;
 
+    if (contentvar == "stakeholder") { 
+        stakeholderop  = textonnote;
+    } else if (contentvar == "feeling") {
+        feelingop == textonnote;
+    } else if ( contentvar == "action") {
+        actionop == textonnote;
+    }
 
         $.ajax({
         url:"sninsert.php",    //the page containing php script
         type: "post",    //request type,
         dataType: 'json',
-        data: {userid: "success", name: "xyz", email: "abc@gmail.com"},
+        data: {userid: userid, action: actionop, feeling: feelingop,stakeholder: stakeholderop},
         success:function(result){
             console.log(result.abc);
         }
     });
+    alert(data);
 }
 
 // double click deletion function on the sticky note
