@@ -43,16 +43,20 @@ function createwacc () {
         actionop == textonnote;
     }
 
+    // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
+    let jsontext = '{'+'userid:'+userid+'action:'+ actionop + 'feeling:' + feelingop + 'stakeholder' + stakeholderop+'}';
+    alert(jsontext);
+
         $.ajax({
         url:"sninsert.php",    //the page containing php script
         type: "post",    //request type,
         dataType: 'json',
-        data: {userid: userid, action: actionop, feeling: feelingop,stakeholder: stakeholderop},
+        data:jsontext ,
         success:function(result){
             console.log(result.abc);
         }
     });
-    alert(data);
+   
 }
 
 // double click deletion function on the sticky note
