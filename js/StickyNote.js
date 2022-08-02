@@ -46,12 +46,12 @@ function createwacc () {
     // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
     let jsontext = '{'+'userid:'+userid+',action: '+ actionop + ',feeling: ' + feelingop + ',stakeholder: ' + stakeholderop+'}';
     alert(jsontext);
-    const jsondata = JSON.parse(jsontext);
+    var jsondata = JSON.parse(jsontext);
         $.ajax({
         url:"sninsert.php",    //the page containing php script
         type: "post",    //request type,
         dataType: 'json',
-        data: jasondata,
+        data: jsondata,
         success:function(result){
             console.log(result.abc);
             alert('SUCCESS');
