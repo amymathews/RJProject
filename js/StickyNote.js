@@ -44,17 +44,17 @@ function createwacc () {
     }
 
     // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-    let jsontext = "{"+"userid:" +userid+ ",action:" + actionop + ",feeling: " + feelingop + ",stakeholder: " + stakeholderop + "}";
+    let jsontext = '{'+'userid:'+userid+',action: '+ actionop + ',feeling: ' + feelingop + ',stakeholder: ' + stakeholderop+'}';
     alert(jsontext);
-    var jsondata = JSON.parse(jsontext);
+
         $.ajax({
         url:"sninsert.php",    //the page containing php script
         type: "post",    //request type,
         dataType: 'json',
-        data: jsondata,
+        data: JSON.parse(jsontext),
         success:function(result){
             console.log(result.abc);
-            alert('SUCCESS');
+            alert()
         }
     });
    
