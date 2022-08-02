@@ -24,7 +24,7 @@ let nextCounter=2;
 let backCounter =2;
 let myOption='stakeholder';
 
-function create () {
+function createwacc () {
     alert("I am here");
     var url_string = window.location.href
     var url = new URL(url_string);
