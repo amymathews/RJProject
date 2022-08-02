@@ -26,9 +26,11 @@ let myOption='stakeholder';
 
 function createwacc () {
 
+    var jsonObj = {};
     var url_string = window.location.href
     var url = new URL(url_string);
     var userid = url.searchParams.get("WACC");
+    jsonObj['userid'] = userid;
     var contentvar = myOption;
     var textonnote = document.getElementById("text_on_note").value;
     var stakeholderop='';
@@ -42,10 +44,12 @@ function createwacc () {
     } else if ( contentvar == "action") {
         actionop == textonnote;
     }
+    jsonObj['stakeholder'] = stakeholderop;
+    jsonObj['feeling'] = feelingop;
+    jsonObj['action'] = textonnote;
 
     // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-    let jsontext = '{'+'userid:'+userid+',action: '+ actionop + ',feeling: ' + feelingop + ',stakeholder: ' + stakeholderop+'}';
-    alert(jsontext);
+    alert(jsonObj);
 
         $.ajax({
         url:"sninsert.php",    //the page containing php script
