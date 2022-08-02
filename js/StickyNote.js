@@ -49,7 +49,7 @@ function createwacc () {
     jsonObj['action'] = textonnote;
 
     // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-    alert(jsonObj);
+    alert(JSON.stringify(ojsonObj));
 
         $.ajax({
         url:"sninsert.php",    //the page containing php script
