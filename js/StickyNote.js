@@ -24,6 +24,23 @@ let nextCounter=2;
 let backCounter =2;
 let myOption='stakeholder';
 
+function create () {
+    var url_string = window.location.href
+    var url = new URL(url_string);
+    var userid = url.searchParams.get("WACC");
+    alert("I am here");
+
+        $.ajax({
+        url:"sninsert.php",    //the page containing php script
+        type: "post",    //request type,
+        dataType: 'json',
+        data: {userid: "success", name: "xyz", email: "abc@gmail.com"},
+        success:function(result){
+            console.log(result.abc);
+        }
+    });
+}
+
 // double click deletion function on the sticky note
 function double_click(event, d){
     let r=confirm("Do you want to delete this sticky note?");
