@@ -43,7 +43,7 @@ function create (event, d) {
 }
 
 // double click deletion function on the sticky note
-function double_click(event, d){
+function double_click(){
     let r=confirm("Do you want to delete this sticky note?");
     if (r==true){
         d3.select(this)
