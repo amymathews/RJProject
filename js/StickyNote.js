@@ -31,9 +31,9 @@ function createwacc () {
     var userid = url.searchParams.get("WACC");
     var contentvar = myOption;
     var textonnote = document.getElementById("text_on_note").value;
-    var stakeholderop= null;
-    var feelingop=null;
-    var actionop=null;
+    var stakeholderop= "";
+    var feelingop="";
+    var actionop="";
 
     if (contentvar == "stakeholder") { 
         stakeholderop  = textonnote;
