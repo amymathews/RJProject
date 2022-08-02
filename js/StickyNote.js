@@ -40,6 +40,7 @@ function createwacc () {
     if (contentvar == "stakeholder") { 
         stakeholderop  = textonnote;
     } else if (contentvar == "feeling") {
+        alert(here);
         feelingop == textonnote;
     } else if ( contentvar == "action") {
         actionop == textonnote;
