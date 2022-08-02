@@ -24,7 +24,7 @@ let nextCounter=2;
 let backCounter =2;
 let myOption='stakeholder';
 
-function create (event, d) {
+function create () {
     alert("I am here");
     var url_string = window.location.href
     var url = new URL(url_string);
@@ -43,7 +43,7 @@ function create (event, d) {
 }
 
 // double click deletion function on the sticky note
-function double_click(){
+function double_click(event, d){
     let r=confirm("Do you want to delete this sticky note?");
     if (r==true){
         d3.select(this)
