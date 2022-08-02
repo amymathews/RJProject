@@ -44,7 +44,7 @@ function createwacc () {
     }
 
     // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-   let jsontext = "{"+"userid:" +userid+ ",action:" + actionop + ",feeling: " + feelingop + ",stakeholder: " + stakeholderop + "}";
+   let jsontext = '{ "userid": userid ,"action": actionop , "feeling": feelingop , "stakeholder":  + stakeholderop  }';
    alert(jsontext); 
     var jsondata = JSON.parse(jsontext);
         $.ajax({
