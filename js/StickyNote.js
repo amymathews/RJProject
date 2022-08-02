@@ -29,7 +29,9 @@ function createwacc () {
     var url_string = window.location.href
     var url = new URL(url_string);
     var userid = url.searchParams.get("WACC");
-    alert(userid);
+    alert(userid); 
+    alert(document.getElementById('question').value);
+    alert(document.getElementById('content').value);
 
 
         $.ajax({
