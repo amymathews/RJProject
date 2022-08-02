@@ -40,10 +40,9 @@ function createwacc () {
     if (contentvar == "stakeholder") { 
         stakeholderop  = textonnote;
     } else if (contentvar == "feeling") {
-        alert(here);
-        feelingop == textonnote;
+        feelingop = textonnote;
     } else if ( contentvar == "action") {
-        actionop == textonnote;
+        actionop = textonnote;
     }
     jsonObj['stakeholder'] = stakeholderop;
     jsonObj['feeling'] = feelingop;
@@ -59,7 +58,7 @@ function createwacc () {
         data: JSON.stringify(jsonObj),
         success:function(result){
             console.log(result.abc);
-            alert()
+            alert("we have made is sisters!!");
         }
     });
    
