@@ -25,10 +25,11 @@ let backCounter =2;
 let myOption='stakeholder';
 
 function create () {
+    alert("I am here");
     var url_string = window.location.href
     var url = new URL(url_string);
     var userid = url.searchParams.get("WACC");
-    alert("I am here");
+
 
         $.ajax({
         url:"sninsert.php",    //the page containing php script
