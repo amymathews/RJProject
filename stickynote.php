@@ -11,13 +11,13 @@
 </head>
 
 <body>
-<form  method ="POST" >
+<form method = "post">
     <div class="content">
 			<div class="container">
 				<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 					<p style="margin-left:5%">stakeholders</p>
 					<p style="margin-left:17%">feelings</p>
-					<p style="margin-left:18%">desired ožtcomes</p>
+					<p style="margin-left:18%">desired outcomes</p>
 				</div>
 					<div id='stickynotes'></div>
 					<div id='selector' style="position: absolute;font-size:15px;width:20%">
@@ -40,8 +40,21 @@
 <script src="js/StickyNote.js"></script>
 </body>
 <?php
-    if( $ـPOST ){
-		echo "here";exit;
+
+    if( $_POST ){
+        echo($_POST);
+        echo "here";
+		foreach ($_POST as $key => $value) {
+			echo "<tr>";
+			echo "<td>";
+			echo $key;
+			echo "</td>";
+			echo "<td>";
+			echo $value;
+			echo "</td>";
+			echo "</tr>";
+        exit;
+        }
 	}
 ?>
 </html>
