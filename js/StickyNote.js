@@ -31,9 +31,9 @@ function createwacc () {
     var userid = url.searchParams.get("WACC");
     var contentvar = myOption;
     var textonnote = document.getElementById("text_on_note").value;
-    var stakeholderop;
-    var feelingop;
-    var actionop;
+    var stakeholderop='';
+    var feelingop='';
+    var actionop='';
 
     if (contentvar == "stakeholder") { 
         stakeholderop  = textonnote;
@@ -44,16 +44,17 @@ function createwacc () {
     }
 
     // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-    let jsontext = '{'+'userid:'+userid+'action:'+ actionop + 'feeling:' + feelingop + 'stakeholder' + stakeholderop+'}';
+    let jsontext = '{'+'userid:'+userid+',action: '+ actionop + ',feeling: ' + feelingop + ',stakeholder: ' + stakeholderop+'}';
     alert(jsontext);
 
         $.ajax({
         url:"sninsert.php",    //the page containing php script
         type: "post",    //request type,
         dataType: 'json',
-        data:jsontext ,
+        data: JSON.parse(jsontext),
         success:function(result){
             console.log(result.abc);
+            alert('SUCCESS');
         }
     });
    
