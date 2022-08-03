@@ -124,8 +124,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
     justify-content: right;
     align-items: right;
     position: relative;
-    width: 100%;
-    height: 100vh;
     right: 133px;
     top:20px;
   
