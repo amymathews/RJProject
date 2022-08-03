@@ -11,8 +11,10 @@
 </head>
 
 <body>
-		<div id="anim">
-			<span class="tooltip" data-tooltip=" To delete stickynote just double-click!">?</span>
+		<div id = content1>
+			<div id="anim">
+				<span class="tooltip" data-tooltip=" To delete stickynote just double-click!">?</span>
+			</div>
 		</div>
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">

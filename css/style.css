@@ -121,9 +121,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
 #content1 {
     position: relative;
 }
-#content1 img {
+#content1 {
     position: absolute;
-    top: 0px;
+    top: 15px;
     right: 0px;
 }
 
