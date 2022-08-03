@@ -78,20 +78,24 @@ function clickFunc(event, d){
     
 }
 function backClick(event, d){
-    if(backCounter==3){ 
+    if(backCounter==2){ 
         let type = 'stakeholder';
         myOption = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
         
     }
-    if(backCounter==2){ 
+    if(backCounter==1){ 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
        
     }
+    else if(nextCounter >3){
+        backCounter=1;
+    }
+
     
     backCounter++;
     
