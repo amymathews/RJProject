@@ -20,7 +20,7 @@
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
-			<div id="content">
+			<div id="content1">
 				<img src= image/cat.pngx>
 			</div>
 				<form method="POST">
