@@ -12,7 +12,7 @@
 
 <body>
 	<div id="content1">
-			<img src= images/cat.png> title = "to remove stickynote, double click!">
+			<img src= images/cat.png title = "to remove stickynote, double click!">
 	</div>
 	<div class="content">
 		<div class="container">
