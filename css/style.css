@@ -121,16 +121,14 @@ input[type="range"]::-webkit-slider-thumb:hover {
 #content1 {
     position: relative;
 }
-#content1 {
+#content1 img {
     position: absolute;
     top: 15px;
     right: 0px;
 }
 
 .tooltip {
-    position: absolute;
-    top: 20px;
-    right: 10px;
+    position: relative;
     background: green;
     padding: 5px 12px;
     margin: 5px;
