@@ -11,10 +11,12 @@
 </head>
 
 <body>
-	
-			<div id="anim">
-				<span class="tooltip" style="top: 0px; right: 0px;" data-tooltip=" To delete stickynote just double-click!">?</span>
-			</div>
+	<br><br><br>
+    <div id = helpbutton>
+        <div id="anim">
+        <span class="tooltip" data-tooltip="username must consist of 29 symbols.">?</span>
+        </div>
+    </div>
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:5%">stakeholders</p>
