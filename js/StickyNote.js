@@ -103,45 +103,45 @@ function backClick(event, d){
 }
 
 // draw the predefined sticky notes
-function draw(notes) {
-    // define scale
-    colorScale = d3.scaleOrdinal()
-                 .domain(stickyNoteTypes)
-                 .range(stickyNoteColors);
-    xScale = d3.scaleBand()
-                .domain(stickyNoteTypes.slice(0,3))
-                .range([width*1/4, width*5/6])
-                .padding(0.3);
-    yScale = d3.scaleLinear()
-                .domain([0,8])
-                .range([height*1/15,height*7/8]);
+// function draw(notes) {
+//     // define scale
+//     colorScale = d3.scaleOrdinal()
+//                  .domain(stickyNoteTypes)
+//                  .range(stickyNoteColors);
+//     xScale = d3.scaleBand()
+//                 .domain(stickyNoteTypes.slice(0,3))
+//                 .range([width*1/4, width*5/6])
+//                 .padding(0.3);
+//     yScale = d3.scaleLinear()
+//                 .domain([0,8])
+//                 .range([height*1/15,height*7/8]);
 
-    // notes
-    note = d3.select('#stickynotes')
-        .selectAll("textarea")
-        .data(notes)
-        .join("textarea")
-        .style("margin-left", s => xScale(s.type)+'px')
-        .style("margin-top", s => yScale(s.index)+'px')
-        .attr("rows",3)
-        .attr("cols",18)
-        .style('background-color', s => colorScale(s.type))
-        .text(s => s.content)
-        .style('color',"black")
-        .on("dblclick", double_click);
+//     // notes
+//     note = d3.select('#stickynotes')
+//         .selectAll("textarea")
+//         .data(notes)
+//         .join("textarea")
+//         .style("margin-left", s => xScale(s.type)+'px')
+//         .style("margin-top", s => yScale(s.index)+'px')
+//         .attr("rows",3)
+//         .attr("cols",18)
+//         .style('background-color', s => colorScale(s.type))
+//         .text(s => s.content)
+//         .style('color',"black")
+//         .on("dblclick", double_click);
 
-    // drag to move
-    drag = d3.drag()
-        .on("drag", dragged);
+//     // drag to move
+//     drag = d3.drag()
+//         .on("drag", dragged);
 
-    note.call(drag).on("click", ()=>{});
+//     note.call(drag).on("click", ()=>{});
 
-    function dragged(event, d) {
-        d3.select(this)
-            .style("margin-left", d.x = event.x+"px")
-            .style("margin-top", d.y = event.y+'px');
-    }
-}
+//     function dragged(event, d) {
+//         d3.select(this)
+//             .style("margin-left", d.x = event.x+"px")
+//             .style("margin-top", d.y = event.y+'px');
+//     }
+// }
 
 // combine stakeholder with feeling & action
 function pairing() {
