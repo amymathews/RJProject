@@ -92,10 +92,9 @@ function backClick(event, d){
             .text(data.questions[type]);
        
     }
-    else if(nextCounter >3){
+    else if(backCounter >3){
         backCounter=1;
     }
-
     
     backCounter++;
     
