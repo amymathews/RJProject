@@ -60,6 +60,7 @@ textarea {
     padding-top:5%;
     padding-left: 10%;
     padding-right: 10%;
+    position: relative;
     overflow: auto;
     height: 100%;
     padding-bottom:5%;
@@ -117,4 +118,3 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-webkit-slider-thumb:hover {
     background: #666;
 }
-
