@@ -11,6 +11,9 @@
 </head>
 
 <body>
+	<div id="content1">
+			<img src= images/cat.png> title = "to remove stickynote, double click!">
+	</div>
 	<div class="content">
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
@@ -20,9 +23,7 @@
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
-			<div id="content1">
-				<img src= image/cat.png>
-			</div>
+	
 				<form method="POST">
 					<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
 					<p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p>
