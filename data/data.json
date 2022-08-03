@@ -1,4 +1,18 @@
 {
+    "notes": [
+        {
+            "type": "stakeholder",
+            "index": 0
+        },
+        {
+            "type": "feeling",
+            "index": 0
+        },
+        {
+            "type": "action",
+            "index": 0
+        }
+    ],
     "questions": {
 
         "stakeholder": "q3) Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? ",
