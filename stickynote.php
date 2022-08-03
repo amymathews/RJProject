@@ -36,7 +36,7 @@
 					<img style="float:left" src=images/back.png onclick="backClick()">
 
 					<br><br>
-					<p id="content"> Please input the content you want to display on the note</p>
+					<p id="content"> Add one note at a time and then click "create sticky note" </p>
 					<textarea id="text_on_note" style="height: 70px; width: auto;"></textarea>
 					<br><br>
 					<br><br>
