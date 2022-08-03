@@ -11,6 +11,9 @@
 </head>
 
 <body>
+		<div id="anim">
+			<span class="tooltip" data-tooltip=" To delete stickynote just double-click!">?</span>
+		</div>
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:5%">stakeholders</p>
@@ -31,7 +34,7 @@
 						<option value="action">q5</option>
 					</select>
 					-->
-					<p id="question"> 1)Stakeholders: Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
+					<p id="question"> 1) Stakeholders: Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
 					<img style="float:right" src=images/next.png onclick="clickFunc()">
 					<img style="float:left" src=images/back.png onclick="backClick()">
 
