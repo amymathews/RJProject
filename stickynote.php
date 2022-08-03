@@ -21,7 +21,7 @@
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 			<div id="content1">
-				<img src= image/cat.pngx>
+				<img src= image/cat.png>
 			</div>
 				<form method="POST">
 					<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
