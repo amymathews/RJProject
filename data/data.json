@@ -15,9 +15,9 @@
     ],
     "questions": {
 
-        "stakeholder": "1)Stakeholders <br /> Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? ",
-        "feeling": "2)Feelings How do you want to feel? (e.g., I want to feel safe)",
-        "action": "3)Desired outcome What are some desired outcome for addressing the harm (e.g., I hope the offender can be banned)?"
+        "stakeholder": "1)Stakeholders \n Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? ",
+        "feeling": "2)Feelings \n How do you want to feel? (e.g., I want to feel safe)",
+        "action": "3)Desired outcomes \n  What are some desired outcome for addressing the harm (e.g., I hope the offender can be banned)?"
     },
     "prompts": {
         "stakeholders": [
