@@ -20,8 +20,8 @@ let note;// the html object, d3.select('#stickynotes')
 let drag;// d3.drag()
 let feelings,stakeholders,actions;// array to be bound with datalist
 let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote layout and event layout
-let nextCounter=2;
-let backCounter =2;
+let nextCounter=1;
+let backCounter =1;
 let myOption='stakeholder';
 
 // double click deletion function on the sticky note
@@ -51,12 +51,12 @@ function double_click(event, d){
 
 
 function clickFunc(event, d){
-    // if(nextCounter==1){ 
-    //     let type = 'stakeholder';
-    //     d3.select("#question")
-    //         .text(data.questions[type]);
+    if(nextCounter==1){ 
+        let type = 'stakeholder';
+        d3.select("#question")
+            .text(data.questions[type]);
         
-    // }
+    }
     if(nextCounter==2){ 
         let type = 'feeling';
         myOption = 'feeling';
@@ -92,11 +92,6 @@ function backClick(event, d){
             .text(data.questions[type]);
        
     }
-    else if(backCounter >3){
-        alert("you have reached the beginning of the questions!");
-        
-    }
-    
     
     backCounter++;
     
