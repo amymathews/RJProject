@@ -11,10 +11,6 @@
 </head>
 
 <body>
-	<div id="content1">
-			<img src= "images/question.png" title = "to remove stickynote, double click!">
-	</div>
-	<div class="content">
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:5%">stakeholders</p>
