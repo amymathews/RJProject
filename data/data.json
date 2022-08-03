@@ -1,16 +1,13 @@
 {
     "notes": [
         {
-            "type": "stakeholder",
-            "index": 0
+            "type": "stakeholder"
         },
         {
-            "type": "feeling",
-            "index": 0
+            "type": "feeling"
         },
         {
-            "type": "action",
-            "index": 0
+            "type": "action"
         }
     ],
     "questions": {
