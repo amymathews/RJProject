@@ -17,7 +17,7 @@
         <span class="tooltip" data-tooltip=" Double click on the stickynote to remove it!">?</span>
         </div>
     </div>
-	<div class="content?">
+	<div class="content">
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:5%">stakeholders</p>
