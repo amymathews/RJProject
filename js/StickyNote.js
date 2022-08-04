@@ -21,7 +21,7 @@ let drag;// d3.drag()
 let feelings,stakeholders,actions;// array to be bound with datalist
 let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote layout and event layout
 let nextCounter=2;
-let backCounter =2;
+let backCounter =1;
 let myOption='stakeholder';
 
 // double click deletion function on the sticky note
@@ -50,7 +50,7 @@ function createwacc () {
         jsonObj['action'] = textonnote;
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-        alert(JSON.stringify(jsonObj));
+        // alert(JSON.stringify(jsonObj));
     
             $.ajax({
             url: './sninsert.php',    //the page containing php script
@@ -113,29 +113,34 @@ function clickFunc(event, d){
             .text(data.questions[type]);       
     }
     else if(nextCounter >3){
-        alert("end of questions!");
+        alert("end of questions! Redirecting to next page");
+        pairing();
+
         nextCounter=1;
     }
     nextCounter++;
     
 }
 function backClick(event, d){
-    if(backCounter==3){ 
-        let type = 'stakeholder';
-        myOption = 'stakeholder';
-        d3.select("#question")
-            .text(data.questions[type]);
-        
-    }
-    if(backCounter==2){ 
+    
+    if(backCounter==1) { 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
        
     }
+    if(backCounter==2){ 
+        let type = 'stakeholder';
+        myOption = 'stakeholder';
+        d3.select("#question")
+            .text(data.questions[type]);
+        
+    }
+
     else if(backCounter >3){
-        backCounter=1;
+        alert("You have reached the begiining of the questions!")
+        backCounter=0;
     }
     
     backCounter++;

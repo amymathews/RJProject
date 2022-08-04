@@ -38,8 +38,8 @@
 					</select>
 					-->
 					<p id="question"> 1) Stakeholders: Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
-					<img style="float:right" src=images/next.png onclick="clickFunc()">
-					<img style="float:left" src=images/back.png onclick="backClick()">
+					<button style="float:right" type = "button" onclick="clickFunc()">Next</button>
+					<button style="float:left" type = "button" onclick="backClick()">Back</button>
 
 					<br><br>
 					<p id="content"> Add one note at a time and then click "create sticky note" </p>
@@ -49,7 +49,7 @@
 					< <button id="create" type="button" onclick="createwacc()" >create a sticky note</button> 
 					<!-- <button id="create" type="button">create a sticky note</button> -->
 					<!-- <p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p> -->
-					<button id="next" type="button">Next</button>
+					<!-- <button id="next" type="button">Next</button> -->
 
 				</form>
 			</div>
