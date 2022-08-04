@@ -55,7 +55,7 @@ function createwacc () {
             $.ajax({
             url: './sninsert.php',    //the page containing php script
             type: 'POST',    //request type,
-            dataType: 'json',
+            // dataType: 'json',
             data: JSON.stringify(jsonObj),
             success:function(output){
                 console.log('success');
