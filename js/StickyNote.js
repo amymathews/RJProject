@@ -60,8 +60,8 @@ function createwacc () {
             success:function(response){
                 console.log('success'+response);
             },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.log(textStatus, errorThrown);
+            error: function(error) {
+                console.log(stringify(error));
              }
         });
        
