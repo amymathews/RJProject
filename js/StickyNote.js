@@ -25,6 +25,45 @@ let backCounter =2;
 let myOption='stakeholder';
 
 // double click deletion function on the sticky note
+function createwacc () {
+
+        var jsonObj = {};
+        var url_string = window.location.href
+        var url = new URL(url_string);
+        var userid = url.searchParams.get("WACC");
+        jsonObj['userid'] = userid;
+        var contentvar = myOption;
+        var textonnote = document.getElementById("text_on_note").value;
+        var stakeholderop='';
+        var feelingop='';
+        var actionop='';
+    
+        if (contentvar == "stakeholder") { 
+            stakeholderop  = textonnote;
+        } else if (contentvar == "feeling") {
+            feelingop = textonnote;
+        } else if ( contentvar == "action") {
+            actionop = textonnote;
+        }
+        jsonObj['stakeholder'] = stakeholderop;
+        jsonObj['feeling'] = feelingop;
+        jsonObj['action'] = textonnote;
+    
+        // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
+        alert(JSON.stringify(jsonObj));
+    
+            $.ajax({
+            url:"sninsert.php",    //the page containing php script
+            type: "post",    //request type,
+            dataType: 'json',
+            data: JSON.stringify(jsonObj),
+            success:function(result){
+                console.log(result.abc);
+                alert("we have made is sisters!!");
+            }
+        });
+       
+    }
 function double_click(event, d){
     let r=confirm("Do you want to delete this sticky note?");
     if (r==true){
