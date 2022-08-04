@@ -61,7 +61,7 @@ function createwacc () {
                 console.log('success');
             },
             error:function(error){
-                console.log('The error is-->'+JSON.stringify(data));
+                console.log('The error is-->'+JSON.stringify(error));
         
             }
         });
