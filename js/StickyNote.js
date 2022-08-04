@@ -53,10 +53,10 @@ function createwacc () {
         alert(JSON.stringify(jsonObj));
     
             $.ajax({
-            url:"./sninsert.php",    //the page containing php script
-            type: "post",    //request type,
+            url: './sninsert.php',    //the page containing php script
+            type: 'POST',    //request type,
             dataType: 'json',
-            data: { user : 'Tommy' },
+            data: JSON.stringify(jsonObj),
             success:function(output){
                 console.log('success');
             },
