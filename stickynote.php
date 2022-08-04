@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<br><br><br>
+<br><br><br><br><br><br>
     <div id = helpbutton>
         <div id="anim">
         <span class="tooltip" data-tooltip=" Double click on the stickynote to remove it!">?</span>
