@@ -57,13 +57,12 @@ function createwacc () {
             type: "post",    //request type,
             dataType: 'json',
             data: jsonObj,
-            success:function(result){
-                console.log(result);
-                alert("we have made is sisters!!");
+            success:function(data){
+                console.log('success');
             },
-            failure:function(error){
-                console.log(error);
-                alert("lllkl");
+            error:function(error){
+                console.log('error');
+        
             }
         });
        
