@@ -58,8 +58,12 @@ function createwacc () {
             dataType: 'json',
             data: jsonObj,
             success:function(result){
-                console.log(result.abc);
+                console.log(result);
                 alert("we have made is sisters!!");
+            },
+            failure:function(error){
+                console.log(error);
+                alert("lllkl");
             }
         });
        
