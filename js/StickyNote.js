@@ -57,13 +57,12 @@ function createwacc () {
             type: "post",    //request type,
             dataType: "json",
             data: JSON.stringify(jsonObj),
-            success:function(data){
-                console.log('success');
+            success:function(response){
+                console.log('success'+response);
             },
-            error:function(error){
-                console.log('The error is-->'+JSON.stringify(error));
-        
-            }
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(textStatus, errorThrown);
+             }
         });
        
     }

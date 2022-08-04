@@ -21,10 +21,12 @@
     // if( $_POST["story"] || $_POST["feeling"] ) {
      if( $_POST ) {
 
-        echo($_POST);
+        print_r($_POST);
        
     // $sql = "INSERT INTO MyGuests (firstname, lastname, email)VALUES ('John', 'Doe', 'john@example.com')";
-     $story = $_POST['story'];
+    /* 
+    
+    $story = $_POST['story'];
      $feeling = $_POST['feeling'];
     $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,action,) VALUES (, '$story','$feeling')";
     if (mysqli_query($conn, $sql)) {
@@ -55,6 +57,7 @@
     header("Location: /stickynote.php?WACC=".$highest_id);
 
     exit;
+    */
 }
 
 ?>
