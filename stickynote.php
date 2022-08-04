@@ -14,7 +14,7 @@
 <br><br><br>
     <div id = helpbutton>
         <div id="anim">
-        <span class="tooltip" data-tooltip="username must consist of 29 symbols.">?</span>
+        <span class="tooltip" data-tooltip=" Double click on the stickynote to remove it!">?</span>
         </div>
     </div>
 		<div class="container">
@@ -47,7 +47,7 @@
 					<br><br>
 					<br><br>
 					<button id="create" type="button">create a sticky note</button>
-					<p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p>
+					<!-- <p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p> -->
 					<button id="next" type="button">Next</button>
 
 				</form>
