@@ -44,7 +44,6 @@
 					<p id="content"> <strong>Add one note at a time and then click "create a sticky note" </strong>  </p>
 					<textarea id="text_on_note" style="height: 70px; width: auto;"></textarea>
 					<br><br>
-					<br><br>
 					<button id="create" type="button" onclick="createwacc()" >create a sticky note</button> 
 					<!-- <button id="create" type="button">create a sticky note</button> -->
 					<!-- <p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p> -->
