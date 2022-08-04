@@ -53,7 +53,7 @@ function createwacc () {
         alert(JSON.stringify(jsonObj));
     
             $.ajax({
-            url:"sninsert.php",    //the page containing php script
+            url:"./sninsert.php",    //the page containing php script
             type: "post",    //request type,
             dataType: 'json',
             data: jsonObj,
