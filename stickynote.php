@@ -39,11 +39,9 @@
 					</select>
 					-->
 					<p id="question"> 1) Stakeholders: Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
-					<button style="float:right" type = "button" onclick="clickFunc()">Next</button>
-					<button style="float:left" type = "button" onclick="backClick()">Back</button>
-
+				
 					<br><br>
-					<p id="content"> Add one note at a time and then click "create sticky note" </p>
+					<p id="content"> <strong>Add one note at a time and then click "create a sticky note" </strong>  </p>
 					<textarea id="text_on_note" style="height: 70px; width: auto;"></textarea>
 					<br><br>
 					<br><br>
@@ -51,6 +49,9 @@
 					<!-- <button id="create" type="button">create a sticky note</button> -->
 					<!-- <p id="remove_note"><strong> Remove: double click on the sticky note to remove it </strong> </p> -->
 					<!-- <button id="next" type="button">Next</button> -->
+					<br><br>
+					<button style="float:right" type = "button" onclick="clickFunc()">Next</button>
+					<button style="float:left" type = "button" onclick="backClick()">Back</button>
 
 				</form>
 			</div>
