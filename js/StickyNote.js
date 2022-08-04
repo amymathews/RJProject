@@ -55,14 +55,15 @@ function createwacc () {
             $.ajax({
             url:"./sninsert.php",    //the page containing php script
             type: "post",    //request type,
-            dataType: "json",
-            data: "JSON.stringify(jsonObj)",
-            success:function(response){
-                console.log('success'+response);
+            dataType: 'json',
+            data: 'jsonObj',
+            success:function(result){
+                console.log('success');
             },
-            error: function(error) {
-                console.log(error.stringify);
-             }
+            error:function(error){
+                console.log('The error is-->'+JSON.stringify(data));
+        
+            }
         });
        
     }
