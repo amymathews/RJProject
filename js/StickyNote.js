@@ -56,7 +56,7 @@ function createwacc () {
             url:"./sninsert.php",    //the page containing php script
             type: "post",    //request type,
             dataType: "json",
-            data: JSON.stringify(jsonObj),
+            data: "JSON.stringify(jsonObj)",
             success:function(response){
                 console.log('success'+response);
             },
