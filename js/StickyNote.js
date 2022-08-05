@@ -37,9 +37,6 @@ function createwacc () {
         var stakeholderop='';
         var feelingop='';
         var actionop='';
-        jsonObj.stakeholder = new Array();
-        jsonObj.feeling = new Array();
-        jsonObj.action = new Array();
     
         if (contentvar == "stakeholder") { 
             stakeholderop  = textonnote;
@@ -48,18 +45,18 @@ function createwacc () {
         } else if ( contentvar == "action") {
             actionop = textonnote;
         }
-        jsonObj.stakeholder.push(stakeholderop);
-        jsonObj.feeling.push(feelingop);
-        jsonObj.action.push(actionop);
+        jsonObj['stakeholder'] = stakeholderop;
+        jsonObj['feeling'] = feelingop;
+        jsonObj['action'] = textonnote;
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-        alert(jsonObj);
+        // alert(JSON.stringify(jsonObj));
     
             $.ajax({
             url: './sninsert.php',    //the page containing php script
             type: 'POST',    //request type,
             // dataType: 'json',
-            data: jsonObj,
+            data: JSON.stringify(jsonObj),
             success:function(output){
                 console.log('success');
             },
