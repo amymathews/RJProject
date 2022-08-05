@@ -35,34 +35,20 @@
    //  $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,actions,) VALUES (, '$story','$feeling')";
    //  $sql = "INSERT INTO logdeets (userId, stakeholder, feeling, action,)VALUES ('John', 'Doe', 'john@example.com')";
    
-    $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,actions,) VALUES ('$userId', '$stakekeholder','$feeling','$action' )";
-    echo $sql;
+    $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,actions) VALUES ('$userId', '$stakekeholder','$feeling','$action' )";
+    //echo $sql;
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
    
-    $sql = "SELECT MAX(userId) as maxId FROM  heroku_3fa92357decd51e.userdet LIMIT 1";
-    $result = mysqli_query($conn, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-       // echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-       $highest_id = $row["maxId"];
-    }
-    } else {
-    echo "0 results";
-    }
+    
 
      
     // $highest_id = mysqli_fetch_row(mysqli_query($conn,'SELECT MAX(userId) FROM  heroku_3fa92357decd51e.userdet LIMIT 1'), 0);
 
        mysqli_close($conn);
-      
-    // header("Location: /stickynote.php?WACC=".$highest_id);
-    header("Location: /stickynote.php?WACC=".$highest_id);
 
     exit;
 }
