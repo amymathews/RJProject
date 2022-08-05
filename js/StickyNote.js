@@ -56,7 +56,7 @@ function createwacc () {
             url:'https://api.apispreadsheets.com/data/hEUjLLN76o2w2Zjz/',    //the page containing php script
             type: 'POST',    //request type,
             // dataType: 'json',
-            data: JSON.stringify(jsonObj),
+            data: "here",
             success:function(){
                 alert("Form Data Submitted :");
                 // console.log('success'+output);
