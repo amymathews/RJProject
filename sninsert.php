@@ -7,10 +7,10 @@ if( $_POST ) {
    $stakekeholder = $_POST['stakeholder'];
    $feeling = $_POST['feeling'];
    $action = $_POST['action'];
-   $file_name = './data.txt';
+   $file_name = 'data.txt';
    $mySingleStr = $userId.'-'. $stakekeholder.'-'.$feeling.'-'.$action.'\n';
    //opens the file.txt file or implicitly creates the file
-   $myfile = fopen($file_name, 'w') or die('Cannot open file: '.$file_name);
+   $myfile = fopen($file_name, 'a') or die('Cannot open file: '.$file_name);
    fwrite($myfile, $mySingleStr);
    fclose($myfile);
 }
