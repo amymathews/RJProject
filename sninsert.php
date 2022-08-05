@@ -11,6 +11,7 @@ if( $_POST ) {
    $mySingleStr = $userId.'-'. $stakekeholder.'-'.$feeling.'-'.$action.'\n';
    //opens the file.txt file or implicitly creates the file
    $myfile = fopen($file_name, 'a') or die('Cannot open file: '.$file_name);
+   echo 'file pointer'.$myfile;
    fwrite($myfile, $mySingleStr);
    fclose($myfile);
 }
