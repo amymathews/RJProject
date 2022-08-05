@@ -27,7 +27,7 @@
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 	
-				<form method="POST">
+				<form id="myForm">
 					<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
 					<p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p>
 					<!-- <label for="notetype">Choose a question</label> -->
@@ -42,7 +42,7 @@
 				
 					<br>
 					<p id="content"> <strong>Add one note at a time and then click "create a sticky note" </strong> </p>
-					<textarea id="text_on_note" style="height: 70px; width: auto;"></textarea>
+					<textarea id="text_on_note"  name = "data" style="height: 70px; width: auto;"></textarea>
 					<br><br>
 					<br><br>
 					<button id="create" type="button" onclick="createwacc()" >create a sticky note</button> 
