@@ -21,8 +21,8 @@
     //if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // if( $_POST["story"] || $_POST["feeling"] ) {
      if( $_POST ) {
-
-        print_r($_POST);
+        print_r("here in php land");
+       // print_r($_POST);
        
     // $sql = "INSERT INTO MyGuests (firstname, lastname, email)VALUES ('John', 'Doe', 'john@example.com')";
    
