@@ -45,18 +45,18 @@ function createwacc () {
         } else if ( contentvar == "action") {
             actionop = textonnote;
         }
-        jsonObj['stakeholder'] = stakeholderop;
-        jsonObj['feeling'] = feelingop;
-        jsonObj['action'] = textonnote;
+        jsonObj['stakeholder'].append(stakeholderop);
+        jsonObj['feeling'].append(feelingop);
+        jsonObj['action'].append(textonnote);
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-        alert(JSON.stringify(jsonObj));
+        alert(jsonObj);
     
             $.ajax({
             url: './sninsert.php',    //the page containing php script
             type: 'POST',    //request type,
             // dataType: 'json',
-            data: JSON.stringify(jsonObj),
+            data: jsonObj,
             success:function(output){
                 console.log('success');
             },
