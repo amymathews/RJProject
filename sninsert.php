@@ -26,18 +26,17 @@
        
       //   $Obj = json_decode($_POST[0]);
       //   print_r($Obj);
-        print_r($userId = $_POST['userid']);
-      //   $stakeholder =
-      //   $feeling =
-      //   $action = 
+      $userId = $_POST['userid'];
+      $stakekeholder = $_POST['stakeholder'];
+      $feeling = $_POST['feeling'];
+      $action = $_POST['action'];
         
-       
-    // $sql = "INSERT INTO MyGuests (firstname, lastname, email)VALUES ('John', 'Doe', 'john@example.com')";
    
-    
-    $story = $_POST['story'];
-    $feeling = $_POST['feeling'];
-    $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,action,) VALUES (, '$story','$feeling')";
+   //  $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,actions,) VALUES (, '$story','$feeling')";
+   //  $sql = "INSERT INTO logdeets (userId, stakeholder, feeling, action,)VALUES ('John', 'Doe', 'john@example.com')";
+   
+    $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,actions,) VALUES ('$userId', '$stakekeholder','$feeling','$action' )";
+    echo $sql;
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
     } else {
