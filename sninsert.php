@@ -27,7 +27,7 @@
       $stakekeholder = $_POST['stakeholder'];
       $feeling = $_POST['feeling'];
       $action = $_POST['action'];
-     }
+   
         
    
    //  $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,actions,) VALUES (, '$story','$feeling')";
@@ -37,13 +37,10 @@
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+       // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+       echo "here--eror";
     }
-   
     // $highest_id = mysqli_fetch_row(mysqli_query($conn,'SELECT MAX(userId) FROM  heroku_3fa92357decd51e.userdet LIMIT 1'), 0);
-
        mysqli_close($conn);
-
-    exit;
-
+   }
 ?>
