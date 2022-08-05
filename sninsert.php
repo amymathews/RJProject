@@ -13,6 +13,7 @@
     $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
         if (!$conn) {
+         echo "connection failed";
         die("Connection failed: " . mysqli_connect_error());
     }
     
@@ -35,7 +36,7 @@
    //  $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,actions,) VALUES (, '$story','$feeling')";
    //  $sql = "INSERT INTO logdeets (userId, stakeholder, feeling, action,)VALUES ('John', 'Doe', 'john@example.com')";
    
-    $sql = "INSERT INTO heroku_3fa92357decd51e.logdet ( userid,individual,need,actions) VALUES ('$userId', '$stakekeholder','$feeling','$action' )";
+    $sql = "INSERT INTO heroku_3fa92357decd51e.logdet (userid,individual,need,actions) VALUES('$userId','$stakekeholder','$feeling','$action')";
     //echo $sql;
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
