@@ -47,7 +47,7 @@ function createwacc () {
         }
         jsonObj['stakeholder'] = stakeholderop;
         jsonObj['feeling'] = feelingop;
-        jsonObj['action'] = textonnote;
+        jsonObj['action'] = actionop;
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
         alert(JSON.stringify(jsonObj));
