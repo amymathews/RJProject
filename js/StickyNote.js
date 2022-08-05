@@ -58,7 +58,7 @@ function createwacc () {
             // dataType: 'json',
             data: jsonObj,
             success:function(output){
-                console.log('success');
+                console.log('success'+output);
             },
             error:function(error){
                 console.log('The error is-->'+JSON.stringify(error));
