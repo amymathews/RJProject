@@ -22,10 +22,10 @@
     // if( $_POST["story"] || $_POST["feeling"] ) {
      if( $_POST ) {
  
-        //print_r($_POST);
+        print_r($_POST);
        
-        $Obj = json_decode($_POST[0]);
-        print_r($Obj);
+      //   $Obj = json_decode($_POST[0]);
+      //   print_r($Obj);
         /*$userId = $Obj.userid;
         $stakeholder =
         $feeling =
