@@ -56,13 +56,13 @@ function createwacc () {
             url:'https://api.apispreadsheets.com/data/hEUjLLN76o2w2Zjz/',    //the page containing php script
             type: 'POST',    //request type,
             // dataType: 'json',
-            data: JSON.stringify(jsonObj),
+            data: $("#myForm").serializeArray(),
             success:function(){
                 alert("Form Data Submitted :");
                 // console.log('success'+output);
             },
             error:function(error){
-                alert("There was an error :(" + JSON.stringify(error));
+                alert("There was an error :(");
                 // console.log('The error is-->'+JSON.stringify(error));
         
             }
