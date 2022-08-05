@@ -7,7 +7,7 @@ if( $_POST ) {
    $stakekeholder = $_POST['stakeholder'];
    $feeling = $_POST['feeling'];
    $action = $_POST['action'];
-   $file_name = 'data.txt';
+   $file_name = '/Users/amymathews/Documents/GitHub/phpTest/data.txt';
    $mySingleStr = $userId.'-'. $stakekeholder.'-'.$feeling.'-'.$action.'\n';
    //opens the file.txt file or implicitly creates the file
    $myfile = fopen($file_name, 'a') or die('Cannot open file: '.$file_name);
