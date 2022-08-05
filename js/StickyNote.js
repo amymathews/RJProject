@@ -37,6 +37,9 @@ function createwacc () {
         var stakeholderop='';
         var feelingop='';
         var actionop='';
+        jsonObj.stakeholder = new Array();
+        jsonObj.feeling = new Array();
+        jsonObj.action = new Array();
     
         if (contentvar == "stakeholder") { 
             stakeholderop  = textonnote;
@@ -45,9 +48,9 @@ function createwacc () {
         } else if ( contentvar == "action") {
             actionop = textonnote;
         }
-        jsonObj['stakeholder'].append(stakeholderop);
-        jsonObj['feeling'].append(feelingop);
-        jsonObj['action'].append(textonnote);
+        jsonObj.stakeholder.push(stakeholderop);
+        jsonObj.feeling.push(feelingop);
+        jsonObj.action.push(actionop);
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
         alert(jsonObj);
