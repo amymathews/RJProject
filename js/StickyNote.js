@@ -50,20 +50,18 @@ function createwacc () {
         jsonObj['action'] = actionop;
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-        // alert(JSON.stringify(jsonObj));
+        alert(JSON.stringify(jsonObj));
     
             $.ajax({
-            url:'https://api.apispreadsheets.com/data/hEUjLLN76o2w2Zjz/',    //the page containing php script
+            url: './sninsert.php',    //the page containing php script
             type: 'POST',    //request type,
             // dataType: 'json',
-            data: $("#myForm").serializeArray(),
-            success:function(){
-                alert("Form Data Submitted :");
-                // console.log('success'+output);
+            data: jsonObj,
+            success:function(output){
+                console.log('success'+output);
             },
             error:function(error){
-                alert("There was an error :(");
-                // console.log('The error is-->'+JSON.stringify(error));
+                console.log('The error is-->'+JSON.stringify(error));
         
             }
         });
