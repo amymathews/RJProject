@@ -50,7 +50,7 @@ function createwacc () {
         jsonObj['action'] = actionop;
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-        alert(JSON.stringify(jsonObj));
+        // alert(JSON.stringify(jsonObj));
     
             $.ajax({
             url:'https://api.apispreadsheets.com/data/hEUjLLN76o2w2Zjz/',    //the page containing php script
