@@ -46,9 +46,9 @@
  
       //   print_r($_POST);
       $userId = $_POST['userid'];
-      $stakekeholder = $_POST['stakeholder'];
-      $feeling = $_POST['feeling'];
-      $action = $_POST['action'];
+      $stakekeholder = implode(",", $_POST['stakeholder']);
+      $feeling = implode(",", $_POST['feeling']);
+      $action = implode(",", $_POST['action']);
      
     $sql = "INSERT INTO heroku_3fa92357decd51e.logdet (userid,individual,need,actions) VALUES('$userId','$stakekeholder','$feeling','$action')";
     
