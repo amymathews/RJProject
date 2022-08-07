@@ -36,7 +36,6 @@ function createwacc () {
         var url = new URL(url_string);
         var userid = url.searchParams.get("WACC");
         var connvar = url.searchParams.get("connVar");
-        jsonObj['connvar'] = connvar;
         jsonObj['userid'] = userid;
         var contentvar = myOption;
         var textonnote = document.getElementById("text_on_note").value;

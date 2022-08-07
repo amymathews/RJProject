@@ -114,7 +114,7 @@
     echo "0 results";
     }
   
-    echo '---'.$conn; exit;
+   
      
     // $highest_id = mysqli_fetch_row(mysqli_query($conn,'SELECT MAX(userId) FROM  heroku_3fa92357decd51e.userdet LIMIT 1'), 0);
 
