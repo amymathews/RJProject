@@ -30,7 +30,7 @@ jsonObj['feeling'] = new Array();
 jsonObj['action'] = new Array();
 
 // double click deletion function on the sticky note
-function createwacc () {
+function createwacc (counter) {
 
         var url_string = window.location.href
         var url = new URL(url_string);
@@ -53,23 +53,25 @@ function createwacc () {
         jsonObj['stakeholder'].push(stakeholderop);
         jsonObj['feeling'].push(feelingop);
         jsonObj['action'].push(actionop);
-    
-        // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
         alert(JSON.stringify(jsonObj));
     
-            $.ajax({
-            url: './sninsert.php',    //the page containing php script
-            type: 'POST',    //request type,
-            // dataType: 'json',
-            data: jsonObj,
-            success:function(output){
-                console.log('success'+output);
-            },
-            error:function(error){
-                console.log('The error is-->'+JSON.stringify(error));
-        
-            }
-        });
+        // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
+        if(counter > 3) {
+       
+                $.ajax({
+                url: './sninsert.php',    //the page containing php script
+                type: 'POST',    //request type,
+                // dataType: 'json',
+                data: jsonObj,
+                success:function(output){
+                    console.log('success'+output);
+                },
+                error:function(error){
+                    console.log('The error is-->'+JSON.stringify(error));
+            
+                }
+                 });
+        }
        
     }
 function double_click(event, d){
@@ -119,6 +121,7 @@ function clickFunc(event, d){
     }
     else if(nextCounter >3){
         alert("end of questions! Redirecting to next page");
+        createwacc(nextCounter);
         pairing();
 
         nextCounter=1;
