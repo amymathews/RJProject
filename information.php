@@ -96,7 +96,7 @@
      $feeling = $_POST['feeling'];
     $sql = "INSERT INTO heroku_3fa92357decd51e.userdet ( username,what_happened,feelings) VALUES ('Test23', '$story','$feeling')";
     if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully";
+       // echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
