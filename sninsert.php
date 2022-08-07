@@ -1,24 +1,25 @@
 <?php
+echo "Hi";
 
-if( $_POST ) {
+// if( $_POST ) {
  
-   //   print_r($_POST);
-   $userId = $_POST['userid'];
-   $stakekeholder = $_POST['stakeholder'];
-   $feeling = $_POST['feeling'];
-   $action = $_POST['action'];
-   $file_name = '/Users/amymathews/Documents/GitHub/phpTest/data.txt';
-   $mySingleStr = $userId.'-'. $stakekeholder.'-'.$feeling.'-'.$action.'\n';
-   //opens the file.txt file or implicitly creates the file
-   $myfile = fopen($file_name, 'w') or die('Cannot open file: '.$file_name);
+//    //   print_r($_POST);
+//    $userId = $_POST['userid'];
+//    $stakekeholder = $_POST['stakeholder'];
+//    $feeling = $_POST['feeling'];
+//    $action = $_POST['action'];
+//    $file_name = '/Users/amymathews/Documents/GitHub/phpTest/data.txt';
+//    $mySingleStr = $userId.'-'. $stakekeholder.'-'.$feeling.'-'.$action.'\n';
+//    //opens the file.txt file or implicitly creates the file
+//    $myfile = fopen($file_name, 'w') or die('Cannot open file: '.$file_name);
   
-   $ff=fwrite($myfile, $mySingleStr);
-   echo 'file pointer'.$myfile.'----'.$ff;
-   fclose($myfile);
-}
-else {
-   echo "error";
-}
+//    $ff=fwrite($myfile, $mySingleStr);
+//    echo 'file pointer'.$myfile.'----'.$ff;
+//    fclose($myfile);
+// }
+// else {
+//    echo "error";
+// }
    // //  Get Heroku ClearDB connection information
    //  $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
    //  $cleardb_server = $cleardb_url["host"];

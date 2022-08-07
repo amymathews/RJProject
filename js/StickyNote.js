@@ -23,15 +23,18 @@ let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote lay
 let nextCounter=2;
 let backCounter =1;
 let myOption='stakeholder';
+var jsonObj = {};
+jsonObj['userid'];
+jsonObj['stakeholder'] = new Array();
+jsonObj['feeling'] = new Array();
+jsonObj['action'] = new Array();
 
 // double click deletion function on the sticky note
 function createwacc () {
 
-        var jsonObj = {};
         var url_string = window.location.href
         var url = new URL(url_string);
         var userid = url.searchParams.get("WACC");
-        jsonObj['userid'] = userid;
         var contentvar = myOption;
         var textonnote = document.getElementById("text_on_note").value;
         var stakeholderop='';
@@ -45,9 +48,9 @@ function createwacc () {
         } else if ( contentvar == "action") {
             actionop = textonnote;
         }
-        jsonObj['stakeholder'] = stakeholderop;
-        jsonObj['feeling'] = feelingop;
-        jsonObj['action'] = actionop;
+        jsonObj['stakeholder'].push(stakeholderop);
+        jsonObj['feeling'].push(feelingop);
+        jsonObj['action'].push(actionop);
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
         alert(JSON.stringify(jsonObj));
