@@ -120,9 +120,8 @@
       // mysqli_close($conn);
       
     // header("Location: /stickynote.php?WACC=".$highest_id);
-    header("Location: /stickynote.php?WACC=".$highest_id."&connVar=".$conn);
-
+    header("Location: /stickynote.php?WACC=".$highest_id);
+    // ."&connVar=".$conn
     exit;
 }
-
 ?>
