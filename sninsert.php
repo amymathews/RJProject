@@ -42,7 +42,6 @@ echo "Hi";
      if( $_POST ) {
  
       //   print_r($_POST);
-      echo $_POST['stakekeholder'];
       $userId = $_POST['userid'];
       $stakekeholder = $_POST['stakeholder'];
       $feeling = $_POST['feeling'];
