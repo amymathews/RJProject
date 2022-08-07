@@ -1,5 +1,5 @@
 <?php
-echo "Hi";
+
 
 // if( $_POST ) {
  
@@ -29,11 +29,14 @@ echo "Hi";
     $active_group = 'default';
     $query_builder = TRUE;
     // Connect to DB
-    $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+    $conn = $_POST['connvar'];
+
+   //  $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
         if (!$conn) {
-         echo "connection failed";
-        die("Connection failed: " . mysqli_connect_error());
+        // echo "connection failed";
+        //die("Connection failed: " . mysqli_connect_error());
+        $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
     }
    
     
@@ -58,6 +61,6 @@ echo "Hi";
        echo "here--eror";
     }
     // $highest_id = mysqli_fetch_row(mysqli_query($conn,'SELECT MAX(userId) FROM  heroku_3fa92357decd51e.userdet LIMIT 1'), 0);
-       mysqli_close($conn);
+     //  mysqli_close($conn);
    }
 ?>
