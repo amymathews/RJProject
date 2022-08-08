@@ -312,7 +312,7 @@ function main() {
             $.ajax({
                 url: './matchsn.php',    //the page containing php script
                 type: 'POST',    //request type,
-                data: {new_note : content, 
+                data: {note : content, 
                     userid: userid},
                 success:function(output){
                     console.log('success'+output);
