@@ -9,13 +9,14 @@ function start() {
 
 function end() {
   endTime = new Date().getTime();
-  alert(endTime);
+  var time = startTime-endTime;
+  alert(time);
 
 }
 
-function tottime(){
-    alert(startTime);
-    alert(endTime);
-    var time = startTime-endTime;
-    alert(time);
-}
+// function tottime(){
+//     alert(startTime);
+//     alert(endTime);
+//     var time = startTime-endTime;
+//     alert(time);
+// }
