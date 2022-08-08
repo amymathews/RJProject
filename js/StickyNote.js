@@ -43,6 +43,7 @@ function createwacc (counter) {
         var stakeholderop='';
         var feelingop='';
         var actionop='';
+    
         if (contentvar == "stakeholder") { 
             stakeholderop  = textonnote;
         } else if (contentvar == "feeling") {
@@ -53,7 +54,7 @@ function createwacc (counter) {
         jsonObj['stakeholder'].push(stakeholderop);
         jsonObj['feeling'].push(feelingop);
         jsonObj['action'].push(actionop);
-        // alert(JSON.stringify(jsonObj));
+        alert(JSON.stringify(jsonObj));
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
         if(counter > 3) {
@@ -308,16 +309,10 @@ function main() {
                 .call(drag).on("click", ()=>{})
                 .on("dblclick", double_click);
             document.getElementById("outcometype").value = "";
-            var url_string = window.location.href
-            var url = new URL(url_string);
-            var userid = url.searchParams.get("WACC");
-    
-        
             $.ajax({
                 url: './matchsn.php',    //the page containing php script
                 type: 'POST',    //request type,
-                data: note,
-                // data: { note: new_note, userid: userid},
+                data: new_note,
                 success:function(output){
                     console.log('success'+output);
                 },
