@@ -316,7 +316,7 @@ function main() {
                     console.log('success'+output);
                 },
                 error:function(error){
-                    console.log('The error is-->'+JSON.stringify(error));
+                console.log('The error is here at the combine -->'+JSON.stringify(error));
             
                 }
                  });
