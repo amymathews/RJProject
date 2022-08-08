@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+startcounting();
 <form action = "<?php $_PHP_SELF ?>" method = "POST">
     <div class="container">
         <p>First, we would like to ask you to share about online harm that you have experienced.</p> 
