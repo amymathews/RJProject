@@ -1,49 +1,18 @@
-var timer;
-var timerStart;
-var timeSpentOnSite = getTimeSpentOnSite();
+var startTime, endTime;
 
-function getTimeSpentOnSite(){
-    timeSpentOnSite = parseInt(localStorage.getItem('timeSpentOnSite'));
-    timeSpentOnSite = isNaN(timeSpentOnSite) ? 0 : timeSpentOnSite;
-    return timeSpentOnSite;
-}
+function start() {
+    alert("here at start!");
+  startTime = new Date();
+};
 
-function startCounting(){
-    alert("Here");
-    timerStart = Date.now();
-    timer = setInterval(function(){
-        timeSpentOnSite = getTimeSpentOnSite()+(Date.now()-timerStart);
-        localStorage.setItem('timeSpentOnSite',timeSpentOnSite);
-        timerStart = parseInt(Date.now());
-        // Convert to seconds
-        console.log(parseInt(timeSpentOnSite/1000));
-    },1000);
-}
-var stopCountingWhenWindowIsInactive = true; 
+function end() {
+    alert("here at end");
+  endTime = new Date();
+  var timeDiff = endTime - startTime; //in ms
+  // strip the ms
+  timeDiff /= 1000;
 
-if( stopCountingWhenWindowIsInactive ){
-
-    if( typeof document.hidden !== "undefined" ){
-        var hidden = "hidden", 
-        visibilityChange = "visibilitychange", 
-        visibilityState = "visibilityState";
-    }else if ( typeof document.msHidden !== "undefined" ){
-        var hidden = "msHidden", 
-        visibilityChange = "msvisibilitychange", 
-        visibilityState = "msVisibilityState";
-    }
-    var documentIsHidden = document[hidden];
-
-    document.addEventListener(visibilityChange, function() {
-        if(documentIsHidden != document[hidden]) {
-            if( document[hidden] ){
-                // Window is inactive
-                clearInterval(timer);
-            }else{
-                // Window is active
-                startCounting();
-            }
-            documentIsHidden = document[hidden];
-        }
-    });
+  // get seconds 
+  var seconds = Math.round(timeDiff);
+  console.log(seconds + " seconds");
 }

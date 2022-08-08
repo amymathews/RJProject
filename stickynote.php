@@ -5,6 +5,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/d3.v6.min.js"></script>
 	<script src="js/FileSaver.js"></script>
+	<script src = "time.js"></script>
 
 	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -85,7 +86,7 @@
 				<div class="to_right"></div>
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
-			<button style="float:right; margin-top:10%" onclick="window.location.href = './complete.html'" >Complete</button>
+			<button style="float:right; margin-top:10%" onclick="window.location.href = './complete.html'; end();" >Complete</button>
 		</div>
 
 	</div>

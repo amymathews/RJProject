@@ -5,7 +5,7 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/d3.v6.min.js"></script>
         <script src="js/FileSaver.js"></script>
-
+        <script src = "time.js"></script>
         <link rel=stylesheet" href="css/w3.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -22,7 +22,7 @@
             <br/>
             <br/>
     
-            <button style="float:right" onclick="window.location.href = './information.php'" >next</button>
+            <button style="float:right" onclick="window.location.href = './information.php'; start();">next</button>
             </div>
     </body>
 </html>

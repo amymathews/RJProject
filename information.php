@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<script type="text/javascript" src="time.js"></script>
-<script language="javascript">
-   startCounting();
-</script>
 <form action = "<?php $_PHP_SELF ?>" method = "POST">
     <div class="container">
         <p>First, we would like to ask you to share about online harm that you have experienced.</p> 
