@@ -3,7 +3,7 @@ var startTime, endTime;
 function start() {
     alert("here at start!");
   startTime = new Date();
-  console.log(startTime)
+  alert(startTime);
 };
 
 function end() {
