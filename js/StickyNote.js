@@ -39,6 +39,7 @@ function getTimeSpentOnSite(){
 }
 
 function startCounting(){
+    alert("Here");
     timerStart = Date.now();
     timer = setInterval(function(){
         timeSpentOnSite = getTimeSpentOnSite()+(Date.now()-timerStart);
