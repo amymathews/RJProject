@@ -1,12 +1,14 @@
-var startTime, endTime;
+
 
 function start() {
+    var startTime;
     alert("here at start!");
   startTime = new Date();
   alert(startTime);
+  end(startTime)
 };
 
-function end() {
+function end(startTime) {
 
     alert("here at end");
   endTime = new Date();
