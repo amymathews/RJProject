@@ -1,12 +1,12 @@
 var startTime, endTime;
 
 function start() {
-  startTime = performance.now();
+  startTime = new Date().getTime();
   tottime(startTime);
 };
 
 function end() {
-  endTime = performance.now();
+  endTime = new Date().getTime();
   tottime(endTime);
 }
 
