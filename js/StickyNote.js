@@ -317,7 +317,7 @@ function main() {
             $.ajax({
                 url: './matchsn.php',    //the page containing php script
                 type: 'POST',    //request type,
-                data: jobject,
+                data: {new_note, jobject},
                 success:function(output){
                     console.log('success'+output);
                 },
