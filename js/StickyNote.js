@@ -43,7 +43,6 @@ function createwacc (counter) {
         var stakeholderop='';
         var feelingop='';
         var actionop='';
-    
         if (contentvar == "stakeholder") { 
             stakeholderop  = textonnote;
         } else if (contentvar == "feeling") {
@@ -309,10 +308,14 @@ function main() {
                 .call(drag).on("click", ()=>{})
                 .on("dblclick", double_click);
             document.getElementById("outcometype").value = "";
+            var url_string = window.location.href
+            var url = new URL(url_string);
+            var userid = url.searchParams.get("WACC");
+        jsonObj['userid'] = userid;
             $.ajax({
                 url: './matchsn.php',    //the page containing php script
                 type: 'POST',    //request type,
-                data: new_note,
+                data: { note: new_note, userId: userid},
                 success:function(output){
                     console.log('success'+output);
                 },

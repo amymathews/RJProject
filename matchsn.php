@@ -25,9 +25,9 @@ echo "Hi";
     echo "We are here";
 //       //   print_r($_POST);
       $userId = $_POST['userid'];
-      $notes = $_POST['content'];
+      $notes = $_POST['note'];
      
-    $sql = "INSERT INTO heroku_3fa92357decd51e.matchsn (notes_created) VALUES ('$notes')";
+    $sql = "INSERT INTO heroku_3fa92357decd51e.matchsn (notes_created, userid) VALUES ('$notes', 'userId')";
     
 
 
