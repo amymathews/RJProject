@@ -54,7 +54,7 @@ function createwacc (counter) {
         jsonObj['stakeholder'].push(stakeholderop);
         jsonObj['feeling'].push(feelingop);
         jsonObj['action'].push(actionop);
-        alert(JSON.stringify(jsonObj));
+        // alert(JSON.stringify(jsonObj));
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
         if(counter > 3) {

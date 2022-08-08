@@ -22,7 +22,7 @@
             <br/>
             <br/>
     
-            <button style="float:right" onclick="window.location.href = './information.php'; start();">next</button>
+            <button style="float:right" onclick="window.location.href = './information.php'; ">next</button>
             </div>
     </body>
 </html>
