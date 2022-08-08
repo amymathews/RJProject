@@ -29,14 +29,12 @@ jsonObj['stakeholder'] = new Array();
 jsonObj['feeling'] = new Array();
 jsonObj['action'] = new Array();
 
-
 // double click deletion function on the sticky note
 function createwacc (counter) {
 
         var url_string = window.location.href
         var url = new URL(url_string);
         var userid = url.searchParams.get("WACC");
-        var connvar = url.searchParams.get("connVar");
         jsonObj['userid'] = userid;
         var contentvar = myOption;
         var textonnote = document.getElementById("text_on_note").value;
@@ -54,7 +52,6 @@ function createwacc (counter) {
         jsonObj['stakeholder'].push(stakeholderop);
         jsonObj['feeling'].push(feelingop);
         jsonObj['action'].push(actionop);
-        alert(JSON.stringify(jsonObj));
     
         // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
         if(counter > 3) {
@@ -276,6 +273,9 @@ function main() {
         })
         // create combined sticky notes
         d3.select('#combine').on('click',()=> {
+            var url_string = window.location.href
+            var url = new URL(url_string);
+            var userid = url.searchParams.get("WACC");
             let new_note = {"type": "event","content": "","index": 0}
             new_note["index"] = stickyNoteCount["event"];
             stickyNoteCount["event"] += 1;
@@ -312,7 +312,8 @@ function main() {
             $.ajax({
                 url: './matchsn.php',    //the page containing php script
                 type: 'POST',    //request type,
-                data: new_note,
+                data: {new_note : content, 
+                    userid: userid},
                 success:function(output){
                     console.log('success'+output);
                 },

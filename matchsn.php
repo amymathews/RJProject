@@ -24,11 +24,11 @@ echo "Hi";
   if( $_POST ) {
  
 //       //   print_r($_POST);
-      // $userid = $_POST['userid'];
+      $userid = $_POST['userid'];
       // $notes = implode($_POST['note']);
       $notes = $_POST['note'];
      
-    $sql = "INSERT INTO heroku_3fa92357decd51e.matchsn ( notes_created) VALUES ( '$notes')";
+    $sql = "INSERT INTO heroku_3fa92357decd51e.matchsn ( notes_created, userid) VALUES ( '$notes', '$userid')";
     
 
 
