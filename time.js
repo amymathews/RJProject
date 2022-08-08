@@ -1,7 +1,7 @@
 var startTime, endTime;
 
 function start() {
-  startTime = new Date().getTime();
+  startTime = new Date();
   alert("st", startTime);
 
   
