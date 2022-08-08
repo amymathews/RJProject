@@ -2,7 +2,7 @@ var startTime, endTime;
 
 function start() {
   startTime = new Date();
-  alert("st", startTime);
+  alert(startTime);
 
   
 };
