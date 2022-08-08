@@ -311,7 +311,7 @@ function main() {
             var url_string = window.location.href
             var url = new URL(url_string);
             var userid = url.searchParams.get("WACC");
-        jsonObj['userid'] = userid;
+        
             $.ajax({
                 url: './matchsn.php',    //the page containing php script
                 type: 'POST',    //request type,
