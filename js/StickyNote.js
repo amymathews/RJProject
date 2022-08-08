@@ -308,6 +308,18 @@ function main() {
                 .call(drag).on("click", ()=>{})
                 .on("dblclick", double_click);
             document.getElementById("outcometype").value = "";
+            $.ajax({
+                url: './matchsn.php',    //the page containing php script
+                type: 'POST',    //request type,
+                data: new_note,
+                success:function(output){
+                    console.log('success'+output);
+                },
+                error:function(error){
+                    console.log('The error is-->'+JSON.stringify(error));
+            
+                }
+                 });
         })
         d3.select('#next').on("click",()=>{
             pairing();
