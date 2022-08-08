@@ -27,17 +27,17 @@ echo "Hi";
 //       $userId = $_POST['userid'];
       $notes = $_POST['content'];
      
-    $sql = "INSERT INTO heroku_3fa92357decd51e.matchsn (notes) VALUES ('$notes')";
+    $sql = "INSERT INTO heroku_3fa92357decd51e.matchsn (notes_created) VALUES ('$notes')";
     
 
 
-//     if (mysqli_query($conn, $sql)) {
-//         echo "New record created successfully";
-//     } else {
-//        // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-//        echo "here--eror";
-//     }
+    if (mysqli_query($conn, $sql)) {
+        echo "New record created successfully";
+    } else {
+       // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+       echo "here--eror";
+    }
     
-//       mysqli_close($conn);
+      mysqli_close($conn);
   }
 ?>
