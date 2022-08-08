@@ -311,12 +311,12 @@ function main() {
             var url_string = window.location.href
             var url = new URL(url_string);
             var userid = url.searchParams.get("WACC");
-            alert(userid);
+    
         
             $.ajax({
                 url: './matchsn.php',    //the page containing php script
                 type: 'POST',    //request type,
-                data: { note: new_note, userId: userid},
+                data: { note: new_note, userid: userid},
                 success:function(output){
                     console.log('success'+output);
                 },
