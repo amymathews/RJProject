@@ -7,9 +7,11 @@ function start() {
 };
 
 function end() {
+
     alert("here at end");
   endTime = new Date();
-  var timeDiff = endTime - startTime; //in ms
+  alert(endTime);
+  var timeDiff = endTime.getTime() - startTime.getTime(); //in ms
   // strip the ms
   timeDiff /= 1000;
   alert(timeDiff);
