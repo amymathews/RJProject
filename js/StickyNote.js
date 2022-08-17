@@ -125,6 +125,7 @@ function clickFunc(event, d){
         nextCounter=1;
     }
     nextCounter++;
+    alert(nextCounter);
     
 }
 function backClick(event, d){
@@ -146,10 +147,11 @@ function backClick(event, d){
 
     else if(backCounter >3){
         alert("You have reached the begiining of the questions!")
-        backCounter=0;
+        backCounter= 0;
     }
     
     backCounter++;
+    alert(backCounter);
     
 }
 
