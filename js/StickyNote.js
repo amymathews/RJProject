@@ -102,7 +102,9 @@ function clickFunc(event, d){
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
-        
+
+        nextCounter = nextCounter +1;
+
     }
     if(nextCounter==2){ 
         let type = 'feeling';
@@ -136,6 +138,8 @@ function backClick(event, d){
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
+        backCounter = backCounter + 1;
+
        
     }
     if(backCounter==2){ 
@@ -143,15 +147,15 @@ function backClick(event, d){
         myOption = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
+        backCounter = backCounter + 1;
         
     }
 
     else if(backCounter >3){
         alert("You have reached the begiining of the questions!")
-        backCounter= 0;
+        backCounter= 1;
     }
     
-    backCounter++;
     alert(backCounter);
     
 }
