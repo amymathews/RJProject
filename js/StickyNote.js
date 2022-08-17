@@ -109,7 +109,7 @@ function clickFunc(event, d){
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
-        nextCounter == 3;
+            nextCounter = nextCounter +1;
        
     }
     else if(nextCounter==3){ 
@@ -117,7 +117,7 @@ function clickFunc(event, d){
         myOption = 'action';
         d3.select("#question")
             .text(data.questions[type]); 
-        nextCounter == 4;      
+            nextCounter = nextCounter +1;    
     }
     else if(nextCounter >3){
         alert("end of questions! Redirecting to next page");
