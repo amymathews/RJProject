@@ -98,24 +98,26 @@ function double_click(event, d){
 
 
 function clickFunc(event, d){
-    // if(nextCounter==1){ 
-    //     let type = 'stakeholder';
-    //     d3.select("#question")
-    //         .text(data.questions[type]);
+    if(nextCounter==1){ 
+        let type = 'stakeholder';
+        d3.select("#question")
+            .text(data.questions[type]);
         
-    // }
+    }
     if(nextCounter==2){ 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
+        nextCounter == 3;
        
     }
     else if(nextCounter==3){ 
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
-            .text(data.questions[type]);       
+            .text(data.questions[type]); 
+        nextCounter == 4;      
     }
     else if(nextCounter >3){
         alert("end of questions! Redirecting to next page");
@@ -124,7 +126,6 @@ function clickFunc(event, d){
 
         nextCounter=1;
     }
-    nextCounter++;
     alert(nextCounter);
     
 }
