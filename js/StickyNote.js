@@ -102,43 +102,39 @@ function clickFunc(event, d){
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
-
-        nextCounter = nextCounter +1;
-
     }
     if(nextCounter==2){ 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
-            .text(data.questions[type]);
-            nextCounter = nextCounter +1;
-       
+            .text(data.questions[type]);       
     }
     else if(nextCounter==3){ 
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
             .text(data.questions[type]); 
-            nextCounter = nextCounter +1;    
     }
     else if(nextCounter >3){
         alert("end of questions! Redirecting to next page");
         createwacc(nextCounter);
         pairing();
 
-        nextCounter=1;
+        nextCounter=0;
     }
     alert(nextCounter);
+    nextCounter = nextCounter +1;
+
     
 }
 function backClick(event, d){
     
-    if(backCounter==1) { 
+    if(backCounter== 1) { 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
-        backCounter = backCounter + 1;
+
 
        
     }
@@ -147,15 +143,15 @@ function backClick(event, d){
         myOption = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
-        backCounter = backCounter + 1;
         
     }
 
     else if(backCounter >3){
         alert("You have reached the begiining of the questions!")
-        backCounter= 1;
+        backCounter= 0;
     }
     
+    backCounter = backCounter + 1;
     alert(backCounter);
     
 }
