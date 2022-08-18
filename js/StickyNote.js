@@ -102,7 +102,7 @@ function clickFunc(event, d){
     alert("_counter" + _counter);
     if (_counter>3){
     return;
-    }x
+    }
     _counter++;
     if(_counter==1){ 
         let type = 'stakeholder';
