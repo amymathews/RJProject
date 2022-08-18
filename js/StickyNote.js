@@ -22,6 +22,7 @@ let feelings,stakeholders,actions;// array to be bound with datalist
 let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote layout and event layout
 let nextCounter=2;
 let backCounter =1;
+let counter = 1;
 let myOption='stakeholder';
 var jsonObj = {};
 jsonObj['userid'];
@@ -98,44 +99,41 @@ function double_click(event, d){
 
 
 function clickFunc(event, d){
-    if(nextCounter==1){ 
+    counter++;
+    if(counter==1){ 
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
+        
     }
-    if(nextCounter==2){ 
+    if(counter==2){ 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
-            .text(data.questions[type]);       
+            .text(data.questions[type]);
+       
     }
-    else if(nextCounter==3){ 
+    else if(counter==3){ 
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
-            .text(data.questions[type]); 
+            .text(data.questions[type]);       
     }
-    else if(nextCounter >3){
+    else if(counter >3){
         alert("end of questions! Redirecting to next page");
         createwacc(nextCounter);
         pairing();
-
-        nextCounter=0;
     }
-    alert(nextCounter);
-    nextCounter = nextCounter +1;
-
+    alert("nextcounter: " + nextCounter);
     
 }
 function backClick(event, d){
     
-    if(backCounter== 1) { 
+    if(backCounter==1) { 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
-
-
        
     }
     if(backCounter==2){ 
@@ -151,8 +149,8 @@ function backClick(event, d){
         backCounter= 0;
     }
     
-    backCounter = backCounter + 1;
-    alert(backCounter);
+    backCounter++;
+    alert("backcounter: " + backCounter);
     
 }
 
