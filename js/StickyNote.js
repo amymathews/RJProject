@@ -102,7 +102,7 @@ function clickFunc(event, d){
     alert("_counter" + _counter);
     if (_counter>3){
     return;
-    }
+    }x
     _counter++;
     if(_counter==1){ 
         let type = 'stakeholder';
@@ -125,8 +125,8 @@ function clickFunc(event, d){
     }
     else if(_counter >3){
         alert("end of questions! Redirecting to next page");
-        createwacc(_counter);
-        pairing();
+        // createwacc(_counter);
+        // pairing();
     }
 }
     alert("nextcounter: " + _counter);
