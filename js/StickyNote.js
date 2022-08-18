@@ -99,6 +99,7 @@ function double_click(event, d){
 
 
 function clickFunc(event, d){
+    alert("_counter" + _counter);
     if (_counter>3){
     return;
     }
@@ -122,7 +123,7 @@ function clickFunc(event, d){
         d3.select("#question")
             .text(data.questions[type]);       
     }
-    else if(counter >3){
+    else if(_counter >3){
         alert("end of questions! Redirecting to next page");
         createwacc(_counter);
         pairing();
@@ -132,20 +133,21 @@ function clickFunc(event, d){
     
 function backClick(event, d){
 
+    alert(_counter);
 
-    if (_counter ==1){
+    if (_counter == 0){
         return;
         }
         _counter--;
     
-    if(_counter==1) { 
+    if(_counter==2) { 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
        
     }
-    if(_counter==2){ 
+    if(_counter==1){ 
         let type = 'stakeholder';
         myOption = 'stakeholder';
         d3.select("#question")
@@ -154,7 +156,7 @@ function backClick(event, d){
     }
 
     else if(_counter >3){
-        alert("You have reached the begiining of the questions!")
+        alert("You have reached the begining of the questions!")
     }
     
     alert("backcounter: " + counter);
