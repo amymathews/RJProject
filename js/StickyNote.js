@@ -33,7 +33,8 @@ jsonObj['action'] = new Array();
 
 // function to handle pushing info to back end
 function createwacc () {
-
+    alert("flag" + flag);
+    if (flag == 0){
         var url_string = window.location.href
         var url = new URL(url_string);
         var userid = url.searchParams.get("WACC");
@@ -54,6 +55,7 @@ function createwacc () {
         jsonObj['stakeholder'].push(stakeholderop);
         jsonObj['feeling'].push(feelingop);
         jsonObj['action'].push(actionop);
+    }
     
         if(flag == 1){
             $.ajax({
@@ -98,7 +100,6 @@ function double_click(event, d){
 
 
 function clickFunc(event, d){
-    alert("_counter" + _counter);
     if (_counter>=3){
     return;
     }
@@ -129,8 +130,6 @@ function clickFunc(event, d){
 }
 
 function backClick(event, d){
-
-    alert(_counter);
 
     if (_counter == 1){
         return;
