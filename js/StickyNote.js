@@ -31,7 +31,7 @@ jsonObj['feeling'] = new Array();
 jsonObj['action'] = new Array();
 
 // function to handle pushing info to back end
-function createwacc (counter) {
+function createwacc () {
 
         var url_string = window.location.href
         var url = new URL(url_string);
