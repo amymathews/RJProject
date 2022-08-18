@@ -23,6 +23,7 @@ let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote lay
 let nextCounter=2;
 let backCounter =1;
 let _counter = 1;
+let flag = 0;
 let myOption='stakeholder';
 var jsonObj = {};
 jsonObj['userid'];
@@ -54,19 +55,21 @@ function createwacc () {
         jsonObj['feeling'].push(feelingop);
         jsonObj['action'].push(actionop);
     
-        $.ajax({
-        url: './sninsert.php',    //the page containing php script
-        type: 'POST',    //request type,
-        // dataType: 'json',
-        data: jsonObj,
-        success:function(output){
-            console.log('success '+output);
-        },
-        error:function(error){
-            console.log('The error is--> '+JSON.stringify(error));
-    
+        if(flag == 1){
+            $.ajax({
+            url: './sninsert.php',    //the page containing php script
+            type: 'POST',    //request type,
+            // dataType: 'json',
+            data: jsonObj,
+            success:function(output){
+                console.log('success '+output);
+            },
+            error:function(error){
+                console.log('The error is--> '+JSON.stringify(error));
+        
+            }
+            });
         }
-        });
        
     }
 function double_click(event, d){
@@ -155,7 +158,8 @@ function backClick(event, d){
         
 }
 function doneFunc(event, d){
-    createwacc();
+    flag = 1;
+    createwacc(flag);
     var  topH2 = document.getElementById('pair');
     topH2.scrollIntoView(true);
 
