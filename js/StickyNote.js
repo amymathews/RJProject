@@ -135,7 +135,7 @@ function backClick(event, d){
 
     alert(_counter);
 
-    if (_counter == 0){
+    if (_counter == 1){
         return;
         }
         _counter--;
