@@ -22,7 +22,7 @@ let feelings,stakeholders,actions;// array to be bound with datalist
 let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote layout and event layout
 let nextCounter=2;
 let backCounter =1;
-let counter = 1;
+let _counter = 1;
 let myOption='stakeholder';
 var jsonObj = {};
 jsonObj['userid'];
@@ -99,21 +99,24 @@ function double_click(event, d){
 
 
 function clickFunc(event, d){
-    counter++;
-    if(counter==1){ 
+    if (_counter>3){
+    return;
+    }
+    _counter++;
+    if(_counter==1){ 
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
         
     }
-    if(counter==2){ 
+    if(_counter==2){ 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
        
     }
-    else if(counter==3){ 
+    else if(_counter==3){ 
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
@@ -121,22 +124,28 @@ function clickFunc(event, d){
     }
     else if(counter >3){
         alert("end of questions! Redirecting to next page");
-        createwacc(nextCounter);
+        createwacc(_counter);
         pairing();
     }
-    alert("nextcounter: " + nextCounter);
-    
 }
-function backClick(event, d){
+    alert("nextcounter: " + _counter);
     
-    if(backCounter==1) { 
+function backClick(event, d){
+
+
+    if (_counter ==1){
+        return;
+        }
+        _counter--;
+    
+    if(_counter==1) { 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
        
     }
-    if(backCounter==2){ 
+    if(_counter==2){ 
         let type = 'stakeholder';
         myOption = 'stakeholder';
         d3.select("#question")
@@ -144,13 +153,11 @@ function backClick(event, d){
         
     }
 
-    else if(backCounter >3){
+    else if(_counter >3){
         alert("You have reached the begiining of the questions!")
-        backCounter= 0;
     }
     
-    backCounter++;
-    alert("backcounter: " + backCounter);
+    alert("backcounter: " + counter);
     
 }
 
