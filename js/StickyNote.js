@@ -60,10 +60,10 @@ function createwacc () {
         // dataType: 'json',
         data: jsonObj,
         success:function(output){
-            console.log('success'+output);
+            console.log('success '+output);
         },
         error:function(error){
-            console.log('The error is-->'+JSON.stringify(error));
+            console.log('The error is--> '+JSON.stringify(error));
     
         }
         });
@@ -121,7 +121,6 @@ function clickFunc(event, d){
     }
     else if(_counter >3){
         alert("end of questions!");
-        // createwacc(_counter);
         pairing();
     }
 }
