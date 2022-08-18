@@ -100,7 +100,7 @@ function double_click(event, d){
 
 function clickFunc(event, d){
     alert("_counter" + _counter);
-    if (_counter>3){
+    if (_counter>=3){
     return;
     }
     _counter++;
