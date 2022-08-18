@@ -30,7 +30,7 @@ jsonObj['stakeholder'] = new Array();
 jsonObj['feeling'] = new Array();
 jsonObj['action'] = new Array();
 
-// double click deletion function on the sticky note
+// function to handle pushing info to back end
 function createwacc (counter) {
 
         var url_string = window.location.href
@@ -54,23 +54,19 @@ function createwacc (counter) {
         jsonObj['feeling'].push(feelingop);
         jsonObj['action'].push(actionop);
     
-        // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-        if(counter > 3) {
-       
-                $.ajax({
-                url: './sninsert.php',    //the page containing php script
-                type: 'POST',    //request type,
-                // dataType: 'json',
-                data: jsonObj,
-                success:function(output){
-                    console.log('success'+output);
-                },
-                error:function(error){
-                    console.log('The error is-->'+JSON.stringify(error));
-            
-                }
-                 });
+        $.ajax({
+        url: './sninsert.php',    //the page containing php script
+        type: 'POST',    //request type,
+        // dataType: 'json',
+        data: jsonObj,
+        success:function(output){
+            console.log('success'+output);
+        },
+        error:function(error){
+            console.log('The error is-->'+JSON.stringify(error));
+    
         }
+        });
        
     }
 function double_click(event, d){
@@ -124,13 +120,12 @@ function clickFunc(event, d){
             .text(data.questions[type]);       
     }
     else if(_counter >3){
-        alert("end of questions! Redirecting to next page");
+        alert("end of questions!");
         // createwacc(_counter);
         pairing();
     }
 }
-    alert("nextcounter: " + _counter);
-    
+
 function backClick(event, d){
 
     alert(_counter);
@@ -158,9 +153,14 @@ function backClick(event, d){
     else if(_counter >3){
         alert("You have reached the begining of the questions!")
     }
-    
-    alert("backcounter: " + counter);
-    
+        
+}
+function doneFunc(event, d){
+    createwacc();
+    var  topH2 = document.getElementById('pair');
+    topH2.scrollIntoView(true);
+
+
 }
 
 // draw the predefined sticky notes
@@ -236,8 +236,8 @@ function pairing() {
            .append('option')
            .text(d=>d);
 
-    var  topH2 = document.getElementById('pair');
-    // topH2.scrollIntoView(true);
+    // var  topH2 = document.getElementById('pair');
+    // // topH2.scrollIntoView(true);
 }
 function main() {
     d3.json(data_file).then(function (DATA) {
