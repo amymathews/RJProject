@@ -31,47 +31,46 @@ jsonObj['action'] = new Array();
 
 // double click deletion function on the sticky note
 function createwacc (counter) {
+    var url_string = window.location.href
+    var url = new URL(url_string);
+    var userid = url.searchParams.get("WACC");
+    jsonObj['userid'] = userid;
+    var contentvar = myOption;
+    var textonnote = document.getElementById("text_on_note").value;
+    var stakeholderop='';
+    var feelingop='';
+    var actionop='';
 
-        var url_string = window.location.href
-        var url = new URL(url_string);
-        var userid = url.searchParams.get("WACC");
-        jsonObj['userid'] = userid;
-        var contentvar = myOption;
-        var textonnote = document.getElementById("text_on_note").value;
-        var stakeholderop='';
-        var feelingop='';
-        var actionop='';
-    
-        if (contentvar == "stakeholder") { 
-            stakeholderop  = textonnote;
-        } else if (contentvar == "feeling") {
-            feelingop = textonnote;
-        } else if ( contentvar == "action") {
-            actionop = textonnote;
-        }
-        jsonObj['stakeholder'].push(stakeholderop);
-        jsonObj['feeling'].push(feelingop);
-        jsonObj['action'].push(actionop);
-    
-        // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
-        if(counter > 3) {
-       
-                $.ajax({
-                url: './sninsert.php',    //the page containing php script
-                type: 'POST',    //request type,
-                // dataType: 'json',
-                data: jsonObj,
-                success:function(output){
-                    console.log('success'+output);
-                },
-                error:function(error){
-                    console.log('The error is-->'+JSON.stringify(error));
-            
-                }
-                 });
-        }
-       
+    if (contentvar == "stakeholder") { 
+        stakeholderop  = textonnote;
+    } else if (contentvar == "feeling") {
+        feelingop = textonnote;
+    } else if ( contentvar == "action") {
+        actionop = textonnote;
     }
+    jsonObj['stakeholder'].push(stakeholderop);
+    jsonObj['feeling'].push(feelingop);
+    jsonObj['action'].push(actionop);
+
+    // {userid: userid, action: actionop, feeling: feelingop, stakeholder: stakeholderop}
+    if(counter > 3) {
+        $.ajax({
+            url: './sninsert.php',    //the page containing php script
+            type: 'POST',    //request type,
+            // dataType: 'json',
+            data: jsonObj,
+            success:function(output){
+                console.log('success'+output);
+            },
+            error:function(error){
+                console.log('The error is-->'+JSON.stringify(error));
+        
+            }
+        });
+    }
+    // clear input value
+    document.getElementById("text_on_note").value = "";
+}
 function double_click(event, d){
     let r=confirm("Do you want to delete this sticky note?");
     if (r==true){
@@ -279,9 +278,9 @@ function main() {
             let new_note = {"type": "event","content": "","index": 0}
             new_note["index"] = stickyNoteCount["event"];
             stickyNoteCount["event"] += 1;
-            let content = "I hope \""
+            let content = "Stakeholder: \""
             content += document.getElementById("stakeholdertype").value;
-            content += "\"\ncan achieve \""
+            content += "\"\nTo do: \""
             content += document.getElementById("outcometype").value;
             content += "\"."
             new_note["content"] = content;

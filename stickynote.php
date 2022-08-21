@@ -21,9 +21,9 @@
 	<div class="content">
 		<div class="container">
 			<div id="category_title" style="position:absolute;margin-left:27%;width:60%;display:flex;font-size:18px">
-				<p style="margin-left:5%">stakeholders</p>
-				<p style="margin-left:17%">feelings</p>
-				<p style="margin-left:18%">desired outcomes</p>
+				<p style="margin-left:5%">1) stakeholders</p>
+				<p style="margin-left:17%">2) feelings</p>
+				<p style="margin-left:18%">3) desired outcomes</p>
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
@@ -62,13 +62,13 @@
 		<div class="container" id='pair'>
 			<p>Please match the need to the stakeholder:</p>
 			<br/>
-			<label for="outcometype">Need:</label>
-			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
-			<datalist id="outcome">
-			</datalist>
 			<label for="stakeholdertype">Stakeholder: </label>
 			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="stakeholder">
+			</datalist>
+			<label for="outcometype">To do:</label>
+			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
+			<datalist id="outcome">
 			</datalist>
 			
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
