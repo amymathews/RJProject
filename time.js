@@ -1,14 +1,14 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
-// var currmin = 0;
+var currmin;
 // console.log("currmin: " + currmin);
 function start() {
 
 if( timeflag == 0){
   console.log("flag is 0");
   startTime = new Date();
-  var currmin = startTime.getMinutes();
+  currmin = startTime.getMinutes();
   console.log("currmin: " + currmin);
 
 //   var currmin = parseInt(startTime.getMinutes());
