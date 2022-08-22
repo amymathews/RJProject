@@ -7,10 +7,26 @@
         "action": "3) Desired outcomes: \n What are some desired outcome for addressing the harm (e.g., I hope the offender can be banned)?"
     },
     "prompts": {
-        "offender": ["Seek information on offenders’ motives for conducting harm","Acknowledge wrong-doing and issue apology"],
-        "family and friends": ["Seek advice on how to address the harm", "Emotional support"],
-        "online platform": ["Seek advice on how to address the harm","Show stance against harm","Content moderation","Improve design and moderation"],
-        "online community members": ["Emotional support","Show stance against harm","Report or call out offenders","Raise public awareness"]
+        "offender": [
+            "Seek information on offenders’ motives for conducting harm",
+            "Acknowledge wrong-doing and issue apology"
+        ],
+        "family and friends": [
+            "Seek advice on how to address the harm",
+            "Emotional support"
+        ],
+        "online platform": [
+            "Seek advice on how to address the harm",
+            "Show stance against harm",
+            "Content moderation",
+            "Improve design and moderation"
+        ],
+        "online community members": [
+            "Emotional support",
+            "Show stance against harm",
+            "Report or call out offenders",
+            "Raise public awareness"
+        ]
     },
     "discarded" : {
         "prompts": {

@@ -68,13 +68,10 @@ function createwacc () {
         },
         error:function(error){
             console.log('The error is--> '+JSON.stringify(error));
-    
         }
         });
+        pairing();
     }
-    
-    // clear input value
-    document.getElementById("text_on_note").value = "";
 }
 
 // double click deletion function on the sticky note
@@ -154,17 +151,16 @@ function backClick(event, d){
     }
 
     else if(_counter >3){
-        alert("You have reached the begining of the questions!")
+        alert("You have reached the beginning of the questions!")
     }
         
 }
 function doneFunc(event, d){
     flag = 1;
     createwacc(flag);
+
     var  topH2 = document.getElementById('pair');
     topH2.scrollIntoView(true);
-
-
 }
 
 // draw the predefined sticky notes
@@ -217,6 +213,7 @@ function pairing() {
                 else return;
             }
         ).concat(Object.keys(data.prompts)))).sort().filter(d=>{return d});
+    console.log(stakeholders)
     d3.select('#stakeholder')
            .selectAll('option')
            .data(stakeholders)
@@ -248,7 +245,6 @@ function main() {
         // create new sticky notes
         d3.select('#create').on('click',()=> {
             let new_note = {"type": "","content": "","index": 0};
-            //new_note["type"] = document.getElementById("notetype").value;
             new_note["type"] = myOption;
             new_note["index"] = stickyNoteCount[new_note["type"]];
             stickyNoteCount[new_note["type"]] += 1;
@@ -268,13 +264,16 @@ function main() {
                 .style('color',"black")
                 .call(drag).on("click", ()=>{})
                 .on("dblclick", double_click);
+                // clear input value
+                document.getElementById("text_on_note").value = "";
         })
         d3.select('#stakeholdertype')
             .on('change',()=>{
              let stakeholder_ = document.getElementById("stakeholdertype").value;
              if (stakeholder_ in data.prompts){
-                 $("#outcomes").empty();
-                 d3.select('#outcomes')
+                console.log(data.prompts[stakeholder_])
+                 $("#outcome").empty();
+                 d3.select('#outcome')
                     .selectAll('option')
                     .data(data.prompts[stakeholder_])
                     .enter()
@@ -288,8 +287,9 @@ function main() {
                              else return s.content;
                          }
                      )));
-                 $("#outcomes").empty();
-                 d3.select('#outcomes')
+                 console.log(customizedOutcomes)
+                 $("#outcome").empty();
+                 d3.select('#outcome')
                      .selectAll('option')
                      .data(customizedOutcomes)
                      .enter()
@@ -348,7 +348,6 @@ function main() {
             });
         })
         d3.select('#next').on("click",()=>{
-            pairing();
         })
         d3.select('#extend').on("click",()=>{
             d3.select('#timelines')
