@@ -5,24 +5,30 @@ var result;
 function start() {
 
 if( timeflag == 0){
+  console.log("flag is 0");
   startTime = new Date();
+  var currmin = parseInt(startTime.getMinutes());
   console.log("starttime" + startTime);
   
 }
 
     if( timeflag == 1) {
-        
+        console.log("flag is 1");
+
         // let endhour = endTime.getHours();
         // let endmin = endTime.getMinutes();
         // let endsec = endTime.getSeconds();
         // var mintuend = endTime.getMinutes();
-        result = Math.round(((new Date()).getTime() - (startTime.getTime())) / 1000);        
-
+        var endTime = new Date();
+        var endmin = parseInt(endTime.getMinutes);
+        result = endmin - currmin;
         console.log("minutes elapsed" + result);
         
     }
 }
     function switchflag(){
+        console.log("in the switch");
+
         timeflag = 1;
         start();
     }
