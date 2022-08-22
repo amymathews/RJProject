@@ -1,8 +1,8 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
-var currmin = 0;
-console.log("currmin: " + currmin);
+// var currmin = 0;
+// console.log("currmin: " + currmin);
 function start() {
 
 if( timeflag == 0){
@@ -18,6 +18,7 @@ if( timeflag == 0){
 }
 
     if( timeflag == 1) {
+        console.log("type: " + typeof(currmin));
         console.log("flag is 1");
 
         // let endhour = endTime.getHours();
