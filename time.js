@@ -16,7 +16,7 @@ if( timeflag == 0){
         let endsec = endTime.getSeconds();
         var mintuend = endTime.getMinutes();
         console.log("endtime " + endTime);
-        var result = differenceInMinutes(endTime, startTime);
+        var result = Math.abs(endTime-startTime)/36e5;
 
 
         console.log("minutes elapsed" + result);
