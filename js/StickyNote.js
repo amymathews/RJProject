@@ -70,7 +70,6 @@ function createwacc () {
             console.log('The error is--> '+JSON.stringify(error));
         }
         });
-        pairing();
     }
 }
 
@@ -159,8 +158,16 @@ function doneFunc(event, d){
     flag = 1;
     createwacc(flag);
 
-    var  topH2 = document.getElementById('pair');
-    topH2.scrollIntoView(true);
+    pairing();
+    d3.select("#pair")
+        .style("visibility","visible");
+
+    d3.select("#three")
+        .classed("active", false)
+        .classed("completed", true);
+    d3.select("#four")
+        .classed("active", true);
+
 }
 
 // draw the predefined sticky notes
@@ -213,7 +220,6 @@ function pairing() {
                 else return;
             }
         ).concat(Object.keys(data.prompts)))).sort().filter(d=>{return d});
-    console.log(stakeholders)
     d3.select('#stakeholder')
            .selectAll('option')
            .data(stakeholders)
@@ -221,8 +227,6 @@ function pairing() {
            .append('option')
            .text(d=>d);
 
-    var  topH2 = document.getElementById('pair');
-    topH2.scrollIntoView(true);
 }
 function main() {
     d3.json(data_file).then(function (DATA) {
@@ -271,7 +275,6 @@ function main() {
             .on('change',()=>{
              let stakeholder_ = document.getElementById("stakeholdertype").value;
              if (stakeholder_ in data.prompts){
-                console.log(data.prompts[stakeholder_])
                  $("#outcome").empty();
                  d3.select('#outcome')
                     .selectAll('option')
@@ -287,7 +290,6 @@ function main() {
                              else return s.content;
                          }
                      )));
-                 console.log(customizedOutcomes)
                  $("#outcome").empty();
                  d3.select('#outcome')
                      .selectAll('option')
@@ -348,6 +350,14 @@ function main() {
             });
         })
         d3.select('#next').on("click",()=>{
+            d3.select("#four")
+                .classed("active", false)
+                .classed("completed", true);
+            d3.select("#five")
+                .classed("active", true);
+            d3.select("#timelineSection")
+                .style("visibility","visible")
+                .style("margin-top", eventyScale(Math.floor(stickyNoteCount['event']/4)+1)+'px');
         })
         d3.select('#extend').on("click",()=>{
             d3.select('#timelines')

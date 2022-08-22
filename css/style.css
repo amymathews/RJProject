@@ -49,8 +49,8 @@ textarea {
     /*
     display: flex;
     flex-direction: column;*/
-    overflow: auto;
     height: 100%;
+    overflow: auto;
 }
 .title {
     font-size: 1rem;
@@ -61,13 +61,18 @@ textarea {
     padding-left: 10%;
     padding-right: 10%;
     position: relative;
-    overflow: auto;
     height: 100%;
     padding-bottom:5%;
 }
 #events{
     position: absolute;
     text-align: center;
+    visibility: hidden;
+}
+#timelineSection{
+    position: absolute;
+    width: 80%;
+    visibility: hidden;
 }
 #stickynotes{
     position: absolute;
@@ -138,8 +143,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     border-radius: 100%;
     color: #FFF;
   }
-  
-  .tooltip:before,
+
   .tooltip:after {
     position: absolute;
     content: '';
@@ -194,4 +198,93 @@ input[type="range"]::-webkit-slider-thumb:hover {
   
   #anim:hover {
     animation: shake 500ms ease-in-out forwards;
+  }
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .stepper-wrapper {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position:fixed
+    top:0px;
+    left:0px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+
+  .stepper-item.active {
+    font-weight: bold;
+  }
+
+  .stepper-item.completed .step-counter {
+    background-color: lightseagreen;
+  }
+
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid lightseagreen;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
   }
