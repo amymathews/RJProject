@@ -15,10 +15,10 @@ if( timeflag == 0){
         let endmin = endTime.getMinutes();
         let endsec = endTime.getSeconds();
         var mintuend = endTime.getMinutes();
-        console.log("hour" + endhour);
-        console.log("minute" + endmin);
-        console.log("second" + endsec);
-        var result = mintuend-minute;
+        console.log("endtime " + endTime);
+        var result = differenceInMinutes(endTime, startTime);
+
+
         console.log("minutes elapsed" + result);
         
     }
