@@ -1,7 +1,7 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
-
+console.log("currmin: " + currmin);
 function start() {
 
 if( timeflag == 0){
