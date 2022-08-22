@@ -1,7 +1,6 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
-var currmin = 0;
 var currminGlobal = 0;
 function start() {
 
@@ -9,8 +8,7 @@ if( timeflag == 0){
   console.log("flag is 0");
   startTime = new Date();
   currmin = startTime.getMinutes();
-  var current = parseInt(currmin);
-  currminGlobal = current;
+  currminGlobal = currmin;
   console.log("currmin: " + currmin);
   console.log("currminGlobal in flag 0: " + currminGlobal);
 
