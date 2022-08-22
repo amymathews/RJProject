@@ -1,7 +1,7 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
-var currminGlobal;
+var currminGlobal = 0;
 console.log("curminGlobal: " + currminGlobal);
 function start() {
 
