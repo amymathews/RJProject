@@ -7,7 +7,9 @@ function start() {
 if( timeflag == 0){
   console.log("flag is 0");
   startTime = new Date();
-  var currmin = parseInt(startTime.getMinutes());
+  var currmin = startTime.getMinutes();
+//   var currmin = parseInt(startTime.getMinutes());
+  console.log("type: " + typeof(currmin));
   console.log("starttime" + startTime);
   
 }
@@ -20,7 +22,7 @@ if( timeflag == 0){
         // let endsec = endTime.getSeconds();
         // var mintuend = endTime.getMinutes();
         var endTime = new Date();
-        var endmin = parseInt(endTime.getMinutes);
+        var endmin = endTime.getMinutes;
         result = endmin - currmin;
         console.log("minutes elapsed" + result);
         
