@@ -2,8 +2,8 @@
 
 function start() {
   const startTime = new Date();
-  const current = startTime.getMinutes();
-  alert(current);
+  const current = startTime.getMinutes()*60 + startTime.getSeconds();
+  console.log(current);
 
   
 };
