@@ -12,8 +12,8 @@
 <body>
 <form action = "<?php $_PHP_SELF ?>" method = "POST">
     <div class="container">
-        <p>First, we would like to ask you to share about online harm that you have experienced.</p> 
-        <p> Sharing what has happened and reflect on your feelings is an important part of making sense of the harm. </p>
+        <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
+        <p> You and your friend are messaging privately about a sensitive issue. Your friend shares the conversation publicly on a social media account.</p>
 
         
         <div style="display: flex">
@@ -31,15 +31,14 @@
                     <script src="js/app.js"></script>
                 </div>
             </div> -->
-            <div style="position: absolute;margin-left:55%;">
-    
-                <p>q2) How would you describe your feelings after the harm has happened? (e.g. sad😭 angry😠 awkward😓)</p>
-                <textarea id="feeling" name="feeling" rows="8" cols="31"></textarea>
-            </div>
+            <!-- <div style="position: absolute;margin-left:55%;">
+            </div> -->
         </div>
         <div style="margin-top:8%">
-            <p>q1) Using several sentences, can you tell us what has happened in the harm? </p>
-            <textarea id="story" name="story" rows="5" cols="60"></textarea>
+            <p>In several phrases or sentences, how would you describe your feelings after the harm has happened? (e.g. sad😭 angry😠 awkward😓)</p>
+            <textarea id="feeling" name="feeling" rows="8" cols="31"></textarea>
+            <!-- <p>q1) Using several sentences, can you tell us what has happened in the harm? </p>
+            <textarea id="story" name="story" rows="5" cols="60"></textarea> -->
         </div>
        <button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
     </div>
