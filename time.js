@@ -3,24 +3,24 @@ var timeflag = 0;
 function start() {
 
 if( timeflag == 0){
-  const startTime = new Date();
-  const currhour = startTime.getHours();
-  const currmin = startTime.getMinutes();
-  const currsec = startTime.getSeconds();
+  var startTime = new Date();
+  var currhour = startTime.getHours();
+  var currmin = startTime.getMinutes();
+  var currsec = startTime.getSeconds();
   console.log("hour" + currhour)
   console.log("minute" + currmin);
   console.log("second" + currsec);
 }
 
     if( timeflag == 1) {
-        const endTime = new Date();
-        const endhour = endTime.getHours();
-        const endmin = endTime.getMinutes();
-        const endsec = endTime.getSeconds();
+        var endTime = new Date();
+        var endhour = endTime.getHours();
+        var endmin = endTime.getMinutes();
+        var endsec = endTime.getSeconds();
         console.log("hour" + endhour)
         console.log("minute" + endmin);
         console.log("second" + endsec);
-        const finalmin = currmin-currsec;
+        var finalmin = currmin-currsec;
         console.log("minutes elapsed" + finalmin);
         
     }
