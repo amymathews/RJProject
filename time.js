@@ -23,7 +23,7 @@ if( timeflag == 0){
         // var mintuend = endTime.getMinutes();
         var endTime = new Date();
         var endmin = endTime.getMinutes();
-        result = endmin - currmin;
+        result = (endmin - currmin);
         console.log("minutes elapsed" + result);
         
     }
