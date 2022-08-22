@@ -1,8 +1,8 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
-var currminGlobal;
-// console.log("currmin: " + currmin);
+var currminGlobal =0;
+console.log("curminGlobal: " + currminGlobal);
 function start() {
 
 if( timeflag == 0){
