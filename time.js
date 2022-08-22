@@ -1,9 +1,11 @@
 var timeflag = 0;
+var startTime;
+var result;
 
 function start() {
 
 if( timeflag == 0){
-  var startTime = new Date();
+  startTime = new Date();
   console.log("starttime" + startTime);
   
 }
@@ -14,12 +16,9 @@ if( timeflag == 0){
         // let endmin = endTime.getMinutes();
         // let endsec = endTime.getSeconds();
         // var mintuend = endTime.getMinutes();
-        var result = (new Date()).getTime()- startTime.getTime();
-        result /= 1000;
-        var seconds = Math.round(result);
+        result = Math.round(((new Date()).getTime() - startTime.getTime()) / 1000);        
 
-
-        console.log("minutes elapsed" + seconds);
+        console.log("minutes elapsed" + result);
         
     }
 }
