@@ -13,21 +13,21 @@ if( timeflag == 0){
 //   var currmin = parseInt(startTime.getMinutes());
   
 }
-
-    if( timeflag == 1) {
-        console.log("curminGlobal in flag 1: " + currminGlobal);
-        console.log("flag is 1");
-        var endTime = new Date();
-        var endmin = endTime.getMinutes();
-        result = (endmin - currminGlobal);
-        console.log("minutes elapsed" + result);
-        
-    }
-    return;
+if(timeflag == 1){
+    endtime(currminGlobal);
 }
-    function switchflag(){
-        console.log("in the switch");
+}
 
-        timeflag = 1;
-        start();
-    }
+function endtime(a){
+    console.log("a: " + a)
+    end = new Date();
+    var endmin = end.getMinutes();
+    result = endmin - a;
+    console.log("result: " + result);
+
+}
+function switchflag(){
+    console.log("in the switch");
+    timeflag = 1;
+    start();
+}
