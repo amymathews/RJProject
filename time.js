@@ -14,7 +14,7 @@ if( timeflag == 0){
         // let endmin = endTime.getMinutes();
         // let endsec = endTime.getSeconds();
         // var mintuend = endTime.getMinutes();
-        var result = new Date().getTime()- startTime.getTime();
+        var result = (new Date()).getTime()- startTime.getTime();
         result /= 1000;
         var seconds = Math.round(result);
 
