@@ -53,6 +53,9 @@
 					<br><br>
 					<button style="float:right" type = "button" onclick="clickFunc()">Next</button>
 					<button style="float:left" type = "button" onclick="backClick()">Back</button>
+					<br><br>
+					<button style="float:right" type = "button" onclick="doneFunc()">Done</button>
+
 
 				</form>
 			</div>
