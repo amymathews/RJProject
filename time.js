@@ -1,6 +1,7 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
+var currmin = 0;
 console.log("currmin: " + currmin);
 function start() {
 
@@ -8,6 +9,8 @@ if( timeflag == 0){
   console.log("flag is 0");
   startTime = new Date();
   var currmin = startTime.getMinutes();
+  console.log("currmin: " + currmin);
+
 //   var currmin = parseInt(startTime.getMinutes());
   console.log("type: " + typeof(currmin));
   console.log("starttime" + startTime);
