@@ -7,8 +7,10 @@ function start() {
 if( timeflag == 0){
   console.log("flag is 0");
   startTime = new Date();
-  currminGlobal = startTime.getMinutes();
+  currminGlobal = startTime.getMinutes().toString();
+
   console.log("currminGlobal in flag 0: " + currminGlobal);
+  console.log("currglobal type: " + currminGlobal);
 
 //   var currmin = parseInt(startTime.getMinutes());
   
