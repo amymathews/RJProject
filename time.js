@@ -1,4 +1,4 @@
-let timeflag = 0;
+var timeflag = 0;
 
 function start() {
 
