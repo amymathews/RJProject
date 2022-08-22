@@ -7,8 +7,7 @@ function start() {
 if( timeflag == 0){
   console.log("flag is 0");
   startTime = new Date();
-  currmin = startTime.getMinutes();
-  currminGlobal = currmin;
+  currminGlobal = startTime.getMinutes();
   console.log("currmin: " + currmin);
   console.log("currminGlobal in flag 0: " + currminGlobal);
 
