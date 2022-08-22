@@ -3,19 +3,18 @@ var timeflag = 0;
 function start() {
 
 if( timeflag == 0){
-  var startTime = performance.now();
+  var startTime = new Date();
   console.log("starttime" + startTime);
   
 }
 
     if( timeflag == 1) {
-        var endTime = performance.now();
+        
         // let endhour = endTime.getHours();
         // let endmin = endTime.getMinutes();
         // let endsec = endTime.getSeconds();
         // var mintuend = endTime.getMinutes();
-        console.log("endtime " + endTime);
-        var result = endTime-startTime;
+        var result = new Date() - startTime;
         result /= 1000;
         var seconds = Math.round(result);
 
