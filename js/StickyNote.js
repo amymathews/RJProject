@@ -98,6 +98,7 @@ function double_click(event, d){
     }
 }
 
+//frontclick function to go foward questions
 function clickFunc(event, d){
     if (_counter>=3){
     return;
@@ -127,6 +128,7 @@ function clickFunc(event, d){
     }
 }
 
+//backclick function to go back in the questions. 
 function backClick(event, d){
 
     if (_counter == 1){
@@ -154,6 +156,7 @@ function backClick(event, d){
     }
         
 }
+//function that allows the next page to appear 
 function doneFunc(event, d){
     flag = 1;
     createwacc(flag);
@@ -220,8 +223,6 @@ function pairing() {
            .append('option')
            .text(d=>d);
 
-    var  topH2 = document.getElementById('pair');
-    topH2.scrollIntoView(true);
 }
 function main() {
     d3.json(data_file).then(function (DATA) {

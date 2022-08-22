@@ -5,11 +5,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/d3.v6.min.js"></script>
     <script src="js/FileSaver.js"></script>
+    <script src = "./time.js"></script>
 
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script>start()</script>
 <form action = "<?php $_PHP_SELF ?>" method = "POST">
     <div class="container">
         <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
