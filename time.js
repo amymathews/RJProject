@@ -1,7 +1,7 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
-var currminGlobal =0;
+var currminGlobal;
 console.log("curminGlobal: " + currminGlobal);
 function start() {
 
@@ -11,15 +11,16 @@ if( timeflag == 0){
    var currmin = startTime.getMinutes();
    currminGlobal = currmin;
   console.log("currmin: " + currmin);
+  console.log("currminGlobal in flag 0: " + currminGlobal);
 
 //   var currmin = parseInt(startTime.getMinutes());
   console.log("type: " + currmin);
-  console.log("starttime" + startTime);
+
   
 }
 
     if( timeflag == 1) {
-        console.log("curminGlobal: " + currminGlobal);
+        console.log("curminGlobal in flag 1: " + currminGlobal);
         console.log("flag is 1");
 
         // let endhour = endTime.getHours();
