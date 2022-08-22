@@ -3,24 +3,20 @@ var timeflag = 0;
 function start() {
 
 if( timeflag == 0){
-  const startTime = new Date();
-  let currhour = startTime.getHours();
-  let currmin = startTime.getMinutes();
-  let currsec = startTime.getSeconds();
-  console.log("hour" + currhour)
-  console.log("minute" + currmin);
-  console.log("second" + currsec);
+  var startTime = new Date();
+  console.log("starttime" + startTime);
+  
 }
 
     if( timeflag == 1) {
-        const endTime = new Date();
+        var endTime = new Date();
         let endhour = endTime.getHours();
         let endmin = endTime.getMinutes();
         let endsec = endTime.getSeconds();
-        console.log("hour" + endhour)
+        console.log("hour" + endhour);
         console.log("minute" + endmin);
         console.log("second" + endsec);
-        let result = endmin - currmin;
+        var result = (endTime - startTime)/1000;
         console.log("minutes elapsed" + result);
         
     }
