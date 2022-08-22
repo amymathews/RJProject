@@ -33,7 +33,6 @@ jsonObj['action'] = new Array();
 
 // function to handle pushing info to back end
 function createwacc () {
-        
     if (flag == 0){
         var url_string = window.location.href
         var url = new URL(url_string);
@@ -223,9 +222,6 @@ function pairing() {
            .enter()
            .append('option')
            .text(d=>d);
-
-    var  topH2 = document.getElementById('pair');
-    topH2.scrollIntoView(true);
 }
 function main() {
     d3.json(data_file).then(function (DATA) {
