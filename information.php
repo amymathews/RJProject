@@ -5,7 +5,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/d3.v6.min.js"></script>
     <script src="js/FileSaver.js"></script>
-    <script src = "./time.js"></script>
 
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
