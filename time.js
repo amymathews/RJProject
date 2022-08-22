@@ -1,6 +1,6 @@
 var timeflag = 0;
 var startTime;
-var result;
+var result = 0;
 
 function start() {
 
@@ -22,7 +22,7 @@ if( timeflag == 0){
         // let endsec = endTime.getSeconds();
         // var mintuend = endTime.getMinutes();
         var endTime = new Date();
-        var endmin = endTime.getMinutes;
+        var endmin = endTime.getMinutes();
         result = endmin - currmin;
         console.log("minutes elapsed" + result);
         
