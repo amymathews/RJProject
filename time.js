@@ -1,15 +1,15 @@
 var timeflag = 0;
 var startTime;
 var result = 0;
-var currminGlobal = 0;
+var currmin = 0;
+var currminGlobal = currmin;
 console.log("curminGlobal: " + currminGlobal);
 function start() {
 
 if( timeflag == 0){
   console.log("flag is 0");
   startTime = new Date();
-   var currmin = startTime.getMinutes();
-   currminGlobal = currmin;
+  currmin = startTime.getMinutes();
   console.log("currmin: " + currmin);
   console.log("currminGlobal in flag 0: " + currminGlobal);
 
@@ -22,11 +22,6 @@ if( timeflag == 0){
     if( timeflag == 1) {
         console.log("curminGlobal in flag 1: " + currminGlobal);
         console.log("flag is 1");
-
-        // let endhour = endTime.getHours();
-        // let endmin = endTime.getMinutes();
-        // let endsec = endTime.getSeconds();
-        // var mintuend = endTime.getMinutes();
         var endTime = new Date();
         var endmin = endTime.getMinutes();
         result = (endmin - currminGlobal);
