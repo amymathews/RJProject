@@ -16,7 +16,7 @@ if( timeflag == 0){
         // let endmin = endTime.getMinutes();
         // let endsec = endTime.getSeconds();
         // var mintuend = endTime.getMinutes();
-        result = Math.round(((new Date()).getTime() - startTime.getTime()) / 1000);        
+        result = Math.round(((new Date()).getTime() - (startTime.getTime())) / 1000);        
 
         console.log("minutes elapsed" + result);
         
