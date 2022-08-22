@@ -222,6 +222,9 @@ function pairing() {
            .enter()
            .append('option')
            .text(d=>d);
+
+    var  topH2 = document.getElementById('pair');
+    topH2.scrollIntoView(true);
 }
 function main() {
     d3.json(data_file).then(function (DATA) {
