@@ -4,6 +4,7 @@ function start() {
 
 if( timeflag == 0){
   var startTime = new Date();
+  var minute = startTime.getMinutes();
   console.log("starttime" + startTime);
   
 }
@@ -13,10 +14,11 @@ if( timeflag == 0){
         let endhour = endTime.getHours();
         let endmin = endTime.getMinutes();
         let endsec = endTime.getSeconds();
+        var mintuend = endTime.getMinutes();
         console.log("hour" + endhour);
         console.log("minute" + endmin);
         console.log("second" + endsec);
-        var result = (endTime - startTime)/1000;
+        var result = mintuend-minute;
         console.log("minutes elapsed" + result);
         
     }
