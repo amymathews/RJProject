@@ -16,10 +16,12 @@ if( timeflag == 0){
         let endsec = endTime.getSeconds();
         var mintuend = endTime.getMinutes();
         console.log("endtime " + endTime);
-        var result = Math.abs(endTime-startTime)/36e5;
+        var result = endTime-startTime;
+        result /= 1000;
+        var seconds = Math.round(result);
 
 
-        console.log("minutes elapsed" + result);
+        console.log("minutes elapsed" + seconds);
         
     }
 }
