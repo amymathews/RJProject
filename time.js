@@ -10,7 +10,7 @@ if( timeflag == 0){
   currminGlobal = startTime.getMinutes().toString();
 
   console.log("currminGlobal in flag 0: " + currminGlobal);
-  console.log("currglobal type: " + currminGlobal);
+  console.log("currglobal type: " + typeof(currminGlobal));
 
 //   var currmin = parseInt(startTime.getMinutes());
   
