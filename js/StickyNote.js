@@ -29,7 +29,6 @@ jsonObj['stakeholder'] = new Array();
 jsonObj['feeling'] = new Array();
 jsonObj['action'] = new Array();
 
-// double click deletion function on the sticky note
 function createwacc (counter) {
     var url_string = window.location.href
     var url = new URL(url_string);
@@ -68,9 +67,12 @@ function createwacc (counter) {
             }
         });
     }
+    
     // clear input value
     document.getElementById("text_on_note").value = "";
 }
+
+// double click deletion function on the sticky note
 function double_click(event, d){
     let r=confirm("Do you want to delete this sticky note?");
     if (r==true){
@@ -95,20 +97,17 @@ function double_click(event, d){
     }
 }
 
-
 function clickFunc(event, d){
     // if(nextCounter==1){ 
     //     let type = 'stakeholder';
     //     d3.select("#question")
     //         .text(data.questions[type]);
-        
     // }
     if(nextCounter==2){ 
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
-       
     }
     else if(nextCounter==3){ 
         let type = 'action';
@@ -124,8 +123,8 @@ function clickFunc(event, d){
         nextCounter=1;
     }
     nextCounter++;
-    
 }
+
 function backClick(event, d){
     
     if(backCounter==1) { 
@@ -144,7 +143,7 @@ function backClick(event, d){
     }
 
     else if(backCounter >3){
-        alert("You have reached the begiining of the questions!")
+        alert("You have reached the beginning of the questions!")
         backCounter=0;
     }
     
@@ -195,29 +194,13 @@ function draw(notes) {
 
 // combine stakeholder with feeling & action
 function pairing() {
-    outcomes = Array.from(
-        new Set(
-            notes.map( (s) => {
-                if (s.type == "feeling" || s.type == "action") return s.content;
-                else return;
-            }).concat(data.prompts.outcomes)
-        )
-    ).sort().filter(d=>{return d});
-    d3.select('#outcome')
-       .selectAll('option')
-       .data(outcomes)
-       .enter()
-       .append('option')
-       .text(d=>d);
-
     stakeholders = Array.from(
         new Set(
             notes.map( (s) => {
                 if (s.type == "stakeholder") return s.content;
                 else return;
-            }).concat(data.prompts.stakeholders)
-        )
-    ).sort().filter(d=>{return d});
+            }
+        ).concat(Object.keys(data.prompts)))).sort().filter(d=>{return d});
     d3.select('#stakeholder')
            .selectAll('option')
            .data(stakeholders)
@@ -270,6 +253,34 @@ function main() {
                 .call(drag).on("click", ()=>{})
                 .on("dblclick", double_click);
         })
+        d3.select('#stakeholdertype')
+            .on('change',()=>{
+             let stakeholder_ = document.getElementById("stakeholdertype").value;
+             if (stakeholder_ in data.prompts){
+                 $("#outcomes").empty();
+                 d3.select('#outcomes')
+                    .selectAll('option')
+                    .data(data.prompts[stakeholder_])
+                    .enter()
+                    .append('option')
+                    .text(d=>d)
+             } else {
+                let customizedOutcomes = Array.from(
+                     new Set(
+                         notes.map( (s) => {
+                             if (s.type == "stakeholder") return;
+                             else return s.content;
+                         }
+                     )));
+                 $("#outcomes").empty();
+                 d3.select('#outcomes')
+                     .selectAll('option')
+                     .data(customizedOutcomes)
+                     .enter()
+                     .append('option')
+                     .text(d=>d)
+             }
+            })
         // create combined sticky notes
         d3.select('#combine').on('click',()=> {
             var url_string = window.location.href
@@ -278,11 +289,10 @@ function main() {
             let new_note = {"type": "event","content": "","index": 0}
             new_note["index"] = stickyNoteCount["event"];
             stickyNoteCount["event"] += 1;
-            let content = "Stakeholder: \""
+            let content = "Stakeholder: "
             content += document.getElementById("stakeholdertype").value;
-            content += "\"\nTo do: \""
+            content += "\nTo do: "
             content += document.getElementById("outcometype").value;
-            content += "\"."
             new_note["content"] = content;
             notes.push(new_note);
             combined.push(new_note);
@@ -317,10 +327,9 @@ function main() {
                     console.log('success'+output);
                 },
                 error:function(error){
-                console.log('The error is here at the combine -->'+JSON.stringify(error));
-            
+                    console.log('The error is here at the combine -->'+JSON.stringify(error));
                 }
-                 });
+            });
         })
         d3.select('#next').on("click",()=>{
             pairing();
