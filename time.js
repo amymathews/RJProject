@@ -33,6 +33,7 @@ if( timeflag == 0){
         console.log("minutes elapsed" + result);
         
     }
+    return;
 }
     function switchflag(){
         console.log("in the switch");
