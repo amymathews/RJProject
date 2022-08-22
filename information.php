@@ -13,6 +13,23 @@
 <body>
     <script>start()</script>
 <form action = "<?php $_PHP_SELF ?>" method = "POST">
+    <div class="stepper-wrapper">
+        <div class="stepper-item completed">
+            <div class="step-counter">1</div>
+        </div>
+        <div class="stepper-item active">
+            <div class="step-counter">2</div>
+        </div>
+        <div class="stepper-item">
+            <div class="step-counter">3</div>
+        </div>
+        <div class="stepper-item">
+            <div class="step-counter">4</div>
+        </div>
+        <div class="stepper-item">
+            <div class="step-counter">5</div>
+        </div>
+    </div>
     <div class="container">
         <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
         <p> You and your friend are messaging privately about a sensitive issue. Your friend shares the conversation publicly on a social media account.</p>

@@ -10,6 +10,23 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="stepper-wrapper">
+            <div class="stepper-item active">
+                <div class="step-counter">1</div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter">2</div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter">3</div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter">4</div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter">5</div>
+            </div>
+        </div>
         <div class="container">
             
             <p>Welcome to our system! Our system is designed to help people who have experienced online harm (e.g., harassment, bullying, etc) to make sense of the situation.</p>
