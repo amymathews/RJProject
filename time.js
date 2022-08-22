@@ -1,8 +1,8 @@
-let flag = 0;
+let timeflag = 0;
 
 function start() {
 
-if( flag == 0){
+if( timeflag == 0){
   const startTime = new Date();
   const currhour = startTime.getHours();
   const currmin = startTime.getMinutes();
@@ -12,7 +12,7 @@ if( flag == 0){
   console.log("second" + currsec);
 }
 
-    if( flag == 1) {
+    if( timeflag == 1) {
         const endTime = new Date();
         const endhour = endTime.getHours();
         const endmin = endTime.getMinutes();
@@ -26,6 +26,6 @@ if( flag == 0){
     }
 }
     function switchflag(){
-        flag = 1;
+        timeflag = 1;
         start();
     }
