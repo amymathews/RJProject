@@ -14,7 +14,7 @@ let stickyNoteCount = {
     'action':0,
     'event':0,
 }
-let combined = []
+let combined = [];
 let notes;// initiate as data.notes, stores all the sticky notes
 let note;// the html object, d3.select('#stickynotes')
 let drag;// d3.drag()
