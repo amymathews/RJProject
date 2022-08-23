@@ -99,7 +99,9 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
+				<form>
                 <button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
+				</form>
 			</div>
 		</div>
 
@@ -125,8 +127,9 @@
         die("Connection failed: " . mysqli_connect_error());
     }
 	$pastime = intval($_GET['st']);
+	$wacc = intval($_GET['WACC']);
 	$Elptime = time() - $pastime;
-	$sql = "UPDATE heroku_3fa92357decd51e.userdet  SET timeElapsed='Doe' WHERE id=$Elptime";
+	$sql = "UPDATE heroku_3fa92357decd51e.userdet  SET timeElapsed=$Elptime WHERE id= $wacc";
 	if (mysqli_query($conn, $sql)) {
 		echo "New record created successfully";
 	 } else {
