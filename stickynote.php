@@ -99,7 +99,7 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-                <button style="float:right; margin-top:10%" onclick="switchflag() " >Complete</button>
+                <button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
 			</div>
 		</div>
 
@@ -108,7 +108,35 @@
 <script src="js/StickyNote.js"></script>
 </body>
 </html>
+<?
+  if( $_POST ) {
 
+	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $cleardb_server = $cleardb_url["host"];
+    $cleardb_username = $cleardb_url["user"];
+    $cleardb_password = $cleardb_url["pass"];
+    $cleardb_db = substr($cleardb_url["path"],1);
+    $active_group = 'default';
+    $query_builder = TRUE;
+    // Connect to DB
+    $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+
+        if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+	$pastime = intval($_GET['st']);
+	$Elptime = time() - $pastime;
+	$sql = "UPDATE heroku_3fa92357decd51e.userdet  SET timeElapsed='Doe' WHERE id=$Elptime";
+	if (mysqli_query($conn, $sql)) {
+		echo "New record created successfully";
+	 } else {
+		 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+	 }
+	 exit;
+
+  }
+
+?>
 
 
 
