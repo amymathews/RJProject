@@ -112,8 +112,8 @@
 </html>
 <?php
   if( $_POST ) {
-	echo "I am here";
-exit;
+	//echo "I am here";
+
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_server = $cleardb_url["host"];
     $cleardb_username = $cleardb_url["user"];
