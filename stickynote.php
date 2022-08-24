@@ -97,19 +97,17 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-				<form>
-                	<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
-				</form>
 			</div>
+                <button name="complete" style="float:right; margin-top:10%" >Complete</button>
 		</div>
 	</div>
 
 	<script src="js/StickyNote.js"></script>
 	</body>
 	</html>
-<?php
+
+<!-- <?php
   if( $_POST ) {
-	//echo "I am here";
 
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_server = $cleardb_url["host"];
@@ -137,4 +135,4 @@
 	 exit;
 
   }
-?>
+?> -->
