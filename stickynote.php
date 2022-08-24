@@ -100,9 +100,11 @@
 			</div>
 		</div>
 	</div>
-	<form action = "<?php $_PHP_SELF ?>" method = "POST">
-				<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
-	</form>
+	<div id="mybutton">
+		<form action = "<?php $_PHP_SELF ?>" method = "POST">
+			<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
+		</form>
+	</div>
 
 	<script src="js/StickyNote.js"></script>
 	</body>
