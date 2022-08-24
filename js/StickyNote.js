@@ -57,7 +57,6 @@ function createwacc () {
     }
     
     if(flag == 1){
-        alert("here");
         $.ajax({
         url: './sninsert.php',    //the page containing php script
         type: 'POST',    //request type,
