@@ -5,7 +5,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/d3.v6.min.js"></script>
 	<script src="js/FileSaver.js"></script>
-	<script src = "time.js"></script>
 
 	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -99,10 +98,10 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-				<form action = "<?php $_PHP_SELF ?>" method = "POST">
-                <button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
-				</form>
 			</div>
+			<form action = "<?php $_PHP_SELF ?>" method = "POST">
+                <button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
+			</form>
 		</div>
 
 	</div>
