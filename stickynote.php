@@ -92,20 +92,22 @@
                     Tips: Tips: drag to put them onto the timeline one by one.
                 </p>
                 <div id="timelines"></div>
-				<button name="complete" style="float:right; margin-bottom:10%" >Complete</button>
                 <div style="margin-top:103px;display:flex">
                     <HR width="80%" style="margin-top:27px;border:3px solid grey">
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
 			</div>
+			<form action = "<?php $_PHP_SELF ?>" method = "POST">
+                	<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
+			</form>
 		</div>
 	</div>
 
 	<script src="js/StickyNote.js"></script>
 	</body>
 	</html>
-
+	
 <!-- <?php
   if( $_POST ) {
 
