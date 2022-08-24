@@ -97,7 +97,7 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-				<form action = "<?php $_PHP_SELF ?>" style = "overflow:auto" method = "POST">
+				<form action = "<?php $_PHP_SELF ?>" style="margin-top:103px;display:flex" method = "POST">
                 		<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
 				</form>
 			</div>
