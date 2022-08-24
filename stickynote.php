@@ -85,6 +85,7 @@
 			<br/>
 			<div id="events"></div>
 			<div id="timelineSection">
+			<form action = "<?php $_PHP_SELF ?>" style="margin-top:103px;display:flex" method = "POST">
                 <p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened.</p>
                 <p>Put the sticky notes onto the timeline one by one to illustrate the time order you hope to achieve the needs.</p>
                 <p>
@@ -97,8 +98,7 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-				<form action = "<?php $_PHP_SELF ?>" style="margin-top:103px;display:flex" method = "POST">
-                		<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
+                	<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
 				</form>
 			</div>
 		</div>
