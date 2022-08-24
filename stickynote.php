@@ -98,11 +98,9 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-				
-                <!-- <button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button> -->
+				<!-- <form action = "<?php $_PHP_SELF ?>" method = "POST"> -->
+                		<!-- <button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button> -->
 				<!-- </form> -->
-				<!-- <button style="float:right; bottom:2%" onclick="window.location.href = './complete.html'" >Complete</button> -->
-				<!-- <button style="float:right; margin-top:10%" onclick="window.location.href = './complete.html'; " >Complete</button> -->
 			</div>
 		</div>
 
