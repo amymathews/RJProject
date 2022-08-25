@@ -14,6 +14,7 @@ let stickyNoteCount = {
     'action':0,
     'event':0,
 }
+let j = 0;
 let combined = [];
 let notes;// initiate as data.notes, stores all the sticky notes
 let note;// the html object, d3.select('#stickynotes')
@@ -203,7 +204,7 @@ function draw(notes) {
         .text(s => s.content)
         .style('color',"black")
         .on("dblclick", double_click)
-        .attr("id", "hi")
+        .attr("id", j)
 
     // drag to move
     drag = d3.drag()
@@ -216,7 +217,7 @@ function draw(notes) {
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
             .style("margin-top", d.y = event.y+'px')
-            .attr("id", d.id = "hi");
+            .attr("id", d.id = j);
     }
 }
 
