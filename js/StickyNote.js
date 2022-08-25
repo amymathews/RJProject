@@ -382,7 +382,7 @@ function main() {
             .style("border","3px solid grey")
 
             //document.getElementById("complete").style("margin-top","130px");
-            // document.getElementById("complete").style.marginTop = "130px";
+            document.getElementById("complete").style.marginTop = "130px";
             //margin-left:50px
 
         })
