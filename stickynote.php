@@ -94,7 +94,7 @@
                 </div>
 				<form action = "<?php $_PHP_SELF ?>" method = "POST">
 					<button id = "complete" name="complete" style="margin-left:1px; margin-bottom: 25px;" type="submit" >Complete</button>
-				</form>
+				</form> 
 			</div> 
 		</div>
 	</div>
