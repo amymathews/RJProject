@@ -96,8 +96,10 @@
 					<button id = "complete" name="complete" style="margin-right:1px; margin-bottom: 25px;" type="submit" >Complete</button>
 				</form> 
 			</div> 
+			<div id="footer"></div>
 		</div>
 	</div>
+
 
 	<script src="js/StickyNote.js"></script>
 	</body>
