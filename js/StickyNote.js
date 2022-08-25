@@ -203,6 +203,7 @@ function draw(notes) {
         .text(s => s.content)
         .style('color',"black")
         .on("dblclick", double_click)
+        .attr("id", "hi")
 
     // drag to move
     drag = d3.drag()
@@ -211,10 +212,11 @@ function draw(notes) {
     note.call(drag).on("click", ()=>{});
 
     function dragged(event, d) {
-        console.log('----'+event.x+'****'+event.y+'--'+ d3.select(this).attr("id") + '------');
+        console.log('----'+event.x+'****'+event.y+'--'+ d.id + '------');
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
-            .style("margin-top", d.y = event.y+'px');
+            .style("margin-top", d.y = event.y+'px')
+            .attr("id", d.id = "hi");
     }
 }
 
