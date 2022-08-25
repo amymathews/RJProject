@@ -183,8 +183,8 @@ function draw(notes) {
                 .range([width*1/4, width*5/6])
                 .padding(0.3);
     yScale = d3.scaleLinear()
-                .domain([0,8])
-                .range([height*1/15,height*7/8]);
+                .domain([0,7])
+                .range([height*1/8,height*7/8]);
 
     // notes
     note = d3.select('#stickynotes')

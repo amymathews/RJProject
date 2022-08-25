@@ -5,7 +5,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/d3.v6.min.js"></script>
 	<script src="js/FileSaver.js"></script>
-
+	<script src = "time.js"></script>
 	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,12 +40,10 @@
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
-	
 				<form>
 					<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
 					<p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p>
 					<p id="question"> 1) Stakeholders: Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
-				
 					<br>
 					<p id="content"> <strong>Add one note at a time and then click "create a sticky note" </strong> </p>
 					<textarea id="text_on_note" name = "stakeholder" style="height: 70px; width: auto;"></textarea>
@@ -57,8 +55,6 @@
 					<button style="float:left" type = "button" onclick="backClick()">Back</button>
 					<br><br>
 					<button style="float:right" type = "button" onclick="doneFunc()">Done</button>
-
-
 				</form>
 			</div>
 		</div>
@@ -79,7 +75,6 @@
 				<span class="dot"> &nbsp &#63;</span>
 				Tips: To re-select stakeholders, delete remaining text first. You can directly modify text in all text boxes / sticky notes too.
 			</p>
-
 			<button id="next" style="margin-top:1%;margin-left:2%;float:right" type="button">next</button>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
@@ -101,7 +96,7 @@
 			</div> 
 		</div>
 	</div>
-		
+
 	<script src="js/StickyNote.js"></script>
 	</body>
 	</html>
