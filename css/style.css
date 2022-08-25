@@ -70,7 +70,7 @@ textarea {
     text-align: center;
 }
 #timelineSection{
-    position: absolute;
+    /* position: absolute; */
     width: 80%;
     visibility: hidden;
 }
