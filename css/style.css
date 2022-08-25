@@ -110,11 +110,11 @@ button{
 }
 #footer {
   position: relative;
-  margin-top: -180px;
+  margin-top: -50px;
   /* negative value of footer height */
-  height: 180px;
+  height: 50px;
   clear: both;
-  background-color: red;
+  background-color: lavenderblush;
 }
 
 input[type="range"] {
