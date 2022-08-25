@@ -86,7 +86,6 @@
                     <span class="dot"> &nbsp &#63;</span>
                     Tips: Tips: drag to put them onto the timeline one by one.
                 </p>
-				<div id="footer"></div>
                 <div id="timelines"></div>
                 <div style="margin-top:103px;display:flex">
                     <HR width="80%" style="margin-top:27px;border:3px solid grey">
@@ -97,6 +96,7 @@
 					<button id = "complete" name="complete" style="margin-right:1px; margin-bottom: 25px;" type="submit" >Complete</button>
 				</form> 
 			</div> 
+			<div id="footer"></div>
 		</div>
 	</div>
 
