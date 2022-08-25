@@ -207,6 +207,7 @@ function draw(notes) {
     note.call(drag).on("click", ()=>{});
 
     function dragged(event, d) {
+        console.log('----'+event.x+'****'+event.y);
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
             .style("margin-top", d.y = event.y+'px');
@@ -268,7 +269,7 @@ function main() {
                 .style('background-color', colorScale(new_note["type"]))
                 .text(new_note["content"])
                 .style('color',"black")
-                .call(drag).on("click", ()=>{})
+                .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click);
                 // clear input value
                 document.getElementById("text_on_note").value = "";
