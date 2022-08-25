@@ -216,9 +216,10 @@ function draw(notes) {
         console.log('----'+event.x+'****'+event.y+'--'+ d.id + '------');
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
-            .style("margin-top", d.y = event.y+'px')
-            .attr("id", d.id = j);
-    }
+            .style("margin-top", d.y = event.y+'px');
+    //         .attr("id", d.id = j);
+     }
+    console.log("j is: " + j);
 }
 
 // combine stakeholder with feeling & action
