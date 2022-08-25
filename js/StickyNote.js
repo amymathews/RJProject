@@ -178,6 +178,7 @@ function doneFunc(event, d){
 
 // draw the predefined sticky notes
 function draw(notes) {
+    j+=1;
     // define scale
     colorScale = d3.scaleOrdinal()
                  .domain(stickyNoteTypes)
