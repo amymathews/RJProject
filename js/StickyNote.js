@@ -381,7 +381,8 @@ function main() {
             .style("margin-top","130px")
             .style("border","3px solid grey")
 
-            document.getElementById("complete").style("margin-top","130px");
+            //document.getElementById("complete").style("margin-top","130px");
+            document.getElementById("complete").style.marginTop = "130px";
 
         })
         d3.select('#done').on("click",()=>{
