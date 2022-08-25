@@ -26,6 +26,7 @@ let _counter = 1;
 let flag = 0;
 let myOption='stakeholder';
 var jsonObj = {};
+let j=0;
 jsonObj['userid'];
 jsonObj['stakeholder'] = new Array();
 jsonObj['feeling'] = new Array();
@@ -207,7 +208,7 @@ function draw(notes) {
     note.call(drag).on("click", ()=>{});
 
     function dragged(event, d) {
-        console.log('----'+event.x+'****'+event.y+'--'+d.name+'--'+d.attr);
+        console.log('----'+event.x+'****'+event.y+'--'+ d.select(this).attr(id));
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
             .style("margin-top", d.y = event.y+'px');
@@ -257,6 +258,7 @@ function main() {
             stickyNoteCount[new_note["type"]] += 1;
             new_note["content"] = document.getElementById("text_on_note").value;
             notes.push(new_note);
+            j++;
             note = d3.select('#stickynotes')
                 .selectAll("textarea")
                 .data(notes)
@@ -271,7 +273,7 @@ function main() {
                 .style('color',"black")
                 .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click)
-                .attr("id", function(d,i){ return "textarea" + i});
+                .attr("id", function(d,j){ return "textarea" + j});
                 // clear input value
                 document.getElementById("text_on_note").value = "";
         })
