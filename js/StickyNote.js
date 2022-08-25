@@ -98,8 +98,10 @@ function double_click(event, d){
 }
 
 //frontclick function to go foward questions
-function clickFunc(event, d){
+function clickFunc(event, d, x){
     if (_counter>=3){
+    x.style.display = 'none';
+
     return;
     }
     _counter++;
@@ -123,6 +125,7 @@ function clickFunc(event, d){
     }
     else if(_counter >3){
         alert("end of questions!");
+        // x.style.display = 'none';
         pairing();
     }
 }
