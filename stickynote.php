@@ -5,6 +5,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/d3.v6.min.js"></script>
 	<script src="js/FileSaver.js"></script>
+	<script src = "time.js"></script>
 	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -50,10 +51,10 @@
 					<br><br>
 					<button id="create" type="button" onclick="createwacc()" >create a sticky note</button>
 					<br><br>
-					<button  style="float:right" type = "button" onclick="clickFunc()">Next</button>
-					<button  style="float:left" type = "button" onclick="backClick()">Back</button>
+					<button style="float:right" type = "button" onclick="clickFunc()">Next</button>
+					<button style="float:left" type = "button" onclick="backClick()">Back</button>
 					<br><br>
-					<button  style="float:right" type = "button" onclick="doneFunc()">Done</button>
+					<button style="float:right" type = "button" onclick="doneFunc()">Done</button>
 				</form>
 			</div>
 		</div>
@@ -91,7 +92,9 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-					<button name="complete" style="float:right; margin-top: -8px" type="submit" >Complete</button>
+				<form method = "POST">
+					<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
+				</form>
 			</div> 
 		</div>
 	</div>
