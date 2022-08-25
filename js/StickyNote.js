@@ -189,7 +189,7 @@ function draw(notes) {
     yScale = d3.scaleLinear()
                 .domain([0,7])
                 .range([height*1/8,height*7/8]);
-
+    j = j++;
     // notes
     note = d3.select('#stickynotes')
 
@@ -200,11 +200,13 @@ function draw(notes) {
         .style("margin-top", s => yScale(s.index)+'px')
         .attr("rows",3)
         .attr("cols",18)
+        .attr("id", j)
+        .attr("name",j)
         .style('background-color', s => colorScale(s.type))
         .text(s => s.content)
         .style('color',"black")
         .on("dblclick", double_click)
-        .attr("id", ++j)
+       
 
     // drag to move
     drag = d3.drag()
@@ -213,7 +215,7 @@ function draw(notes) {
     note.call(drag).on("click", ()=>{});
 
     function dragged(event, d) {
-        console.log('----'+event.x+'****'+event.y+'--'+ d.id + '------');
+        console.log('----'+event.x+'****'+event.y+'--'+ d.id + '------'+this.name+'--'+event.name);
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
             .style("margin-top", d.y = event.y+'px');
