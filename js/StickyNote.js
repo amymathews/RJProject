@@ -383,6 +383,7 @@ function main() {
 
             //document.getElementById("complete").style("margin-top","130px");
             document.getElementById("complete").style.marginTop = "130px";
+            //margin-left:50px
 
         })
         d3.select('#done').on("click",()=>{

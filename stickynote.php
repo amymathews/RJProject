@@ -91,10 +91,10 @@
                     <HR width="80%" style="margin-top:27px;border:3px solid grey">
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
-					<form method = "POST">
-					<button id = "complete" name="complete" style="margin-left:50px" type="submit" >Complete</button>
-					</form>
                 </div>
+				<form method = "POST">
+					<button id = "complete" name="complete" style="margin-left:50px" type="submit" >Complete</button>
+				</form>
 			</div> 
 		</div>
 	</div>
