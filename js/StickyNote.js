@@ -207,7 +207,7 @@ function draw(notes) {
     note.call(drag).on("click", ()=>{});
 
     function dragged(event, d) {
-        console.log('----'+event.x+'****'+event.y+'--'+ d.attr(id) + '------');
+        console.log('----'+event.x+'****'+event.y+'--'+ d3.select(this).attr("id") + '------');
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
             .style("margin-top", d.y = event.y+'px');
@@ -272,7 +272,8 @@ function main() {
                 .style('color',"black")
                 .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click)
-                .attr("id", function(d,j){ return "textarea" + j});
+                // .attr("id", function(d,j){ return "textarea" + j});
+                .attr("id", "hi");
                 // clear input value
                 document.getElementById("text_on_note").value = "";
         })
