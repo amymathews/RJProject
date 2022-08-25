@@ -93,7 +93,7 @@
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
 				<form action = "<?php $_PHP_SELF ?>" method = "POST">
-					<button id = "complete" name="complete" style="margin: top 10px; " type="submit" >Complete</button>
+					<button id = "complete" name="complete" style="margin-left:50px" type="submit" >Complete</button>
 				</form>
 			</div> 
 		</div>
