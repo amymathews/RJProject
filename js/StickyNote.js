@@ -380,6 +380,9 @@ function main() {
             .attr("width","80%")
             .style("margin-top","130px")
             .style("border","3px solid grey")
+
+            document.getElementById("complete").style("margin-top","130px");
+
         })
         d3.select('#done').on("click",()=>{
             var content = JSON.stringify({"notes": notes});
