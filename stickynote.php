@@ -92,7 +92,7 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 					<form method = "POST">
-					<button name="complete" style="margin-left:50px" type="submit" >Complete</button>
+					<button id = "extend" name="complete" style="margin-left:50px" type="submit" >Complete</button>
 					</form>
                 </div>
 			</div> 
