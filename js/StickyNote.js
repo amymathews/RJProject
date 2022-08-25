@@ -188,6 +188,7 @@ function draw(notes) {
 
     // notes
     note = d3.select('#stickynotes')
+
         .selectAll("textarea")
         .data(notes)
         .join("textarea")
@@ -199,7 +200,7 @@ function draw(notes) {
         .text(s => s.content)
         .style('color',"black")
         .on("dblclick", double_click)
-        .attr("id", "hi");
+        .attr("id", j);
 
     // drag to move
     drag = d3.drag()
