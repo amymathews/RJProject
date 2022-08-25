@@ -50,7 +50,7 @@
 					<br><br>
 					<button id="create" type="button" onclick="createwacc()" >create a sticky note</button>
 					<br><br>
-					<button  style="float:right" type = "button" onclick="clickFunc(this)">Next</button>
+					<button  style="float:right" type = "button" onclick="clickFunc()">Next</button>
 					<button  style="float:left" type = "button" onclick="backClick()">Back</button>
 					<br><br>
 					<button  style="float:right" type = "button" onclick="doneFunc()">Done</button>
@@ -91,7 +91,7 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-					<button name="complete" style="float:right; margin-top:10%" type="submit" >Complete</button>
+					<button name="complete" style="float:right; margin-top: -8px" type="submit" >Complete</button>
 			</div> 
 		</div>
 	</div>
