@@ -215,7 +215,8 @@ function draw(notes) {
     note.call(drag).on("click", ()=>{});
 
     function dragged(event, d) {
-        console.log('----'+event.x+'****'+event.y+'--'+ d.id + '------'+this.name+'--'+event.name);
+      
+        console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'--'+JSON.stringify(d));
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
             .style("margin-top", d.y = event.y+'px');
