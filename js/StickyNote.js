@@ -198,7 +198,8 @@ function draw(notes) {
         .style('background-color', s => colorScale(s.type))
         .text(s => s.content)
         .style('color',"black")
-        .on("dblclick", double_click);
+        .on("dblclick", double_click)
+        .attr("id", "hi");
 
     // drag to move
     drag = d3.drag()
@@ -273,7 +274,6 @@ function main() {
                 .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click)
                 // .attr("id", function(d,j){ return "textarea" + j});
-                .attr("id", "hi");
                 // clear input value
                 document.getElementById("text_on_note").value = "";
         })
