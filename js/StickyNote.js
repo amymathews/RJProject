@@ -178,7 +178,6 @@ function doneFunc(event, d){
 
 // draw the predefined sticky notes
 function draw(notes) {
-    j+=1;
     // define scale
     colorScale = d3.scaleOrdinal()
                  .domain(stickyNoteTypes)
@@ -205,7 +204,7 @@ function draw(notes) {
         .text(s => s.content)
         .style('color',"black")
         .on("dblclick", double_click)
-        .attr("id", j)
+        .attr("id", ++j)
 
     // drag to move
     drag = d3.drag()
