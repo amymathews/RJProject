@@ -50,10 +50,10 @@
 					<br><br>
 					<button id="create" type="button" onclick="createwacc()" >create a sticky note</button>
 					<br><br>
-					<button style="float:right" type = "button" onclick="clickFunc()">Next</button>
-					<button style="float:left" type = "button" onclick="backClick()">Back</button>
+					<button id = "mydiv" style="float:right" type = "button" onclick="clickFunc()">Next</button>
+					<button id = "mydiv" style="float:left" type = "button" onclick="backClick()">Back</button>
 					<br><br>
-					<button style="float:right" type = "button" onclick="doneFunc()">Done</button>
+					<button  style="float:right" type = "button" onclick="doneFunc()">Done</button>
 				</form>
 			</div>
 		</div>

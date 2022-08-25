@@ -78,6 +78,9 @@ textarea {
     position: absolute;
     text-align: center;
 }
+#mydiv {
+  display: none;
+}
 #pair{
     /**/
 }
