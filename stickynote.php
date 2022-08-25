@@ -95,7 +95,8 @@
 				<form action = "<?php $_PHP_SELF ?>" method = "POST">
 					<button id = "complete" name="complete" style="margin-right:1px; margin-bottom: 25px;" type="submit" >Complete</button>
 				</form> 
-			</div> 
+			</div>
+			<br><br><br> 
 			<div id="footer"></div>
 		</div>
 	</div>
