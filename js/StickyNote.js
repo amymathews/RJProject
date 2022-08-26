@@ -110,7 +110,7 @@ function clickFunc(event, d, x){
     _counter++;
 
     if (nxtbtn.style.visibility === 'hidden') {
-        form.style.visibility = 'visible';
+        nxtbtn.style.visibility = 'visible';
     }
     
     if(_counter==1){ 
@@ -142,6 +142,10 @@ function clickFunc(event, d, x){
 
 //backclick function to go back in the questions. 
 function backClick(event, d){
+    
+    if (nxtbtn.style.visibility === 'hidden') {
+        nxtbtn.style.visibility = 'visible';
+    }
 
     if (_counter == 1){
         return;
