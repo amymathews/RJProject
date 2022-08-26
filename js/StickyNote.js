@@ -249,6 +249,10 @@ function draw(notes) {
      }
      function enddrag(event, d){
         console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
+        var stickyval;
+        stickyval = document.getElementById("stickypos").value ;
+        console.log('-->'+stickyval);
+        document.getElementById("stickypos").value = stickyval+'--'+d.index+'-'+event.x+'-'+event.y;
 
      }
 }
