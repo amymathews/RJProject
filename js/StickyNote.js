@@ -15,6 +15,7 @@ let stickyNoteCount = {
     'event':0,
 }
 let j = 0;
+let nxtbtn = getElementById("nextbtn");
 let combined = [];
 let notes;// initiate as data.notes, stores all the sticky notes
 let note;// the html object, d3.select('#stickynotes')
@@ -101,7 +102,7 @@ function double_click(event, d){
 //frontclick function to go foward questions
 function clickFunc(event, d, x){
     if (_counter>=3){
-    x.style.display = 'none';
+    nxtbtn.style.display = 'none';
 
     return;
     }
