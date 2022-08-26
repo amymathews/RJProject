@@ -16,6 +16,7 @@ let stickyNoteCount = {
 }
 let j = 0;
 let nxtbtn = document.getElementById("nextbtn");
+let bkbtn = document.getElementById("backbtn");
 let combined = [];
 let notes;// initiate as data.notes, stores all the sticky notes
 let note;// the html object, d3.select('#stickynotes')
@@ -101,6 +102,9 @@ function double_click(event, d){
 
 //frontclick function to go foward questions
 function clickFunc(event, d, x){
+    if (bkbtn.style.visibility === 'hidden') {
+        bkbtn.style.visibility = 'visible';
+    }
     if (_counter>=3) {
     nxtbtn.style.visibility = 'hidden';
 
@@ -142,15 +146,20 @@ function clickFunc(event, d, x){
 
 //backclick function to go back in the questions. 
 function backClick(event, d){
-    
+
     if (nxtbtn.style.visibility === 'hidden') {
         nxtbtn.style.visibility = 'visible';
     }
 
     if (_counter == 1){
+        bkbtn.style.visibility = 'hidden';        
         return;
         }
+    else{
         _counter--;
+    if (bkbtn.style.visibility === 'hidden') {
+        bkbtn.style.visibility = 'visible';
+    }
     
     if(_counter==2) { 
         let type = 'feeling';
@@ -170,6 +179,7 @@ function backClick(event, d){
     else if(_counter >3){
         alert("You have reached the beginning of the questions!")
     }
+}
         
 }
 //function that allows the next page to appear 
