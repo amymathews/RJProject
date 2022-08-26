@@ -94,7 +94,7 @@
                 </div>
 				<form action = "<?php $_PHP_SELF ?>" method = "POST">
 				    <input type="hidden" name="stickypos" id ="stickypos" value="" />
-					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" onclick= redirect() >Complete</button>
+					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" >Complete</button>
 				</form> 
 			</div>
 			<br><br><br> 
@@ -126,13 +126,13 @@
 	$stickyval = $_POST["stickypos"];
 	$sql = "UPDATE heroku_3fa92357decd51e.userdet  SET timeElapsed=$Elptime,orderEntered = '$stickyval' WHERE userid= $wacc";
 	if (mysqli_query($conn, $sql)) {
-		echo "New record created successfully";
+		// echo "New record created successfully";
 	 } else {
 		 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
-	 echo $sql;
-	 header("Location: /complete.php"); 
-	 exit;
-
+	//  echo $sql;
+	if (isset($_POST['complete'])) {
+		header("Location: ./complete.php"); // redirect to your desired page
+	 }
   }
 ?> 
