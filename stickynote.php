@@ -94,21 +94,13 @@
                 </div>
 				<form action = "<?php $_PHP_SELF ?>" method = "POST">
 				    <input type="hidden" name="stickypos" id ="stickypos" value="" />
-					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" onclick="myFunction()" >Complete</button>
+					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" >Complete</button>
 				</form> 
 			</div>
 			<br><br><br> 
 			<div id="footer"></div>
 		</div>
 	</div>
-	<script>
-      function myFunction() {
-		console.log("here");
-        window.location.href="./complete.html";
-      }
-    </script>
-
-
 	<script src="js/StickyNote.js"></script>
 	</body>
 	</html>
@@ -141,7 +133,6 @@
 	 }
 	 //echo $sql;
 	 header("Location: /complete.html"); 
-	 exit;
 
   }
 ?> 
