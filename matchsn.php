@@ -1,5 +1,5 @@
 <?php
-echo "Hi";
+// echo "Hi";
    //  Get Heroku ClearDB connection information
     $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_server = $cleardb_url["host"];
@@ -32,7 +32,7 @@ echo "Hi";
 
 
     if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully";
+        // echo "New record created successfully";
     } else {
        // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
        echo "here--eror";
