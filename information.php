@@ -60,26 +60,6 @@
        <button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
     </div>
 
-<!-- <script>
-  var fs = require('fs')
-  
-  // Data which will write in a file.
-  var dataadded = "Learning how to write in a file."
-    
-  // Write data in 'Output.txt' .
-  fs.writeFile('Output.txt', dataadded)
-    
-    function download(){
-        var content = "What happened:\n";
-        content += document.getElementById("story").value;
-        content += "\nFeelings:\n";
-        content += document.getElementById("feeling").value;
-        var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-        saveAs(blob, "user.txt");
-        window.location.href = './stickynote.html'
-    }
-</script> -->
-
 </form>
 </body>
 </html>
