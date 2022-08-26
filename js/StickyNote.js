@@ -106,7 +106,6 @@ function clickFunc(event, d, x){
         bkbtn.style.visibility = 'visible';
     }
     if (_counter>=3) {
-    nxtbtn.style.visibility = 'hidden';
 
     return;
     }
@@ -130,6 +129,7 @@ function clickFunc(event, d, x){
             .text(data.questions[type]);
     }
     else if(_counter==3){ 
+        nxtbtn.style.visibility = 'hidden';
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
