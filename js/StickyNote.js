@@ -104,8 +104,6 @@ function double_click(event, d){
 function clickFunc(event, d, x){
     if (bkbtn.style.visibility === 'hidden') {
         bkbtn.style.visibility = 'visible';
-    }else{
-        bkbtn.style.visibility = 'hidden';
     }
 
     if (_counter>=3) {
