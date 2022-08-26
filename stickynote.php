@@ -131,6 +131,9 @@
 		 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
 	//  echo $sql;
+
+	header("Location: /stickynote.php?WACC=aaaaa");
+	exit;
 	
   }
 ?> 
