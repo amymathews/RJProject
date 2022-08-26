@@ -101,28 +101,31 @@ function double_click(event, d){
 
 //frontclick function to go foward questions
 function clickFunc(event, d, x){
-    if (_counter>=3){
+    if (_counter>=3) {
     nxtbtn.style.visibility = 'hidden';
 
     return;
     }
+    else {
     _counter++;
+
+    if (nxtbtn.style.visibility === 'hidden') {
+        form.style.visibility = 'visible';
+    }
+    
     if(_counter==1){ 
-        nxtbtn.style.visibility = 'visible';
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
         
     }
     if(_counter==2){ 
-        nxtbtn.style.visibility = 'visible';
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
     }
     else if(_counter==3){ 
-        nxtbtn.style.visibility = 'visible';
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
@@ -133,6 +136,8 @@ function clickFunc(event, d, x){
         // x.style.display = 'none';
         pairing();
     }
+    
+    } 
 }
 
 //backclick function to go back in the questions. 
