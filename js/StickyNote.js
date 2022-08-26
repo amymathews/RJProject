@@ -106,21 +106,23 @@ function clickFunc(event, d, x){
 
     return;
     }
-    nxtbtn.style.visibility = 'visible';
     _counter++;
     if(_counter==1){ 
+        nxtbtn.style.visibility = 'visible';
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
         
     }
     if(_counter==2){ 
+        nxtbtn.style.visibility = 'visible';
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
     }
     else if(_counter==3){ 
+        nxtbtn.style.visibility = 'visible';
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
