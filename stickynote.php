@@ -92,7 +92,7 @@
                     <div class="to_right"></div>
                     <button id="extend" type="button" style="margin-left:50px">extend timeline</button>
                 </div>
-				<form action = "<?php $_PHP_SELF ?>" method = "POST">
+				<form method = "POST">
 				    <input type="hidden" name="stickypos" id ="stickypos" value="" />
 					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" >Complete</button>
 				</form> 
@@ -106,6 +106,7 @@
 	</html>
 	
 <?php
+  if( $_POST ) {
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 	$cleardb_server = $cleardb_url["host"];
 	$cleardb_username = $cleardb_url["user"];
@@ -119,7 +120,6 @@
 		if (!$conn) {
 		die("Connection failed: " . mysqli_connect_error());
 	}
-  if( $_POST ) {
 	$pastime = intval($_GET['st']);
 	$wacc = intval($_GET['WACC']);
 	$Elptime = time() - $pastime;
