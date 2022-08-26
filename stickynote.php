@@ -134,6 +134,7 @@
 		 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
 	 echo $sql;
+	 header("Location: ./complete.html"); 
 	 exit;
 
   }
