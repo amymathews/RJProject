@@ -152,7 +152,6 @@ function backClick(event, d){
     }
 
     if (_counter == 1){
-        bkbtn.style.visibility = 'hidden';        
         return;
         }
     else{
@@ -169,6 +168,7 @@ function backClick(event, d){
        
     }
     if(_counter==1){ 
+        bkbtn.style.visibility = 'hidden';        
         let type = 'stakeholder';
         myOption = 'stakeholder';
         d3.select("#question")
