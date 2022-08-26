@@ -107,7 +107,7 @@
 	</body>
 	</html>
 	
-<!-- <?php
+<?php
   if( $_POST ) {
 
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -137,4 +137,4 @@
 	 exit;
 
   }
-?> -->
+?>
