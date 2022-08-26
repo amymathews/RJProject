@@ -102,10 +102,11 @@ function double_click(event, d){
 //frontclick function to go foward questions
 function clickFunc(event, d, x){
     if (_counter>=3){
-    nxtbtn.style.display = 'none';
+    nxtbtn.style.visibility = 'hidden';
 
     return;
     }
+    nxtbtn.style.visibility = 'visible';
     _counter++;
     if(_counter==1){ 
         let type = 'stakeholder';
