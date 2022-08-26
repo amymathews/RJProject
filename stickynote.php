@@ -1,3 +1,7 @@
+<?php
+header("Location: http://www.google.com");
+exit();
+?>
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
