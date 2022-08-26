@@ -234,19 +234,23 @@ function draw(notes) {
 
     // drag to move
     drag = d3.drag()
-        .on("drag", dragged);
+        .on("drag", dragged)
+        .on("ondragend", enddrag);
 
     note.call(drag).on("click", ()=>{});
 
     function dragged(event, d) {
       
-        console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
+        // console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
             .style("margin-top", d.y = event.y+'px');
     //         .attr("id", d.id = j);
      }
-    console.log("j is: " + j);
+     function enddrag(event, d){
+        console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
+
+     }
 }
 
 // combine stakeholder with feeling & action
