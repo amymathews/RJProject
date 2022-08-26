@@ -252,7 +252,7 @@ function draw(notes) {
         var stickyval;
         stickyval = document.getElementById("stickypos").value ;
         console.log('-->'+stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y);
-        document.getElementById("stickypos").value = stickyval+'--'+d.index+'-'+event.x+'-'+event.y;
+        document.getElementById("stickypos").value = stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y;
 
      }
 }
