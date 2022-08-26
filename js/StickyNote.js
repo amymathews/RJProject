@@ -251,7 +251,7 @@ function draw(notes) {
         console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
         var stickyval;
         stickyval = document.getElementById("stickypos").value ;
-        console.log('-->'+stickyval+'--'+d.index+'-'+event.x+'-'+event.y);
+        console.log('-->'+stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y);
         document.getElementById("stickypos").value = stickyval+'--'+d.index+'-'+event.x+'-'+event.y;
 
      }

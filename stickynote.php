@@ -126,7 +126,8 @@
 	$pastime = intval($_GET['st']);
 	$wacc = intval($_GET['WACC']);
 	$Elptime = time() - $pastime;
-	$sql = "UPDATE heroku_3fa92357decd51e.userdet  SET timeElapsed=$Elptime WHERE userid= $wacc";
+	$stickyval = $_POST["stickypos"];
+	$sql = "UPDATE heroku_3fa92357decd51e.userdet  SET timeElapsed=$Elptime,orderEntered=$stickyval WHERE userid= $wacc";
 	if (mysqli_query($conn, $sql)) {
 		echo "New record created successfully";
 	 } else {
