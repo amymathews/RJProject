@@ -103,6 +103,7 @@
 	</div>
 	<script>
       function myFunction() {
+		console.log("here");
         window.location.href="./complete.html";
       }
     </script>
