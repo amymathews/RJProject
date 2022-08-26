@@ -94,7 +94,7 @@
                 </div>
 				<form action = "<?php $_PHP_SELF ?>" method = "POST">
 				    <input type="hidden" name="stickypos" id ="stickypos" value="" />
-					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" onclick= "window.location.href = './complete.php'" >Complete</button>
+					<button id = "complete" name="complete" type = "button" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" onclick= redirect() >Complete</button>
 				</form> 
 			</div>
 			<br><br><br> 

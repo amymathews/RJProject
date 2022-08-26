@@ -75,6 +75,10 @@ function createwacc () {
     }
 }
 
+function redirect(){
+    document.location="complete.php"; //instead of window.location
+}
+
 // double click deletion function on the sticky note
 function double_click(event, d){
     let r=confirm("Do you want to delete this sticky note?");
