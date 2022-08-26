@@ -66,10 +66,10 @@ function createwacc () {
         // dataType: 'json',
         data: jsonObj,
         success:function(output){
-            console.log('success '+output);
+            //console.log('success '+output);
         },
         error:function(error){
-            console.log('The error is--> '+JSON.stringify(error));
+            //console.log('The error is--> '+JSON.stringify(error));
         }
         });
     }
@@ -252,10 +252,10 @@ function draw(notes) {
     //         .attr("id", d.id = j);
      }
      function enddrag(event, d){
-        console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
+        //console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
         var stickyval;
         stickyval = document.getElementById("stickypos").value ;
-        console.log('-->'+stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y);
+        //console.log('-->'+stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y);
         document.getElementById("stickypos").value = stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y;
 
      }
@@ -393,10 +393,10 @@ function main() {
                 data: {note : new_note, 
                     userid: userid},
                 success:function(output){
-                    console.log('success'+output);
+                    //console.log('success'+output);
                 },
                 error:function(error){
-                    console.log('The error is here at the combine -->'+JSON.stringify(error));
+                    //console.log('The error is here at the combine -->'+JSON.stringify(error));
                 }
             });
         })
