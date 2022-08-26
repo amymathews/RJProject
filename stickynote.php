@@ -129,11 +129,11 @@
 	$stickyval = $_POST["stickypos"];
 	$sql = "UPDATE heroku_3fa92357decd51e.userdet  SET timeElapsed=$Elptime,orderEntered = '$stickyval' WHERE userid= $wacc";
 	if (mysqli_query($conn, $sql)) {
-		echo "New record created successfully";
+		//echo "New record created successfully";
 	 } else {
 		 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
-	 echo $sql;
+	 //echo $sql;
 	 header("Location: ./complete.html"); 
 	 exit;
 
