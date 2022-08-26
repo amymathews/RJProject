@@ -130,10 +130,7 @@
 	 } else {
 		 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
-	 echo $sql; exit;
-
-	header("Location: /stickynote.php?WACC=aaaaa");
-	exit;
-	
+	 header("Location: http://www.google.com");
+	 exit();
   }
-?> 
+?>
