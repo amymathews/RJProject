@@ -235,7 +235,7 @@ function draw(notes) {
     // drag to move
     drag = d3.drag()
         .on("drag", dragged)
-        .on("ondragend", enddrag);
+        .on("dragend", enddrag);
 
     note.call(drag).on("click", ()=>{});
 
