@@ -1,7 +1,3 @@
-<?php
-header("Location: http://www.google.com");
-exit();
-?>
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
@@ -132,7 +128,7 @@ exit();
 	if (mysqli_query($conn, $sql)) {
 		// echo "New record created successfully";
 	 } else {
-		 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+		 //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
 	 header("Location: http://www.google.com");
 	 exit();

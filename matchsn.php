@@ -10,34 +10,23 @@
     $query_builder = TRUE;
     // Connect to DB
    // $conn = $_POST['connvar'];
-
    $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-
         if (!$conn) {
          echo "connection failed";
-        die("Connection failed: " . mysqli_connect_error());
-       
+        die("Connection failed: " . mysqli_connect_error());     
     }
-   
-
-
   if( $_POST ) {
- 
 //       //   print_r($_POST);
       $userid = $_POST['userid'];
       $notes = implode($_POST['note']);
      
     $sql = "INSERT INTO heroku_3fa92357decd51e.matchsn (notes_created, userid) VALUES ('$notes','$userid')";
-    
-
-
     if (mysqli_query($conn, $sql)) {
         // echo "New record created successfully";
     } else {
        // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-       echo "here--eror";
+       //echo "here--eror";
     }
-    
       mysqli_close($conn);
   }
 ?>
