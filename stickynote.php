@@ -94,7 +94,7 @@
                 </div>
 				<form action = "<?php $_PHP_SELF ?>" method = "POST">
 				    <input type="hidden" name="stickypos" id ="stickypos" value="" />
-					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" onclick=" window.location.href = './complete.php' " >Complete</button>
+					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" onclick= "window.location.href = './complete.php'" >Complete</button>
 				</form> 
 			</div>
 			<br><br><br> 
@@ -106,21 +106,20 @@
 	</html>
 	
 <?php
-  if( $_POST ) {
-
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $cleardb_server = $cleardb_url["host"];
-    $cleardb_username = $cleardb_url["user"];
-    $cleardb_password = $cleardb_url["pass"];
-    $cleardb_db = substr($cleardb_url["path"],1);
-    $active_group = 'default';
-    $query_builder = TRUE;
-    // Connect to DB
-    $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+	$cleardb_server = $cleardb_url["host"];
+	$cleardb_username = $cleardb_url["user"];
+	$cleardb_password = $cleardb_url["pass"];
+	$cleardb_db = substr($cleardb_url["path"],1);
+	$active_group = 'default';
+	$query_builder = TRUE;
+	// Connect to DB
+	$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
-        if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
+		if (!$conn) {
+		die("Connection failed: " . mysqli_connect_error());
+	}
+  if( $_POST ) {
 	$pastime = intval($_GET['st']);
 	$wacc = intval($_GET['WACC']);
 	$Elptime = time() - $pastime;
