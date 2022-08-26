@@ -15,7 +15,7 @@ let stickyNoteCount = {
     'event':0,
 }
 let j = 0;
-let nxtbtn = getElementById("nextbtn");
+let nxtbtn = document.getElementById("nextbtn");
 let combined = [];
 let notes;// initiate as data.notes, stores all the sticky notes
 let note;// the html object, d3.select('#stickynotes')
