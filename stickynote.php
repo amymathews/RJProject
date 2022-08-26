@@ -131,8 +131,6 @@
 		 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
 	//  echo $sql;
-	if (isset($_POST['complete'])) {
-		header("Location: ./complete.php"); // redirect to your desired page
-	 }
+	
   }
 ?> 
