@@ -1,8 +1,5 @@
 <?php
   if($_POST){
-	ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 	$cleardb_server = $cleardb_url["host"];
 	$cleardb_username = $cleardb_url["user"];
@@ -26,7 +23,7 @@ error_reporting(E_ALL);
 	 } else {
 		 //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
-	 header("Location: http://www.google.com");
+	 header("Location: ./complete.php");
 	 exit();
   }
 ?>
