@@ -123,12 +123,14 @@ function clickFunc(event, d, x){
     }
     
     if(_counter==1){ 
+        donebtn.style.visibility = 'hidden';
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
         
     }
     if(_counter==2){ 
+        donebtn.style.visibility = 'hidden';
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
@@ -163,6 +165,7 @@ function backClick(event, d){
         bkbtn.style.visibility = 'visible';
     }
     if(_counter==2) { 
+        donebtn.style.visibility = 'hidden';
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
@@ -170,6 +173,7 @@ function backClick(event, d){
        
     }
     if(_counter==1){ 
+        donebtn.style.visibility = 'hidden';
         bkbtn.style.visibility = 'hidden';        
         let type = 'stakeholder';
         myOption = 'stakeholder';
