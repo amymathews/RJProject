@@ -188,7 +188,6 @@ function backClick(event, d){
 //function that allows the next page to appear 
 function doneFunc(event, d){
     flag = 1;
-    alert("if next section is not visible, please scroll down!");
     createwacc(flag);
     pairing();
     d3.select("#pair")
