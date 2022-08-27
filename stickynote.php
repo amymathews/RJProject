@@ -109,7 +109,6 @@
 			<br/>
 			<!-- <div id="events"></div> -->
 			<div id="timelineSection">
-			<div id="events"></div>
                 <p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened.</p>
                 <p>Put the sticky notes onto the timeline one by one to illustrate the time order you hope to achieve the needs.</p>
                 <p>
@@ -127,6 +126,7 @@
 					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Complete</button>
 				</form> 
 			</div>
+			<div id="events"></div>
 			<br><br><br> 
 			<div id="footer"></div>
 		</div>
