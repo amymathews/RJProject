@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 	<div class="stepper-wrapper">
 		<div id="one" class="stepper-item completed">
@@ -58,7 +57,6 @@
 				</form>
 			</div>
 		</div>
-
 		<div class="container" id='pair' style="visibility: hidden">
 			<p>Now, let’s assign tasks for each stakeholder. The options are a combination of your input in the previous task and our suggestions. Create one at a time until you get all the to-dos you want.</p>
             <br/>
@@ -101,12 +99,11 @@
 			<div id="footer"></div>
 		</div>
 	</div>
-	<script src="js/StickyNote.js"></script>
+<!--	<script src="js/StickyNote.js"></script> -->
 	</body>
 	</html>
-	
 <?php
-  if( $_POST ) {
+  if($_POST){
 	header("Location: http://www.google.com");
 	 exit();
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
