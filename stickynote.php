@@ -108,6 +108,7 @@
 			<button id="next" style="margin-top:3%;float:right; margin-left: 1px; background-color:lightblue;" type="button">go to the next question</button>
 			<br/>
 			<div id="events"></div>
+			<div id='stickynotes'></div>
 			<div id="timelineSection">
                 <p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened.</p>
                 <p>Put the sticky notes onto the timeline one by one to illustrate the time order you hope to achieve the needs.</p>
@@ -115,7 +116,6 @@
                     <span class="dot"> &nbsp &#63;</span>
                     Tips: Tips: drag to put them onto the timeline one by one.
                 </p>
-				<div id='stickynotes'></div>
                 <div id="timelines"></div>
                 <div style="margin-top:103px;display:flex">
                     <HR width="80%" style="margin-top:27px;border:3px solid grey">

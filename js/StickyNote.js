@@ -67,10 +67,10 @@ function createwacc () {
         // dataType: 'json',
         data: jsonObj,
         success:function(output){
-            //console.log('success '+output);
+            console.log('success '+output);
         },
         error:function(error){
-            //console.log('The error is--> '+JSON.stringify(error));
+            console.log('The error is--> '+JSON.stringify(error));
         }
         });
     }
@@ -188,6 +188,7 @@ function backClick(event, d){
 //function that allows the next page to appear 
 function doneFunc(event, d){
     flag = 1;
+    alert("if next section is not visible, please scroll down!");
     createwacc(flag);
     pairing();
     d3.select("#pair")
