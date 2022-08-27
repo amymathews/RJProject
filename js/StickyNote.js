@@ -144,18 +144,14 @@ function clickFunc(event, d, x){
         alert("end of questions!");
         // x.style.display = 'none';
         pairing();
-    }
-    
+    }   
     } 
 }
-
 //backclick function to go back in the questions. 
 function backClick(event, d){
-
     if (nxtbtn.style.visibility === 'hidden') {
         nxtbtn.style.visibility = 'visible';
     }
-
     if (_counter == 1){
         return;
         }
@@ -164,7 +160,6 @@ function backClick(event, d){
     if (bkbtn.style.visibility === 'hidden') {
         bkbtn.style.visibility = 'visible';
     }
-    
     if(_counter==2) { 
         let type = 'feeling';
         myOption = 'feeling';
@@ -177,33 +172,26 @@ function backClick(event, d){
         let type = 'stakeholder';
         myOption = 'stakeholder';
         d3.select("#question")
-            .text(data.questions[type]);
-        
+            .text(data.questions[type]);   
     }
-
     else if(_counter >3){
         alert("You have reached the beginning of the questions!")
     }
 }
-        
 }
 //function that allows the next page to appear 
 function doneFunc(event, d){
     flag = 1;
     createwacc(flag);
-
     pairing();
     d3.select("#pair")
         .style("visibility","visible");
-
     d3.select("#three")
         .classed("active", false)
         .classed("completed", true);
     d3.select("#four")
         .classed("active", true);
-
 }
-
 // draw the predefined sticky notes
 function draw(notes) {
     // define scale
@@ -220,7 +208,6 @@ function draw(notes) {
     j = j++;
     // notes
     note = d3.select('#stickynotes')
-
         .selectAll("textarea")
         .data(notes)
         .join("textarea")
@@ -234,17 +221,12 @@ function draw(notes) {
         .text(s => s.content)
         .style('color',"black")
         .on("dblclick", double_click)
-       
-
     // drag to move
     drag = d3.drag()
         .on("drag", dragged)
         .on("end", enddrag);
-
     note.call(drag).on("click", ()=>{});
-
-    function dragged(event, d) {
-      
+    function dragged(event, d) {  
         // console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
@@ -416,11 +398,6 @@ function main() {
             .attr("width","80%")
             .style("margin-top","130px")
             .style("border","3px solid grey")
-
-            //document.getElementById("complete").style("margin-top","130px");
-           // document.getElementById("complete").style.marginTop = "130px";
-            //margin-left:50px
-
         })
         d3.select('#done').on("click",()=>{
             var content = JSON.stringify({"notes": notes});
