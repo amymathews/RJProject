@@ -38,7 +38,7 @@
             <br/>
             <br/>
     
-            <button style="float:right" onclick="window.location.href = './information.php'; ">next</button>
+            <button style="float:right" onclick="window.location.href = './information.php'; ">go to beginning of activity </button>
             </div>
     </body>
 </html>

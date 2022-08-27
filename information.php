@@ -57,7 +57,7 @@
             <!-- <p>q1) Using several sentences, can you tell us what has happened in the harm? </p>
             <textarea id="story" name="story" rows="5" cols="60"></textarea> -->
         </div>
-       <button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">next</button>
+       <button style="float:right; margin-top:15%" onclick="window.location.href = './stickynote.php'">go to the next question</button>
     </div>
 
 </form>
