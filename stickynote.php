@@ -99,7 +99,7 @@
 			<div id="footer"></div>
 		</div>
 	</div>
-<!--	<script src="js/StickyNote.js"></script> -->
+	<script src="js/StickyNote.js"></script>
 	</body>
 	</html>
 <?php
