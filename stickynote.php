@@ -82,7 +82,7 @@
 					<button id = "nextbtn" style="float:right" type = "button" onclick="clickFunc()">Next</button>
 					<button id = "backbtn" style="float:left; visibility: hidden;" type = "button" onclick="backClick()">Back</button>
 					<br><br>
-					<button id = "donebtn" style="float:right; visibility: hidden;" type = "button" onclick="doneFunc()">go to the next question</button>
+					<button id = "donebtn" style="float:right; visibility: hidden; background-color:lightblue;" type = "button" onclick="doneFunc()">go to the next question</button>
 				</form>
 			</div>
 		</div>
@@ -102,7 +102,7 @@
 				<span class="dot"> &nbsp &#63;</span>
 				Tips: To re-select stakeholders, delete remaining text first. You can directly modify text in all text boxes / sticky notes too.
 			</p>
-			<button id="next" style="margin-top:1%;margin-left:2%;float:right" type="button">go to the next question</button>
+			<button id="next" style="margin-top:1%;margin-left:2%;float:right; background-color:lightblue;" type="button">go to the next question</button>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
 			<div id="events"></div>
@@ -121,7 +121,7 @@
                 </div>
 				<form method = "POST">
 				    <input type="hidden" name="stickypos" id ="stickypos" value="" />
-					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px;" >Complete</button>
+					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Complete</button>
 				</form> 
 			</div>
 			<br><br><br> 
