@@ -82,7 +82,7 @@
 					<button id = "nextbtn" style="float:right" type = "button" onclick="clickFunc()">Next</button>
 					<button id = "backbtn" style="float:left; visibility: hidden;" type = "button" onclick="backClick()">Back</button>
 					<br><br>
-					<button style="float:right" type = "button" onclick="doneFunc()">Done</button>
+					<button id = "donebtn" style="float:right; visibility: hidden;" type = "button" onclick="doneFunc()">go to the next question</button>
 				</form>
 			</div>
 		</div>

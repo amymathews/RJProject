@@ -17,6 +17,7 @@ let stickyNoteCount = {
 let j = 0;
 let nxtbtn = document.getElementById("nextbtn");
 let bkbtn = document.getElementById("backbtn");
+let donebtn = document.getElementById("donebtn");
 let combined = [];
 let notes;// initiate as data.notes, stores all the sticky notes
 let note;// the html object, d3.select('#stickynotes')
@@ -135,6 +136,7 @@ function clickFunc(event, d, x){
     }
     else if(_counter==3){ 
         nxtbtn.style.visibility = 'hidden';
+        donebtn.style.visibility = 'visible';
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
