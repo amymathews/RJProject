@@ -105,7 +105,7 @@
 			</p>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
-			<button id="next" style="margin-top:1%;float:right; background-color:lightblue;" type="button">go to the next question</button>
+			<button id="next" style="margin-top:3%;float:right; margin-left: 1px; background-color:lightblue;" type="button">go to the next question</button>
 			<br/>
 			<div id="events"></div>
 			<div id="timelineSection">
