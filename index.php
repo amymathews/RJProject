@@ -38,7 +38,7 @@
             <br/>
             <br/>
     
-            <button style="float:right; color:lightblue;" onclick="window.location.href = './information.php'; ">go to beginning of activity </button>
+            <button style="float:right; background-color:lightblue;" onclick="window.location.href = './information.php'; ">go to beginning of activity </button>
             </div>
     </body>
 </html>
