@@ -114,7 +114,6 @@
                     <span class="dot"> &nbsp &#63;</span>
                     Tips: Tips: drag to put them onto the timeline one by one.
                 </p>
-				<div id = 'stickies' ></div>
                 <div id="timelines"></div>
                 <div style="margin-top:103px;display:flex">
                     <HR width="80%" style="margin-top:27px;border:3px solid grey">

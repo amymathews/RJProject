@@ -21,7 +21,6 @@ let donebtn = document.getElementById("donebtn");
 let combined = [];
 let notes;// initiate as data.notes, stores all the sticky notes
 let note;// the html object, d3.select('#stickynotes')
-let snote;
 let drag;// d3.drag()
 let feelings,stakeholders,actions;// array to be bound with datalist
 let xScale,yScale,colorScale,eventxScale,eventyScale;//scales for stickynote layout and event layout
@@ -246,20 +245,6 @@ function draw(notes) {
         document.getElementById("stickypos").value = stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y;
 
      }
-     snote = d3.select('#stickies')
-        .selectAll("textarea")
-        .data(notes)
-        .join("textarea")
-        .style("margin-left", s => xScale(s.type)+'px')
-        .style("margin-top", s => yScale(s.index)+'px')
-        .attr("rows",3)
-        .attr("cols",18)
-        .attr("id", j)
-        .attr("name",j)
-        .style('background-color', s => colorScale(s.type))
-        .text(s => s.content)
-        .style('color',"black")
-        .on("dblclick", double_click)
 
 }
 
