@@ -66,7 +66,7 @@
 				<p style="margin-left:12%">2) feelings</p>
 				<p style="margin-left:10%">3) desired outcomes</p>
 			</div>
-			<!-- <div id='stickynotes'></div> -->
+			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 				<form>
 					<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
@@ -88,6 +88,7 @@
 			</div>
 		</div>
 		<div class="container" id='pair' style="visibility: hidden">
+			<div id='stickynotes'></div>
 			<p>Now, let’s assign tasks for each stakeholder. The options are a combination of your input in the previous task and our suggestions. Create one at a time until you get all the to-dos you want.</p>
             <br/>
 			<label for="stakeholdertype">Stakeholder: </label>
@@ -114,7 +115,6 @@
                     <span class="dot"> &nbsp &#63;</span>
                     Tips: Tips: drag to put them onto the timeline one by one.
                 </p>
-				<div id='stickynotes'></div>
                 <div id="timelines"></div>
                 <div style="margin-top:103px;display:flex">
                     <HR width="80%" style="margin-top:27px;border:3px solid grey">
