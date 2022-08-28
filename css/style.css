@@ -70,12 +70,12 @@ textarea {
     text-align: center;
 }
 #timelineSection{
-    position: absolute;
+    position: sticky;
     width: 80%;
     visibility: hidden;
 }
 #stickynotes{
-    position: absolute;
+    position: relative;
     text-align: center;
 }
 #mydiv {
