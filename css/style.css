@@ -75,7 +75,7 @@ textarea {
     visibility: hidden;
 }
 #stickynotes{
-    position: relative;
+    position: absolute;
     text-align: center;
 }
 #mydiv {
