@@ -245,7 +245,6 @@ function draw(notes) {
         document.getElementById("stickypos").value = stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y;
 
      }
-
 }
 
 // combine stakeholder with feeling & action
