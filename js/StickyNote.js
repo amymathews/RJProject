@@ -394,7 +394,7 @@ function main() {
                 .classed("active", true);
             d3.select("#timelineSection")
                 .style("visibility","visible")
-                // .style("margin-top", eventyScale(Math.floor(stickyNoteCount['event']/4)+1)+'px');
+                .style("margin-top", eventyScale(Math.floor(stickyNoteCount['event']/4)+1)+'px');
         })
         d3.select('#extend').on("click",()=>{
             d3.select('#timelines')
