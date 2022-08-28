@@ -187,7 +187,7 @@ function doneFunc(event, d){
     flag = 1;
     createwacc(flag);
     pairing();
-    alert("Scroll done if you cannot see the next activity!");
+    alert("if you don’t see the next question, please scroll down");
     d3.select("#pair")
         .style("visibility","visible");
     d3.select("#three")
