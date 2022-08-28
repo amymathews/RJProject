@@ -76,9 +76,6 @@ function createwacc () {
     }
 }
 
-function redirect(){
-    document.location="complete.php"; //instead of window.location
-}
 
 // double click deletion function on the sticky note
 function double_click(event, d){
@@ -190,6 +187,7 @@ function doneFunc(event, d){
     flag = 1;
     createwacc(flag);
     pairing();
+    alert("Scroll done if you cannot see the next activity!");
     d3.select("#pair")
         .style("visibility","visible");
     d3.select("#three")
