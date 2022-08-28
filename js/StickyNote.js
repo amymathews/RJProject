@@ -242,7 +242,7 @@ function draw(notes) {
         var stickyval;
         stickyval = document.getElementById("stickypos").value ;
         //console.log('-->'+stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y);
-        document.getElementById("stickypos").value = stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y;
+        document.getElementById("stickypos").value = stickyval+'-index- '+d.index+'-xcoor- '+event.x+'-ycoor- '+event.y;
 
      }
 }
@@ -405,6 +405,7 @@ function main() {
         })
         d3.select('#done').on("click",()=>{
             var content = JSON.stringify({"notes": notes});
+            //look here for bolding
             var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
             saveAs(blob, "user.json");
         })
