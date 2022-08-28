@@ -107,7 +107,7 @@
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
 			<div id="events"></div>
-			<!-- <div id="timelineSection"> -->
+			<div id="test">
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			<br/><br/><br/><br/><br/><br/>
                 <p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened.</p>
@@ -126,7 +126,7 @@
 				    <input type="hidden" name="stickypos" id ="stickypos" value="" />
 					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Complete</button>
 				</form> 
-			<!-- </div> -->
+			</div>
 			<br><br><br> 
 			<div id="footer"></div>
 		</div>
