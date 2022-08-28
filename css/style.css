@@ -109,7 +109,7 @@ button{
     cursor: pointer;
 }
 #footer {
-  position: absolute;
+  position: relative;
   margin-top: -50px;
   /* negative value of footer height */
   height: 50px;
