@@ -59,7 +59,7 @@
 	<div class="content">
 		<div class="container">
 			<div style="position:absolute;margin-left:27%;width:60%">
-				<p><span class="dot"> &nbsp &#63;</span>Double click to delete the note.</p>
+				<p><span class="dot"> &nbsp &#63;</span> <span style="color:blue">Double click to delete the note. </span></p>
 			</div>
 			<div id="category_title" style="position:absolute;margin-top:2%;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:4%">1) stakeholders</p>
@@ -94,8 +94,8 @@
 		</div>
 		<div class="container" id='pair' style="visibility: hidden">
 			<p>Now, we’d like you to create an action plan on how to address the harm.</p>
-			<p><strong>Create sticky notes to assign to-dos for each stakeholder to help you address the harm.</strong> The stakeholders and to-dos are a combination of your input and our suggestions. </p>
-			<p><strong> 2. Put the to-dos in time order.</strong> Scroll down and there is a the long arrow, which represents a timeline starting from the time that harm has happened. Please drag sticky notes onto the timeline one by one to illsturate the time order you’d like to achieve those to-dos.</p>
+			<p>Step 1.<strong>Create sticky notes to assign to-dos for each stakeholder to help you address the harm.</strong> The stakeholders and to-dos are a combination of your input and our suggestions. </p>
+			<p> Step 2.<strong> Put the to-dos in time order.</strong> Scroll down and there is a the long arrow, which represents a timeline starting from the time that harm has happened. Please drag sticky notes onto the timeline one by one to illsturate the time order you’d like to achieve those to-dos.</p>
             <br/>
 			<label for="stakeholdertype"> <strong> Stakeholder: </strong> </label>
 			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
@@ -108,7 +108,7 @@
 			<br/>
 			<p>
 				<span class="dot"> &nbsp &#63;</span>
-				<style color: lightblue ></style> To re-select stakeholders, delete remaining text first. You can directly modify text in all text boxes / sticky notes too.
+				<span style="color:blue"> To re-select stakeholders, delete remaining text first. You can directly modify text in all text boxes / sticky notes too. </span>
 			</p>
 			<!-- <button id="next" style="margin-top:1%; margin-left:2%;float:right; background-color:lightblue;" type="button">go to the next question</button> -->
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
