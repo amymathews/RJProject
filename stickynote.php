@@ -24,7 +24,7 @@
 		 //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
 
-	 header("Location: ./complete.php?WACC="$wac);
+	 header("Location: ./complete.php");
 	 exit();
   }
 ?>
