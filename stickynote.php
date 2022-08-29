@@ -24,7 +24,7 @@
 		 //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
 
-	 header("Location: ./complete.php?WACC="$wac"");
+	 header("Location: ./complete.php?WACC="$wac);
 	 exit();
   }
 ?>
@@ -60,7 +60,7 @@
 	<div class="content">
 		<div class="container">
 			<div style="position:absolute;margin-left:27%;width:60%">
-				<p><span class="dot"> &nbsp &#63;</span> <span style="color: navyblue">Double click to delete the note. </span></p>
+				<p><span class="dot"> &nbsp &#63;</span> <span style="color: blue">Double click to delete the note. </span></p>
 			</div>
 			<div id="category_title" style="position:absolute;margin-top:2%;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:4%">1) stakeholders</p>
@@ -109,7 +109,7 @@
 			<br/>
 			<p>
 				<span class="dot"> &nbsp &#63;</span>
-				<span style="color:navyblue"> To re-select stakeholders, delete remaining text first. You can directly modify text in all text boxes / sticky notes too. </span>
+				<span style="color:blue"> To re-select stakeholders, delete remaining text first. You can directly modify text in all text boxes / sticky notes too. </span>
 			</p>
 			<!-- <button id="next" style="margin-top:1%; margin-left:2%;float:right; background-color:lightblue;" type="button">go to the next question</button> -->
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
