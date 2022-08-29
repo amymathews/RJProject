@@ -69,11 +69,16 @@
 			<div id='stickynotes'></div>
 			<div id='selector' style="position: absolute;font-size:15px;width:20%">
 				<form>
-					<p id="note_type"> <strong> On this page, we will work on creating sticky notes to identify the people, feelings and actions related to the harm that you have experienced. </strong></p>
-					<p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p>
-					<p id="question"> 1) Stakeholders: Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? <br><br>  Please put their names (e.g., offender) into the textbox below, and click "create new note"</p>
+					<p id="note_type"> In this step, we will brainstorm the people, needs and actions that are related to the harm you have experienced.</p>
+					<p> We will guide you through the process step by step by creating sticky notes. In the next step, you will link the stakeholders, needs and actions together.</p>
+					<!-- <p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p> -->
+					<p id="question"> <strong> 1) Stakeholder: Who do you think can help you mitigate the impact? 
+					Who do you think has responsibility responsbility to mitigate the impact?</strong>
 					<br>
-					<p id="content"> <strong>Add one note at a time and then click "create a sticky note" </strong> </p>
+					Write down one name at a time (e.g. offender) and click “create a sticky note.” 
+					</p>
+					<br>
+					<!-- <p id="content"> <strong>Add one note at a time and then click "create a sticky note" </strong> </p> -->
 					<textarea id="text_on_note" name = "stakeholder" style="height: 70px; width: auto;"></textarea>
 					<br><br>
 					<br><br>
@@ -82,7 +87,7 @@
 					<button id = "nextbtn" style="float:right" type = "button" onclick="clickFunc()">Next</button>
 					<button id = "backbtn" style="float:left; visibility: hidden;" type = "button" onclick="backClick()">Back</button>
 					<br><br>
-					<button id = "donebtn" style="float:right; visibility: hidden; background-color:lightblue;" type = "button" onclick="doneFunc()">go to the next question</button>
+					<button id = "donebtn" style="float:right; visibility: hidden; background-color:lightblue;" type = "button" onclick="doneFunc()">Next question</button>
 					<br>
 				</form>
 			</div>
