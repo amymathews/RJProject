@@ -28,8 +28,8 @@
         </div>
         <div class="container">
             
-            <p>Welcome to our system! Our system is designed to help people who have experienced online harm (e.g., harassment, bullying, etc) to make sense of the situation.</p>
-            <p>In the system, we will provide you with a scenario of harm and ask you to complete some tasks according to the scenario.</p>
+            <p>Welcome! We are a group of Berkeley researchers who are trying to understand how to help people who have experienced online harm (e.g., harassment, bullying, etc) to make sense of the situation.</p>
+            <p>In the following process, we will provide you with a scenario of harm and ask you to complete some tasks according to the scenario. The whole process should take place within 45 minutes. We will ask some follow-up questions afterwards.</p>
             <!-- <ul>
                 <li>Share a harm case you've experienced</li>
                 <li>Draw out an action plan to address the harm </li>
@@ -38,7 +38,7 @@
             <br/>
             <br/>
     
-            <button style="float:right; background-color:lightblue;" onclick="window.location.href = './information.php'; ">go to beginning of activity </button>
+            <button style="float:right; background-color:lightblue;" onclick="window.location.href = './information.php'; ">Let's start! </button>
             </div>
     </body>
 </html>
