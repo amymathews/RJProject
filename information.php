@@ -30,34 +30,18 @@
     </div>
     <div class="container">
         <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
-        <p> You and your friend are messaging privately about a sensitive issue. Your friend shares the conversation publicly on a social media account.</p>
+        <p> <em> You and your friend are messaging privately about an issue that is sensitive to you. Your friend shares the conversation publicly on a social media account.</em></p>
 
-        
-        <div style="display: flex">
-            <!-- <div style="margin-left: 5%; margin-right: 5%">
-                <p>Recording (talk about what has happened)</p>
-                <div id="record">
-                    <div id="controls">
-                        <button id="recordButton">Record</button>
-                        <button id="pauseButton" disabled>Pause</button>
-                        <button id="stopButton" disabled>Stop</button>
-                    </div>
-                    <p><strong>Recordings:</strong></p>
-                    <ol id="recordingsList"></ol>
-                    <script src="js/recorder.js"></script>
-                    <script src="js/app.js"></script>
-                </div>
-            </div> -->
-            <!-- <div style="position: absolute;margin-left:55%;">
-            </div> -->
-        </div>
         <div style="margin-top:8%">
-            <p>In several phrases or sentences, how would you describe your feelings after the harm has happened? (e.g. sad😭 angry😠 awkward😓)</p>
+            <p>Please describe some impact that this event may cause to you. For example,
+            (1) Feelings (fear, anger, shame, embarrassment, etc)
+            (2) Social impact (people’s reaction, etc)
+            </p>
             <textarea id="feeling" name="feeling" rows="8" cols="31"></textarea>
             <!-- <p>q1) Using several sentences, can you tell us what has happened in the harm? </p>
             <textarea id="story" name="story" rows="5" cols="60"></textarea> -->
         </div>
-       <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="window.location.href = './stickynote.php'">go to the next question</button>
+       <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="window.location.href = './stickynote.php'">Next question</button>
     </div>
 
 </form>
