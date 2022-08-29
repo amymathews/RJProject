@@ -19,12 +19,11 @@
     
         <img src="images/cats-cool-cat.gif" alt="Funny image" style="width:50%;"> 
         <p><center><em>You are officialy a cool cat.</em></center></p>
-        
-        <p> You will now compelete a survey. Please note down this id and enter when prompted: <span id="wacc"> </p>
         <script>
           let userid = url.searchParams.get("WACC");
           document.getElementById("wacc").innerHTML = userid;
         </script>
+        <p> You will now compelete a survey. Please note down this id and enter when prompted: <span id="wacc"> </p>
 
   <button onclick="window.location.href='https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea';"> Go to survey! </button>
 
