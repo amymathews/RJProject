@@ -2,8 +2,8 @@
     "notes": [
     ],
     "questions": {
-        "stakeholder": "1) Stakeholders:\\nWho do you think can help you mitigate the impact? Who do you think has responsibility responsbility to mitigate the impact?\\n Write down one name at a time (e.g. offender) and click “create a stikcy note.“",
-        "feeling": "2)Needs:\\n What are some needs you have for addressing the harm? Some potential needs include:\\n - Make sense of what has happened\\n - Emotional support.\\n - Feel safe.\n - Transform the online environment.",
+        "stakeholder": "1) Stakeholders:\nWho do you think can help you mitigate the impact? Who do you think has responsibility responsbility to mitigate the impact?\n Write down one name at a time (e.g. offender) and click “create a stikcy note.“",
+        "feeling": "2)Needs:\n What are some needs you have for addressing the harm? Some potential needs include: Make sense of what has happened,Emotional support,Feel safe,Transform the online environment.",
         "action": "3) Desired outcomes:\\n What are some desired outcomes you hope to achieve?  (e.g.,I want the offender to be banned)"
     },
     "prompts": {

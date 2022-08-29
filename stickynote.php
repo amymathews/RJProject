@@ -59,7 +59,7 @@
 	<div class="content">
 		<div class="container">
 			<div style="position:absolute;margin-left:27%;width:60%">
-				<p style ="color:lightblue"><span class="dot"> &nbsp &#63;</span>Tips: You can directly edit text on sticky notes; Double click to delete the note.</p>
+				<p><span class="dot"> &nbsp &#63;</span>Tips: You can directly edit text on sticky notes; Double click to delete the note.</p>
 			</div>
 			<div id="category_title" style="position:absolute;margin-top:2%;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:4%">1) stakeholders</p>
