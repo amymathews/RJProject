@@ -20,6 +20,7 @@
         <img src="images/cats-cool-cat.gif" alt="Funny image" style="width:50%;"> 
         <p><center><em>You are officialy a cool cat.</em></center></p>
         <script>
+          var url_string = window.location.href
           var url = new URL(url_string);
           let userid = url.searchParams.get("WACC");
           document.getElementById("wacc").innerHTML = userid;
