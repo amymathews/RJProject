@@ -23,11 +23,8 @@
 	 } else {
 		 //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	 }
-	 echo '<script>
-	 var userid = url.searchParams.get("WACC");
-	 alert("Redirecting to survey! Please note your id to be userid ")
-	 </script>';
-	 header("Location: ./complete.php");
+
+	 header("Location: ./complete.php?WACC="$wac"");
 	 exit();
   }
 ?>
