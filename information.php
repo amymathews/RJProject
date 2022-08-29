@@ -32,11 +32,10 @@
         <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
         <p> <em> You and your friend are messaging privately about an issue that is sensitive to you. Your friend shares the conversation publicly on a social media account.</em></p>
 
-        <div style="margin-top:8%">
-            <p>Please describe some impact that this event may cause to you. For example,
-            (1) Feelings (fear, anger, shame, embarrassment, etc)
-            (2) Social impact (people’s reaction, etc)
-            </p>
+        <div style="margin-top:2%">
+            <p>Please describe some impact that this event may cause to you. For example,</p>
+            <p>(1) Feelings (fear, anger, shame, embarrassment, etc)</p>
+            <p>(2) Social impact (people’s reaction, etc)</p>
             <textarea id="feeling" name="feeling" rows="8" cols="31"></textarea>
             <!-- <p>q1) Using several sentences, can you tell us what has happened in the harm? </p>
             <textarea id="story" name="story" rows="5" cols="60"></textarea> -->
