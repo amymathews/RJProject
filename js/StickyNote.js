@@ -299,13 +299,14 @@ function main() {
                 .style("margin-top", yScale(new_note["index"])+'px')
                 .attr("rows",3)
                 .attr("cols",18)
-                .attr("readonly", true)
                 .style('background-color', colorScale(new_note["type"]))
                 .text(new_note["content"])
                 .style('color',"black")
                 .attr('readonly')
                 .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click)
+                .attr("readonly", true)
+
                 // clear input value
                 document.getElementById("text_on_note").value = "";
         })
