@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         
         img {
@@ -16,6 +18,7 @@
     <title>You're Done! Thank you!!</title>
 </head>
 <body style="background-color:lavenderblush;">
+<div class = "container">
 <!--     
         <img src="images/cats-cool-cat.gif" alt="Funny image" style="width:50%;"> 
         <p><center><em>You are officialy a cool cat.</em></center></p> -->
@@ -28,11 +31,6 @@
         </script>
 
   <p> Go to survey: "window.location.href='https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea';" </p>
-
-
-
-    
-    
-
+  </div>
 </body>
 </html>
