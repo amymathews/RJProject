@@ -32,11 +32,12 @@ html,body {
     /*font-size: 15px;*/
     overflow: hidden;
 }
-textarea:read-only {
+textarea{
     resize: none;
     position: absolute;
     text-align: center;
     cursor: pointer;
+  
 }
 .to_right {
     width: 0;
