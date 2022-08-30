@@ -299,6 +299,7 @@ function main() {
                 .style("margin-top", yScale(new_note["index"])+'px')
                 .attr("rows",3)
                 .attr("cols",18)
+                .attr("readonly", true)
                 .style('background-color', colorScale(new_note["type"]))
                 .text(new_note["content"])
                 .style('color',"black")
