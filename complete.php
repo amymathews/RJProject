@@ -16,10 +16,10 @@
     <title>You're Done! Thank you!!</title>
 </head>
 <body style="background-color:lavenderblush;">
-    
+<!--     
         <img src="images/cats-cool-cat.gif" alt="Funny image" style="width:50%;"> 
-        <p><center><em>You are officialy a cool cat.</em></center></p>
-        <p> <center> You will now compelete a survey. Please note down this id and enter when prompted: <span id="wacc"> </center></p>
+        <p><center><em>You are officialy a cool cat.</em></center></p> -->
+        <p> <center> You will now compelete a survey. Please note down this id and enter when prompted: <span id="wacc" style ="font-weight:bold;"> </center></p>
         <script>
           var url_string = window.location.href
           var url = new URL(url_string);
@@ -27,7 +27,7 @@
           document.getElementById("wacc").innerHTML = userid;
         </script>
 
-  <button onclick="window.location.href='https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea';"> Go to survey! </button>
+  <p> Go to survey: "window.location.href='https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea';" </p>
 
 
 

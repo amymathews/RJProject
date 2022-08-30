@@ -132,7 +132,7 @@
                 </div>
 				<form method = "POST">
 				    <input type="hidden" name="stickypos" id ="stickypos" value="" />
-					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Complete</button>
+					<button id = "complete" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Go to follow-up Survey</button>
 				</form> 
 			<!-- </div> -->
 			<br><br><br> 
