@@ -36,7 +36,7 @@
             <p>Please describe some impact that this event may cause to you. For example,</p>
             <p>(1) Feelings (fear, anger, shame, embarrassment, etc)</p>
             <p>(2) Social impact (people’s reaction, etc)</p>
-            <textarea id="feeling" name="feeling" rows="8" cols="31"></textarea>
+            <textarea id="feeling"name="feeling"rows="8"cols="31"></textarea>
             <!-- <p>q1) Using several sentences, can you tell us what has happened in the harm? </p>
             <textarea id="story" name="story" rows="5" cols="60"></textarea> -->
         </div>

@@ -117,7 +117,7 @@
 			<div id="events"></div>
 			<!-- <div id="timelineSection"> -->
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			<br/><br/><br/><br/><br/><br/>br/><br/><br/><br/><br/><br/>
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened.</p>
                 <p>Put the sticky notes onto the timeline one by one to illustrate the time order you hope to achieve the needs.</p>
                 <p>
