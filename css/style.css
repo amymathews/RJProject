@@ -35,7 +35,7 @@ html,body {
 textarea{
     resize: none;
     position: absolute;
-    text-align: center;
+    /* text-align: center; */
     cursor: pointer;
   
 }
