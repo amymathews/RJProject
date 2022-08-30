@@ -294,7 +294,7 @@ function main() {
                 .selectAll("textarea")
                 .data(notes)
                 .enter()
-                .append("div")
+                .append("textarea")
                 .style("margin-left", xScale(new_note["type"])+'px')
                 .style("margin-top", yScale(new_note["index"])+'px')
                 .attr("rows",3)

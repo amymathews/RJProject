@@ -74,9 +74,10 @@ textarea {
     width: 80%;
     visibility: hidden;
 }
-#stickynotes{
+#stickynotes:read-only{
     position: absolute;
     text-align: center;
+    
 }
 #mydiv {
   display: none;
