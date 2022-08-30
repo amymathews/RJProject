@@ -109,7 +109,7 @@
 			<br/>
 			<p>
 				<span class="dot"> &nbsp &#63;</span>
-				<span style="color:blue"> To re-select stakeholders, delete remaining text first. You can directly modify text in all text boxes / sticky notes too. </span>
+				<span style="color:blue"> To re-select stakeholders, delete remaining text first.  </span>
 			</p>
 			<!-- <button id="next" style="margin-top:1%; margin-left:2%;float:right; background-color:lightblue;" type="button">go to the next question</button> -->
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
@@ -117,7 +117,7 @@
 			<div id="events"></div>
 			<!-- <div id="timelineSection"> -->
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			<br/><br/><br/><br/><br/><br/>
+			<br/><br/><br/><br/><br/><br/>br/><br/><br/><br/><br/><br/>
                 <p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened.</p>
                 <p>Put the sticky notes onto the timeline one by one to illustrate the time order you hope to achieve the needs.</p>
                 <p>
