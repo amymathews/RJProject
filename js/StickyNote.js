@@ -295,6 +295,7 @@ function main() {
                 .data(notes)
                 .enter()
                 .append("textarea")
+                .append("readonly")
                 .style("margin-left", xScale(new_note["type"])+'px')
                 .style("margin-top", yScale(new_note["index"])+'px')
                 .attr("rows",3)
@@ -304,7 +305,6 @@ function main() {
                 .style('color',"black")
                 .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click)
-                // .attr("id", function(d,j){ return "textarea" + j});
                 // clear input value
                 document.getElementById("text_on_note").value = "";
         })

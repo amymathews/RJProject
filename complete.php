@@ -27,7 +27,7 @@
           document.getElementById("wacc").innerHTML = userid;
         </script>
 
-  <button style = "float:right "onclick="window.location.href='https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea';"> Go to survey! </button>
+  <button onclick="window.location.href='https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea';"> Go to survey! </button>
 
 
 
