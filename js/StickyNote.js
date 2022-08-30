@@ -302,6 +302,7 @@ function main() {
                 .style('background-color', colorScale(new_note["type"]))
                 .text(new_note["content"])
                 .style('color',"black")
+                .attr('readonly')
                 .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click)
                 // clear input value
