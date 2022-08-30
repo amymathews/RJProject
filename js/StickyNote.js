@@ -302,10 +302,9 @@ function main() {
                 .style('background-color', colorScale(new_note["type"]))
                 .text(new_note["content"])
                 .style('color',"black")
-                .attr('readonly')
                 .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click)
-                // .attr("readonly", true)
+                .attr("readonly", true)
 
                 // clear input value
                 document.getElementById("text_on_note").value = "";
