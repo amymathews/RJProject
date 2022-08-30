@@ -305,6 +305,7 @@ function main() {
                 .call(drag).on("click",()=>{} )
                 .on("dblclick", double_click)
                 .attr("readonly", true)
+                //added readony attribute
 
                 // clear input value
                 document.getElementById("text_on_note").value = "";
