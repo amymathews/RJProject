@@ -32,7 +32,7 @@ html,body {
     /*font-size: 15px;*/
     overflow: hidden;
 }
-textarea {
+textarea:read-only {
     resize: none;
     position: absolute;
     text-align: center;
@@ -74,7 +74,7 @@ textarea {
     width: 80%;
     visibility: hidden;
 }
-#stickynotes:read-only{
+#stickynotes{
     position: absolute;
     text-align: center;
     
