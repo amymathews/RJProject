@@ -74,10 +74,11 @@
 					<p> We will guide you through the process step by step by creating sticky notes. In the next step, you will link the stakeholders, needs and actions together.</p>
 					<!-- <p> <strong>Please answer the questions and we will create the sticky notes for you.</strong></p> -->
 					<strong> <p id="question"> 1) Stakeholder: Who do you think can help you mitigate the impact? 
-					Who do you think has responsibility responsbility to mitigate the impact?</strong>
+					Who do you think has responsibility responsbility to mitigate the impact?
 					<br>
 					Write down one name at a time (e.g. offender) and click “create a sticky note.” 
 					</p>
+					</strong>
 					<br>
 					<!-- <p id="content"> <strong>Add one note at a time and then click "create a sticky note" </strong> </p> -->
 					<textarea id="text_on_note" name = "stakeholder" style="height: 70px; width: auto;"></textarea>
