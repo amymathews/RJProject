@@ -31,7 +31,7 @@
         </script>
 
 
-  <p> <center> Go to survey: <a href="https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea ">Survey</a>
+  <p> <center> Go to survey: <a href="https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea " style="color:blue">Survey</a>
   </center></p>
   </div>
 </body>
