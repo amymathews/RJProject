@@ -30,7 +30,9 @@
           document.getElementById("wacc").innerHTML = userid;
         </script>
 
-  <p> <center> Go to survey: https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea </center></p>
+
+  <p> <center> Go to survey: <a href="https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea ">Survey</a>
+  </center></p>
   </div>
 </body>
 </html>
