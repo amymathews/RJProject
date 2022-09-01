@@ -1,17 +1,6 @@
 {
     "notes": [
-        {
-            "type": "stakeholder",
-            "index": 0
-        },
-        {
-            "type": "feeling",
-            "index": 0
-        },
-        {
-            "type": "action",
-            "index": 0
-        }
+       
     ],
     "questions": {
         "stakeholder": "1) Stakeholders:\nWho do you think can help you mitigate the impact? Who do you think has responsibility responsbility to mitigate the impact?\n Write down one name at a time (e.g. offender) and click “create a sticky note.“",
