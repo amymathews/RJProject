@@ -64,7 +64,7 @@
 			</div>
 			<div id="category_title" style="position:absolute;margin-top:2%;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:4%">1) stakeholders</p>
-				<p style="margin-left:12%">2) feelings</p>
+				<p style="margin-left:12%">2) needs</p>
 				<p style="margin-left:10%">3) desired outcomes</p>
 			</div>
 			<div id='stickynotes'></div>
