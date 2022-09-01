@@ -79,9 +79,11 @@ function createwacc () {
 
 // double click deletion function on the sticky note
 function double_click(event, d){
+
+    var index = jsonObj[myOption].indexof(this);
     let r=confirm("Do you want to delete this sticky note?");
     if (r==true){
-        jsonObj[myOption].pop()
+        jsonObj[myOption].splice(index,1);
         d3.select(this)
             .text((s) => {
                 //delete the sticky note from "notes" list
