@@ -249,13 +249,34 @@ function draw(notes) {
 
 // combine stakeholder with feeling & action
 function pairing() {
+    //old  code
+    outcomes = Array.from(
+        new Set(
+            notes.map( (s) => {
+                if (s.type == "feeling" || s.type == "action") return s.content;
+                else return;
+            }).concat(data.prompts.outcomes)
+        )
+    ).sort().filter(d=>{return d});
+   
+    d3.select('#outcome')
+       .selectAll('option')
+       .data(outcomes)
+       .enter()
+       .append('option')
+       .text(d=>d);
+    // end old code
     stakeholders = Array.from(
         new Set(
             notes.map( (s) => {
                 if (s.type == "stakeholder") return s.content;
                 else return;
-            }
-        ).concat(Object.keys(data.prompts)))).sort().filter(d=>{return d});
+            }).concat(data.prompts.stakeholders)
+        )
+    ).sort().filter(d=>{return d});
+        // new code: ).concat(Object.keys(data.prompts)))).sort().filter(d=>{return d});
+    
+    
     d3.select('#stakeholder')
            .selectAll('option')
            .data(stakeholders)
@@ -310,34 +331,34 @@ function main() {
                 // clear input value
                 document.getElementById("text_on_note").value = "";
         })
-        d3.select('#stakeholdertype')
-            .on('change',()=>{
-             let stakeholder_ = document.getElementById("stakeholdertype").value;
-             if (stakeholder_ in data.prompts){
-                 $("#outcome").empty();
-                 d3.select('#outcome')
-                    .selectAll('option')
-                    .data(data.prompts[stakeholder_])
-                    .enter()
-                    .append('option')
-                    .text(d=>d)
-             } else {
-                let customizedOutcomes = Array.from(
-                     new Set(
-                         notes.map( (s) => {
-                             if (s.type == "stakeholder") return;
-                             else return s.content;
-                         }
-                     )));
-                 $("#outcome").empty();
-                 d3.select('#outcome')
-                     .selectAll('option')
-                     .data(customizedOutcomes)
-                     .enter()
-                     .append('option')
-                     .text(d=>d)
-             }
-            })
+        // d3.select('#stakeholdertype')
+        //     .on('change',()=>{
+        //      let stakeholder_ = document.getElementById("stakeholdertype").value;
+        //      if (stakeholder_ in data.prompts){
+        //          $("#outcome").empty();
+        //          d3.select('#outcome')
+        //             .selectAll('option')
+        //             .data(data.prompts[stakeholder_])
+        //             .enter()
+        //             .append('option')
+        //             .text(d=>d)
+        //      } else {
+        //         let customizedOutcomes = Array.from(
+        //              new Set(
+        //                  notes.map( (s) => {
+        //                      if (s.type == "stakeholder") return;
+        //                      else return s.content;
+        //                  }
+        //              )));
+        //          $("#outcome").empty();
+        //          d3.select('#outcome')
+        //              .selectAll('option')
+        //              .data(customizedOutcomes)
+        //              .enter()
+        //              .append('option')
+        //              .text(d=>d)
+        //      }
+        //     })
         // create combined sticky notes
         d3.select('#combine').on('click',()=> {
             var url_string = window.location.href
