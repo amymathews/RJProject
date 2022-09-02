@@ -58,7 +58,7 @@
 		</div>
 	</div>
 	<div class="content">
-	<div class="container">
+	<!-- <div class="container">
         <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
         <p> <em> You and your friend are messaging privately about an issue that is sensitive to you. Your friend shares the conversation publicly on a social media account.</em></p>
 
@@ -71,7 +71,7 @@
             <textarea id="story" name="story" rows="5" cols="60"></textarea> -->
         </div>
        <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="initial()">Next question</button>
-    </div>
+    </div> -->
 		<div class="container">
 			<div style="position:absolute;margin-left:27%;width:60%">
 				<p><span class="dot"> &nbsp &#63;</span> <span style="color: blue">Double click to delete the note. </span></p>
