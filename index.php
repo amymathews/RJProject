@@ -39,7 +39,7 @@
             <br/>
             <br/>
     
-            <button style="float:right; background-color:lightblue;" type="submit">Let's start! </button>
+            <button style="float:right; background-color:lightblue;" type="submit" onclick="window.location.href ='./stickynote.php'">Let's start! </button>
             </div>
     </form>
     </body>
