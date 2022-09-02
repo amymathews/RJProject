@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   if($_POST){
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 	$cleardb_server = $cleardb_url["host"];
@@ -27,7 +27,7 @@
 	 header("Location: ./complete.php?WACC=".$wacc);
 	 exit();
   }
-?>
+?> -->
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
