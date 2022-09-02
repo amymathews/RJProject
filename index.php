@@ -44,7 +44,7 @@
     </form>
     </body>
 </html>
-<?php
+<!-- <?php
 
     //Get Heroku ClearDB connection information
     $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -82,6 +82,6 @@
  // header("Location: /stickynote.php?WACC=".$highest_id);
  $st = time();
  header("Location: /stickynote.php?WACC=".$highest_id."&st=".$st);
-?>
+?> -->
 
 
