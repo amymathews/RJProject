@@ -70,7 +70,7 @@
             <!-- <p>q1) Using several sentences, can you tell us what has happened in the harm? </p>
             <textarea id="story" name="story" rows="5" cols="60"></textarea> -->
         </div>
-       <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="intial()">Next question</button>
+       <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="initial()">Next question</button>
     </div>
 		<div class="container">
 			<div style="position:absolute;margin-left:27%;width:60%">
