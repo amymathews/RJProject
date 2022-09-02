@@ -123,6 +123,23 @@ function double_click(event, d){
     }
 }
 
+function initial(event, d) {
+    
+    var feelingval = document.getElementById("feeling").value;
+    $.ajax({
+        url: './feelinginitial.php',    //the page containing php script
+        type: 'POST',    //request type,
+        // dataType: 'json',
+        data: feelingval,
+        success:function(output){
+            console.log('success in intial '+output);
+        },
+        error:function(error){
+            console.log('The error is--> '+JSON.stringify(error));
+        }
+        });
+}
+
 //frontclick function to go foward questions
 function clickFunc(event, d, x){
     if (bkbtn.style.visibility === 'hidden') {

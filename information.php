@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<form action = "<?php $_PHP_SELF ?>" method = "POST">
+<!-- <form action = "<?php $_PHP_SELF ?>" method = "POST"> -->
     <div class="stepper-wrapper">
         <div class="stepper-item completed">
             <div class="step-counter">1</div>
@@ -43,10 +43,10 @@
        <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="window.location.href = './stickynote.php'">Next question</button>
     </div>
 
-</form>
+<!-- </form> -->
 </body>
 </html>
-<?php
+<!-- <?php
 
    // echo "Hi";
     //Get Heroku ClearDB connection information
@@ -105,4 +105,4 @@
     //"&connVar=".$conn
     exit;
 }
-?>
+?> -->
