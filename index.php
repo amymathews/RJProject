@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-    <form action = "<?php $_PHP_SELF ?>" method = "POST">
         <div class="stepper-wrapper">
             <div class="stepper-item active">
                 <div class="step-counter">1</div>
@@ -39,49 +38,9 @@
             <br/>
             <br/>
     
-            <button style="float:right; background-color:lightblue;" type="submit" onclick="window.location.href ='./stickynote.php'">Let's start! </button>
+            <button style="float:right; background-color:lightblue;" onclick="window.location.href = './information.php'; ">Let's start! </button>
             </div>
-    </form>
     </body>
 </html>
-<!-- <?php
-
-    //Get Heroku ClearDB connection information
-    $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $cleardb_server = $cleardb_url["host"];
-    $cleardb_username = $cleardb_url["user"];
-    $cleardb_password = $cleardb_url["pass"];
-    $cleardb_db = substr($cleardb_url["path"],1);
-    $active_group = 'default';
-    $query_builder = TRUE;
-    // Connect to DB
-    $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-
-        if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
- $sql = "SELECT MAX(userId) as maxId FROM  heroku_3fa92357decd51e.userdet LIMIT 1";
- $result = mysqli_query($conn, $sql);
-
- if (mysqli_num_rows($result) > 0) {
- // output data of each row
- while($row = mysqli_fetch_assoc($result)) {
-    // echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-    $highest_id = $row["maxId"];
- }
- } else {
- echo "0 results";
- }
-
-
-  
- // $highest_id = mysqli_fetch_row(mysqli_query($conn,'SELECT MAX(userId) FROM  heroku_3fa92357decd51e.userdet LIMIT 1'), 0);
-
-   // mysqli_close($conn);
-   
- // header("Location: /stickynote.php?WACC=".$highest_id);
- $st = time();
- header("Location: /stickynote.php?WACC=".$highest_id."&st=".$st);
-?> -->
 
 

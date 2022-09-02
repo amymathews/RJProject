@@ -57,22 +57,6 @@
 			<div class="step-counter">5</div>
 		</div>
 	</div>
-	<form action = "<?php $_PHP_SELF ?>" method = "POST">
-    <div class="container">
-        <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
-        <p> <em> You and your friend are messaging privately about an issue that is sensitive to you. Your friend shares the conversation publicly on a social media account.</em></p>
-
-        <div style="margin-top:2%">
-            <p>Please describe some impact that this event may cause to you. For example,</p>
-            <p>(1) Feelings (fear, anger, shame, embarrassment, etc)</p>
-            <p>(2) Social impact (people’s reaction, etc)</p>
-            <textarea id="feeling"name="feeling"rows="8"cols="31"></textarea>
-            <!-- <p>q1) Using several sentences, can you tell us what has happened in the harm? </p>
-            <textarea id="story" name="story" rows="5" cols="60"></textarea> -->
-        </div>
-		<button style="float:right; margin-top:15%; background-color:lightblue; " onclick= intial()>Next question</button>
-    </div>
-</form>
 	<div class="content">
 		<div class="container">
 			<div style="position:absolute;margin-left:27%;width:60%">
@@ -80,7 +64,7 @@
 			</div>
 			<div id="category_title" style="position:absolute;margin-top:2%;margin-left:27%;width:60%;display:flex;font-size:18px">
 				<p style="margin-left:4%">1) stakeholders</p>
-				<p style="margin-left:12%">2) needs</p>
+				<p style="margin-left:12%">2)needs</p>
 				<p style="margin-left:10%">3) desired outcomes</p>
 			</div>
 			<div id='stickynotes'></div>
