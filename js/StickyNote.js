@@ -124,7 +124,7 @@ function double_click(event, d){
 }
 
 function initial(event, d) {
-    
+
     var feelingval = document.getElementById("feeling").value;
     $.ajax({
         url: './feelinginitial.php',    //the page containing php script
@@ -440,10 +440,10 @@ function main() {
                 data: {note : new_note, 
                     userid: userid},
                 success:function(output){
-                    //console.log('success'+output);
+                    console.log('success'+output);
                 },
                 error:function(error){
-                    //console.log('The error is here at the combine -->'+JSON.stringify(error));
+                    console.log('The error is here at the combine -->'+JSON.stringify(error));
                 }
             });
         })

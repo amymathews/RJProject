@@ -1,4 +1,5 @@
 <?php
+
     //Get Heroku ClearDB connection information
     $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_server = $cleardb_url["host"];
@@ -18,7 +19,6 @@
 
     //if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // if( $_POST["story"] || $_POST["feeling"] ) {
-     if( $_POST ) {
        
     // $sql = "INSERT INTO MyGuests (firstname, lastname, email)VALUES ('John', 'Doe', 'john@example.com')";
      $story = $_POST['feelingval'];
@@ -32,5 +32,4 @@
 
     //"&connVar=".$conn
     mysqli_close($conn);
-}
 ?>
