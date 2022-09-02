@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
   if($_POST){
 	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 	$cleardb_server = $cleardb_url["host"];
@@ -27,7 +27,7 @@
 	 header("Location: ./complete.php?WACC=".$wacc);
 	 exit();
   }
-?> -->
+?> 
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
@@ -58,7 +58,6 @@
 		</div>
 	</div>
 	<div class="content">
-	<form action = "<?php $_PHP_SELF ?>" method = "POST">
 	<div class="container">
         <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
         <p> <em> You and your friend are messaging privately about an issue that is sensitive to you. Your friend shares the conversation publicly on a social media account.</em></p>
@@ -73,7 +72,6 @@
         </div>
        <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="intial()">Next question</button>
     </div>
-	</form>
 		<div class="container">
 			<div style="position:absolute;margin-left:27%;width:60%">
 				<p><span class="dot"> &nbsp &#63;</span> <span style="color: blue">Double click to delete the note. </span></p>
