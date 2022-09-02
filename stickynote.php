@@ -57,6 +57,7 @@
 			<div class="step-counter">5</div>
 		</div>
 	</div>
+	<div class="content">
 	<form action = "<?php $_PHP_SELF ?>" method = "POST">
 	<div class="container">
         <p>Imagine that you have been through the following situation and answer the following questions accordingly.</p> 
@@ -73,7 +74,6 @@
        <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="intial()">Next question</button>
     </div>
 	</form>
-	<div class="content">
 		<div class="container">
 			<div style="position:absolute;margin-left:27%;width:60%">
 				<p><span class="dot"> &nbsp &#63;</span> <span style="color: blue">Double click to delete the note. </span></p>
