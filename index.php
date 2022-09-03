@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
    echo "Hi";
     //Get Heroku ClearDB connection information
     $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -32,7 +32,7 @@
     // header("Location: /stickynote.php?WACC=".$highest_id."&st=".$st);
     exit;
 }
-?>
+?> -->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -73,7 +73,7 @@
             <br/>
             <br/>
             <form method = "POST" action="index.php">
-                <button type = "submit" style="float:right; background-color:lightblue;">Let's start! </button>
+                <button type = "submit" style="float:right; background-color:lightblue;" onclick="information.php">Let's start! </button>
             </form>
         </div>            
     </body>
