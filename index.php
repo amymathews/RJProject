@@ -1,38 +1,3 @@
-<!-- <?php
-   echo "Hi";
-    //Get Heroku ClearDB connection information
-    $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $cleardb_server = $cleardb_url["host"];
-    $cleardb_username = $cleardb_url["user"];
-    $cleardb_password = $cleardb_url["pass"];
-    $cleardb_db = substr($cleardb_url["path"],1);
-    $active_group = 'default';
-    $query_builder = TRUE;
-    // Connect to DB
-    $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-
-        if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    if( $_POST ) {
-    echo "here";
-    $sql = "SELECT MAX(userId) as maxId FROM  heroku_3fa92357decd51e.userdet LIMIT 1";
-    $result = mysqli_query($conn, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-       // echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-       $highest_id = $row["maxId"];
-    }
-    } else {
-    echo "0 results";
-    }
-    $st = time();
-    // header("Location: /stickynote.php?WACC=".$highest_id."&st=".$st);
-    exit;
-}
-?> -->
 <html>
     <head>
         <meta charset="UTF-8">
