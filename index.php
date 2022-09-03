@@ -15,7 +15,7 @@
         die("Connection failed: " . mysqli_connect_error());
     }
     if( $_POST ) {
-    echo"here";
+    echo "here";
     $sql = "SELECT MAX(userId) as maxId FROM  heroku_3fa92357decd51e.userdet LIMIT 1";
     $result = mysqli_query($conn, $sql);
 
@@ -72,8 +72,8 @@
             <img style="float:left" src="images/support.png">
             <br/>
             <br/>
-            <form method = "POST">
-                <button style="float:right; background-color:lightblue;">Let's start! </button>
+            <form method = "POST" action="index.php">
+                <button type = "submit" style="float:right; background-color:lightblue;">Let's start! </button>
             </form>
         </div>            
     </body>
