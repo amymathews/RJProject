@@ -68,7 +68,7 @@
             <p>(2) Social impact (people’s reaction, etc)</p>
             <textarea id="feeling"name="feeling"rows="8"cols="31"></textarea>
             <!-- <p>q1) Using several sentences, can you tell us what has happened in the harm? </p> -->
-            <!-- <textarea id="story" name="story" rows="5" cols="60"></textarea>  -->
+            <!-- <textarea id="story" name="story" rows="5" cols="60"></textarea> 
         </div>
        <button style="float:right; margin-top:15%; background-color:lightblue; " onclick="initial()">Next question</button>
     </div> -->
