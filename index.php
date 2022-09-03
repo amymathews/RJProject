@@ -72,9 +72,7 @@
             <img style="float:left" src="images/support.png">
             <br/>
             <br/>
-            <form method = "POST" action="index.php">
                 <button type = "submit" style="float:right; background-color:lightblue;" onclick="information.php">Let's start! </button>
-            </form>
         </div>            
     </body>
 </html>
