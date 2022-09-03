@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-    <form action = "<?php $_PHP_SELF ?>" method = "POST">
         <div class="stepper-wrapper">
             <div class="stepper-item active">
                 <div class="step-counter">1</div>
@@ -40,6 +39,5 @@
             <br/>
             <button style="float:right; background-color:lightblue;" onclick="window.location.href = './stickynote.php'; ">Let's start! </button>
             </div>
-    </form>
     </body>
 </html>
