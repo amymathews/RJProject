@@ -37,8 +37,7 @@
             <img style="float:left" src="images/support.png">
             <br/>
             <br/>
-    
-            <button style="float:right; background-color:lightblue;" onclick="window.location.href = './information.php'; ">Let's start! </button>
+            <button style="float:right; background-color:lightblue;" onclick="window.location.href = './stickynote.php'; ">Let's start! </button>
             </div>
     </body>
 </html>
