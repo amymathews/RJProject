@@ -45,7 +45,7 @@
 </html>
 <?php
 
-   // echo "Hi";
+    echo "Hi";
     //Get Heroku ClearDB connection information
     $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_server = $cleardb_url["host"];
@@ -62,6 +62,7 @@
     }
      if( $_POST ) {
    
+    echo "here";
     $sql = "SELECT MAX(userId) as maxId FROM  heroku_3fa92357decd51e.userdet LIMIT 1";
     $result = mysqli_query($conn, $sql);
 
