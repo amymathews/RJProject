@@ -72,7 +72,7 @@
             <img style="float:left" src="images/support.png">
             <br/>
             <br/>
-                <button type = "submit" style="float:right; background-color:lightblue;" onclick="information.php">Let's start! </button>
+                <button type = "submit" style="float:right; background-color:lightblue;" oonclick="window.location.href = './information.php'">Let's start! </button>
         </div>            
     </body>
 </html>
