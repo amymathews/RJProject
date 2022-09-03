@@ -60,7 +60,6 @@
         if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
-     if( $_POST ) {
    
     echo "here";
     $sql = "SELECT MAX(userId) as maxId FROM  heroku_3fa92357decd51e.userdet LIMIT 1";
@@ -79,7 +78,6 @@
     header("Location: /stickynote.php?WACC=".$highest_id."&st=".$st);
     //"&connVar=".$conn
     exit;
-}
 ?>
 
 
