@@ -36,11 +36,11 @@
 
 			<div style="margin-top:2%">
 				<p>Please describe your feelings after the event (fear, anger, shame, embarrassment, etc).</p>
-				<textarea id="feeling"name="feeling"rows="20"cols="40"></textarea>
+				<textarea id="feeling"name="feeling"rows="10"cols="55"></textarea>
 			</div>
 			<button style="float:right; margin-top:15%; background-color:lightblue; " id="go_to_createnote">Next question</button>
 		</div>
-		<div class="container" id="createnotes" style="visibility:hidden">
+		<div class="container" id="createnotes" style="visibility:hidden; margin-top: 20px">
 			<div style="position:absolute;margin-left:27%;width:60%">
 				<p><span class="dot"> &nbsp &#63;</span> <span style="color: blue">Double click to delete the note. </span></p>
 			</div>
