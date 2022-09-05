@@ -30,7 +30,7 @@
 	</div>
 	<div class="content">
 
-		<div class="container">
+		<div class="container" style = "margin-top:-100px">
 			<p>Imagine that you have been through the following situation and answer the following questions accordingly.</p>
 			<p> <em> You and your friend are messaging privately about a sensitive political issue. Your friend posts your conversation publicly on a social media platform without your consent. You received messages from strangers that are vulgar. Eventually, someone posts your phone number and home address online, and you start to receive threatening messages</em></p>
 
@@ -121,7 +121,7 @@
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
 			<input type="hidden" name="stickypos" id ="stickypos" value="" />
-			<button id = "done" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Go to follow-up Survey</button>
+			<button id = "done" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Download Test data</button>
 			<br><br><br>
 		</div>
 	</div>
