@@ -58,14 +58,14 @@
 				</p>
 				</strong>
 				<br>
-				<textarea id="text_on_note" name = "action" style="height: 150px; width:200px"></textarea>
+				<textarea id="text_on_note" name = "action" style="height: 150px; width: 275px;"></textarea>
 				<br><br>
 				<br><br>
 				<br><br>
-				<br><br>
+				<br>
 				<button id="create" type="button">create a sticky note</button>
 				<br><br>
-				<br><br>
+				
 				<button id = "nextbtn" style="float:right" type = "button" onclick="clickFunc()">Next</button>
 				<button id = "backbtn" style="float:left; visibility: hidden;" type = "button" onclick="backClick()">Back</button>
 				<br><br>
