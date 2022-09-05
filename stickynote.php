@@ -45,9 +45,9 @@
 				<p><span class="dot"> &nbsp &#63;</span> <span style="color: blue">Double click to delete the note. </span></p>
 			</div>
 			<div id="category_title" style="position:absolute;margin-top:2%;margin-left:27%;width:60%;display:flex;font-size:18px">
-				<p style="margin-left:4%">1) impacts</p>
+				<p style="margin-left:4%">1) stakeholder</p>
 				<p style="margin-left:13%">2) needs</p>
-				<p style="margin-left:16%">3) stakeholder</p>
+				<p style="margin-left:16%">3) impact</p>
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position:absolute;font-size:15px;width:20%;">
