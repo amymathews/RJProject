@@ -85,9 +85,9 @@
 			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="stakeholder">
 			</datalist>
-			<label for="preoutcometype"> <strong> To do: </strong></label>
-			<input id="preoutcometype" name="preoutcometype" type="text" list="preoutcome" onclick="this.select()" style="width:32%"/>
-			<datalist id="preoutcome">
+			<label for="outcometype"> <strong> To do: </strong></label>
+			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
+			<datalist id="outcome">
 			</datalist>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
@@ -96,11 +96,10 @@
 			<input id="prestakeholdertype" name="prestakeholdertype" type="text" list="prestakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="prestakeholder">
 			</datalist>
-			<label for="outcometype"> <strong> To do: </strong></label>
-			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width:32%"/>
-			<datalist id="outcome">
+			<label for="preoutcometype"> <strong> To do: </strong></label>
+			<input id="preoutcometype" name="preoutcometype" type="text" list="preoutcome" onclick="this.select()" style="width:32%"/>
+			<datalist id="preoutcome">
 			</datalist>
-	
 			<button id="combine2" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
 			<br/>
