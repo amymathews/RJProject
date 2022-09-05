@@ -51,8 +51,8 @@
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position:absolute;font-size:15px;width:20%;">
-				<p id="note_type"> In this step, we will brainstorm the people, needs and actions that are related to the harm you have experienced.</p>
-				<p> We will guide you through the process step by step by creating sticky notes. In the next step, you will link the stakeholders, needs and actions together.</p>
+				<p id="note_type"> In this step, we will reflect on the impact, needs and people relevant to the harm you've experienced.</p>
+				<p>You will first create sticky notes, and then move them around to explore their relationships.</p>
 				<strong> <p id="question"> 1) Stakeholder: Who do you think can help you mitigate the impact?
 					Who do you think has responsibility responsbility to mitigate the impact?</strong>
 				<br>
