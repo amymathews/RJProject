@@ -5,7 +5,7 @@ let height = 0.96 * _height;
 let padding = {'left': 0.25*width, 'bottom': 0.1*height, 'top': 0.1*height, 'right': 0.1*width};
 let data = null;// object parsed from the json file
 let data_file = './data/data.json';// data path
-let stickyNoteTypes = ['stakeholder','feeling','action','stakeholder_individual','event'];
+let stickyNoteTypes = ['action','feeling','stakeholder','stakeholder_individual','event'];
 //stakeholder_individual not in use; need & action combined
 let stickyNoteColors = ['#fcb6d0','#ffdee1','#f8dda9','#b6dcb6','#d9f1f1'];
 let stickyNoteCount = {
