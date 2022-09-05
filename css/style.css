@@ -26,18 +26,16 @@
 
 
 html,body {
-    background-color: lavenderblush;
     width: 100%;
     height: 100%;
-    /*font-size: 15px;*/
+    font-size: 15px;
     overflow: hidden;
 }
-textarea{
+textarea {
     resize: none;
     position: absolute;
-    /* text-align: center; */
+    text-align: center;
     cursor: pointer;
-  
 }
 .to_right {
     width: 0;
@@ -50,8 +48,8 @@ textarea{
     /*
     display: flex;
     flex-direction: column;*/
-    height: 100%;
     overflow: auto;
+    height: 100%;
 }
 .title {
     font-size: 1rem;
@@ -62,63 +60,28 @@ textarea{
     padding-left: 10%;
     padding-right: 10%;
     position: relative;
-    height: 100%;
     overflow: auto;
+    height: 100%;
     padding-bottom:5%;
 }
 #events{
     position: absolute;
     text-align: center;
 }
-#timelineSection{
-    position: sticky;
-    width: 80%;
-    visibility: hidden;
-}
 #stickynotes{
     position: absolute;
     text-align: center;
-    
 }
-#mydiv {
-  display: none;
-}
-#pair{
-    /**/
-}
-/* #tooltip{
-    position: absolute;
-    text-align: center;
-    background-color: rgba(250, 250, 250, 1);
-    border: 1px solid rgb(200,200,200);
-    border-radius:5px;
-    font-size:0.8rem;
-    width: 15rem;;
-    padding:4px;
-    color:black;
-    z-index: 3;
-    visibility: hidden;
-    opacity: 0.8;
-} */
+
 #selector{
-    /*position: absolute;*/
     text-anchor: middle;
     font-size: 0.4rem;
     opacity: 80%;
-    visibility: visible;
 }
+
 button{
     cursor: pointer;
 }
-#footer {
-  position: relative;
-  margin-top: -50px;
-  /* negative value of footer height */
-  height: 50px;
-  clear: both;
-  background-color: lavenderblush;
-}
-
 input[type="range"] {
     width: 100%;
     -webkit-appearance: none;
@@ -138,82 +101,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     background: #666;
 }
 
-#helpbutton {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    position: relative;
-    right: 133px;
-    top:20px;
-  
-  }
-  
-  .tooltip {
-    position: relative;
-    background: green;
-    padding: 5px 12px;
-    margin: 5px;
-    font-size: 15px;
-    border-radius: 100%;
-    color: #FFF;
-  }
-
-  .tooltip:after {
-    position: absolute;
-    content: '';
-    opacity: 0;
-    transition: all 0.4s ease;
-  }
-  
-  .tooltip:before {
-    border-width: 10px 8px 0 8px;
-    border-style: solid;
-    border-color: green transparent transparent transparent;
-    top: -15px;
-     transform: translateY(20px);
-  }
-  
-  .tooltip:after {
-    content: attr(data-tooltip);
-    background: green;
-    width: 160px;
-    /*height: 40px;*/
-    font-size: 9px;
-    font-weight: 300;
-    top: -75px;
-    left: -10px;
-    padding: 10px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transform: translateY(20px);
-  }
-  
-  .tooltip:hover::before,
-  .tooltip:hover::after {
-    opacity: 1;
-    transform: translateY(-2px);
-  }
-  
-  @keyframes shake {
-    0% { 
-      transform: rotate(2deg);
-    }
-    50% {
-     transform: rotate(-3deg);
-    }
-    70% {
-      transform: rotate(3deg);
-    }
-  
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  
-  #anim:hover {
-    animation: shake 500ms ease-in-out forwards;
-  }
-  .dot {
+.dot {
     height: 25px;
     width: 25px;
     background-color: lightblue;
@@ -229,7 +117,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     justify-content: space-between;
     margin-bottom: 20px;
     overflow: hidden;
-    position:fixed
+    position: fixed
     top: 0px;
     left: 0px;
   }

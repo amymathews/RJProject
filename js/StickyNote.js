@@ -14,7 +14,7 @@ let stickyNoteCount = {
     'action':0,
     'event':0,
 }
-let j = 0;
+let stickyNoteId = 0;
 let nxtbtn = document.getElementById("nextbtn");
 let bkbtn = document.getElementById("backbtn");
 let donebtn = document.getElementById("donebtn");
@@ -34,48 +34,6 @@ jsonObj['userid'];
 jsonObj['stakeholder'] = new Array();
 jsonObj['feeling'] = new Array();
 jsonObj['action'] = new Array();
-
-// function to handle pushing info to back end
-function createwacc () {
-    if (flag == 0){
-        var url_string = window.location.href
-        var url = new URL(url_string);
-        var userid = url.searchParams.get("WACC");
-        jsonObj['userid'] = userid;
-        var contentvar = myOption;
-        var textonnote = document.getElementById("text_on_note").value;
-        var stakeholderop='';
-        var feelingop='';
-        var actionop='';
-    
-        if (contentvar == "stakeholder") { 
-            stakeholderop  = textonnote;
-        } else if (contentvar == "feeling") {
-            feelingop = textonnote;
-        } else if ( contentvar == "action") {
-            actionop = textonnote;
-        }
-        jsonObj['stakeholder'].push(stakeholderop);
-        jsonObj['feeling'].push(feelingop);
-        jsonObj['action'].push(actionop);
-    }
-    
-    if(flag == 1){
-        $.ajax({
-        url: './sninsert.php',    //the page containing php script
-        type: 'POST',    //request type,
-        // dataType: 'json',
-        data: jsonObj,
-        success:function(output){
-            console.log('success '+output);
-        },
-        error:function(error){
-            console.log('The error is--> '+JSON.stringify(error));
-        }
-        });
-    }
-}
-
 
 // double click deletion function on the sticky note
 function double_click(event, d){
@@ -118,37 +76,37 @@ function clickFunc(event, d, x){
     if (nxtbtn.style.visibility === 'hidden') {
         nxtbtn.style.visibility = 'visible';
     }
-    
-    if(_counter==1){ 
+
+    if(_counter==1){
         donebtn.style.visibility = 'hidden';
         let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
-        
+
     }
-    if(_counter==2){ 
+    if(_counter==2){
         donebtn.style.visibility = 'hidden';
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
     }
-    else if(_counter==3){ 
+    else if(_counter==3){
         nxtbtn.style.visibility = 'hidden';
         donebtn.style.visibility = 'visible';
         let type = 'action';
         myOption = 'action';
         d3.select("#question")
-            .text(data.questions[type]);       
+            .text(data.questions[type]);
     }
     else if(_counter >3){
         alert("end of questions!");
         // x.style.display = 'none';
         pairing();
-    }   
-    } 
+    }
+    }
 }
-//backclick function to go back in the questions. 
+//backclick function to go back in the questions.
 function backClick(event, d){
     if (nxtbtn.style.visibility === 'hidden') {
         nxtbtn.style.visibility = 'visible';
@@ -161,31 +119,30 @@ function backClick(event, d){
     if (bkbtn.style.visibility === 'hidden') {
         bkbtn.style.visibility = 'visible';
     }
-    if(_counter==2) { 
+    if(_counter==2) {
         donebtn.style.visibility = 'hidden';
         let type = 'feeling';
         myOption = 'feeling';
         d3.select("#question")
             .text(data.questions[type]);
-       
+
     }
-    if(_counter==1){ 
+    if(_counter==1){
         donebtn.style.visibility = 'hidden';
-        bkbtn.style.visibility = 'hidden';        
+        bkbtn.style.visibility = 'hidden';
         let type = 'stakeholder';
         myOption = 'stakeholder';
         d3.select("#question")
-            .text(data.questions[type]);   
+            .text(data.questions[type]);
     }
     else if(_counter >3){
         alert("You have reached the beginning of the questions!")
     }
 }
 }
-//function that allows the next page to appear 
+//function that allows the next page to appear
 function doneFunc(event, d){
     flag = 1;
-    createwacc(flag);
     pairing();
     alert("if you don’t see the next question, please scroll down");
     d3.select("#pair")
@@ -209,7 +166,6 @@ function draw(notes) {
     yScale = d3.scaleLinear()
                 .domain([0,7])
                 .range([height*1/8,height*7/8]);
-    j = j++;
     // notes
     note = d3.select('#stickynotes')
         .selectAll("textarea")
@@ -219,31 +175,28 @@ function draw(notes) {
         .style("margin-top", s => yScale(s.index)+'px')
         .attr("rows",3)
         .attr("cols",18)
-        .attr("id", j)
-        .attr("name",j)
+        .attr("id", stickyNoteId)
         .style('background-color', s => colorScale(s.type))
         .text(s => s.content)
         .style('color',"black")
         .on("dblclick", double_click)
+
+    stickyNoteId++;
+
     // drag to move
     drag = d3.drag()
         .on("drag", dragged)
         .on("end", enddrag);
     note.call(drag).on("click", ()=>{});
-    function dragged(event, d) {  
-        // console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
+    function dragged(event, d) {
         d3.select(this)
             .style("margin-left", d.x = event.x+"px")
             .style("margin-top", d.y = event.y+'px');
-    //         .attr("id", d.id = j);
      }
      function enddrag(event, d){
-        //console.log('----'+event.x+'****'+event.y+'--'+ d+ '------'+event+'-- index: '+ d.index);
         var stickyval;
         stickyval = document.getElementById("stickypos").value ;
-        //console.log('-->'+stickyval+'-i-'+d.index+'-x-'+event.x+'-y-'+event.y);
         document.getElementById("stickypos").value = stickyval+'-index- '+d.index+'-xcoor- '+event.x+'-ycoor- '+event.y;
-
      }
 }
 
@@ -255,10 +208,16 @@ function pairing() {
                 if (s.type == "stakeholder") return s.content;
                 else return;
             }
-        ).concat(Object.keys(data.prompts)))).sort().filter(d=>{return d});
+        ))).sort().filter(d=>{return d});
     d3.select('#stakeholder')
+               .selectAll('option')
+               .data(stakeholders)
+               .enter()
+               .append('option')
+               .text(d=>d);
+    d3.select('#prestakeholder')
            .selectAll('option')
-           .data(stakeholders)
+           .data(Object.keys(data.prompts))
            .enter()
            .append('option')
            .text(d=>d);
@@ -273,8 +232,7 @@ function main() {
         }
         d3.select('#selector')
             .style('left',width*0.1 + 'px')
-            .style('top', height*0.1 + 'px')
-            .style('visibility', 'visible');
+            .style('top', height*0.1 + 'px');
         // display questions according to type
         d3.select("#notetype")
             .on('change', ()=>{
@@ -310,32 +268,17 @@ function main() {
                 // clear input value
                 document.getElementById("text_on_note").value = "";
         })
-        d3.select('#stakeholdertype')
+        d3.select('#prestakeholdertype')
             .on('change',()=>{
-             let stakeholder_ = document.getElementById("stakeholdertype").value;
+             let stakeholder_ = document.getElementById("prestakeholdertype").value;
              if (stakeholder_ in data.prompts){
-                 $("#outcome").empty();
-                 d3.select('#outcome')
+                 $("#preoutcome").empty();
+                 d3.select('#preoutcome')
                     .selectAll('option')
                     .data(data.prompts[stakeholder_])
                     .enter()
                     .append('option')
                     .text(d=>d)
-             } else {
-                let customizedOutcomes = Array.from(
-                     new Set(
-                         notes.map( (s) => {
-                             if (s.type == "stakeholder") return;
-                             else return s.content;
-                         }
-                     )));
-                 $("#outcome").empty();
-                 d3.select('#outcome')
-                     .selectAll('option')
-                     .data(customizedOutcomes)
-                     .enter()
-                     .append('option')
-                     .text(d=>d)
              }
             })
         // create combined sticky notes
@@ -374,19 +317,59 @@ function main() {
                 .style('color',"black")
                 .call(drag).on("click", ()=>{})
                 .on("dblclick", double_click);
+            document.getElementById("stakeholdertype").value = "";
             document.getElementById("outcometype").value = "";
-            $.ajax({
-                url: './matchsn.php',    //the page containing php script
-                type: 'POST',    //request type,
-                data: {note : new_note, 
-                    userid: userid},
-                success:function(output){
-                    //console.log('success'+output);
-                },
-                error:function(error){
-                    //console.log('The error is here at the combine -->'+JSON.stringify(error));
-                }
-            });
+        })
+
+        // create combined sticky notes
+        d3.select('#combine2').on('click',()=> {
+            var url_string = window.location.href
+            var url = new URL(url_string);
+            var userid = url.searchParams.get("WACC");
+            let new_note = {"type": "event","content": "","index": 0}
+            new_note["index"] = stickyNoteCount["event"];
+            stickyNoteCount["event"] += 1;
+            let content = "Stakeholder: "
+            content += document.getElementById("prestakeholdertype").value;
+            content += "\nTo do: "
+            content += document.getElementById("preoutcometype").value;
+            new_note["content"] = content;
+            notes.push(new_note);
+            combined.push(new_note);
+            eventxScale = d3.scaleLinear()
+                        .domain([0,3])
+                        .range([0, width*3/4]);
+            eventyScale = d3.scaleLinear()
+                        .domain([0,4])
+                        .range([height*1/15,height*7/8]);
+            d3.select('#events')
+                .selectAll("textarea")
+                .data(combined)
+                .enter()
+                .append("textarea")
+                .style('background-color', colorScale(new_note["type"]))
+                .style('text-align','left')
+                .style("margin-left", eventxScale((new_note["index"]%4))+'px')
+                .style("margin-top", eventyScale(Math.floor(new_note["index"]/4))+'px')
+                .text(new_note["content"])
+                .attr("rows",5)
+                .attr("cols",25)
+                .style('color',"black")
+                .call(drag).on("click", ()=>{})
+                .on("dblclick", double_click);
+
+            document.getElementById("prestakeholdertype").value = "";
+            document.getElementById("preoutcometype").value = "";
+        })
+        d3.select("#go_to_createnote").on("click",()=>{
+            d3.select("#two")
+                .classed("active", false)
+                .classed("completed", true);
+            d3.select("#three")
+                .classed("active", true);
+            d3.select("#createnotes")
+                .style("visibility","visible");
+            alert("if you don’t see the next question, please scroll down");
         })
         d3.select('#next').on("click",()=>{
             d3.select("#four")
@@ -406,7 +389,12 @@ function main() {
             .style("border","3px solid grey")
         })
         d3.select('#done').on("click",()=>{
-            var content = JSON.stringify({"notes": notes});
+            d3.select("#five")
+                .classed("active", false)
+                .classed("completed", true);
+            var content = "Feelings:\n";
+            content += document.getElementById("feeling").value;
+            content += JSON.stringify({"notes": notes});
             //look here for bolding
             var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
             saveAs(blob, "user.json");
