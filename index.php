@@ -29,7 +29,7 @@
     </div>
     <div class="container">
         <p>Welcome! We are a group of Berkeley researchers who are trying to understand how to help people who have experienced online harm (e.g., harassment, bullying, etc) to make sense of the situation.</p>
-        <p>In the following process, we will provide you with a scenario of harm and ask you to complete some tasks according to the scenario. The tasks should take no more than 25 minutes. We will ask you to complete a follow-up survey afterwards.</p>
+        <p>In the following process, we will provide you with a scenario of harm and ask you to complete some tasks according to the scenario. The tasks should take no more than 25 minutes. We will ask you to complete a follow-up survey afterwards</p>
         <img src="images/support.png">
         <br/>
         <br/>

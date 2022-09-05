@@ -32,13 +32,11 @@
 
 		<div class="container">
 			<p>Imagine that you have been through the following situation and answer the following questions accordingly.</p>
-			<p> <em> You and your friend are messaging privately about an issue that is sensitive to you. Your friend shares the conversation publicly on a social media account.</em></p>
+			<p> <em> You and your friend are messaging privately about a sensitive political issue. Your friend posts your conversation publicly on a social media platform without your consent. You received messages from strangers that are vulgar. Eventually, someone posts your phone number and home address online, and you start to receive threatening messages</em></p>
 
 			<div style="margin-top:2%">
-				<p>Please describe some impact that this event may cause to you. For example,</p>
-				<p>(1) Feelings (fear, anger, shame, embarrassment, etc)</p>
-				<p>(2) Social impact (people’s reaction, etc)</p>
-				<textarea id="feeling"name="feeling"rows="8"cols="31"></textarea>
+				<p>Please describe your feelings after the event (fear, anger, shame, embarrassment, etc).</p>
+				<textarea id="feeling"name="feeling"rows="10"cols="50"></textarea>
 			</div>
 			<button style="float:right; margin-top:15%; background-color:lightblue; " id="go_to_createnote">Next question</button>
 		</div>
