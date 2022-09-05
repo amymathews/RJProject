@@ -53,12 +53,12 @@
 			<div id='selector' style="position:absolute;font-size:15px;width:20%;">
 				<p id="note_type"> In this step, we will reflect on the impact, needs and people relevant to the harm you've experienced.</p>
 				<p> You will first create sticky notes, and then move them around to explore their relationships.</p>
-				<strong> <p id="question">(1)What are some potential impact of the harm? Enter one type of impact at a time. Some potential impact areas include: emotional, psychological, physical, financial, etc.
+				<strong> <p id="question">(1) What are some potential impact of the harm? Enter one type of impact at a time. Some potential impact areas include: emotional, psychological, physical, financial, etc.</strong>
 				<br>
+
 				</p>
-				</strong>
 				<br>
-				<textarea id="text_on_note" name = "action" style="height: 70px; width: auto;"></textarea>
+				<textarea id="text_on_note" name = "stakeholder" style="height: 70px; width: auto;"></textarea>
 				<br><br>
 				<br><br>
 				<button id="create" type="button">create a sticky note</button>
