@@ -71,10 +71,8 @@
 			</div>
 		</div>
 		<div class="container" id='pair' style="visibility: hidden">
-			<p>Now, we’d like you to create an action plan on how to address the harm.</p>
-			<p>Step 1.<strong>Create sticky notes to assign to-dos for each stakeholder to help you address the harm.</strong> The stakeholders and to-dos are a combination of your input and our suggestions. </p>
-			<p> Step 2.<strong> Put the to-dos in time order.</strong> Scroll down and there is a the long arrow, which represents a timeline starting from the time that harm has happened. Please drag sticky notes onto the timeline one by one to illsturate the time order you’d like to achieve those to-dos.</p>
-
+			<p>Now, we would like you to create an action plan.</p>
+			<p>Please create sticky notes that represent what you want each stakeholder to do, and move them onto the timeline to express the time order you'd like to achieve those moves. </p>
 			<br/>
 			<p>
 				<span class="dot"> &nbsp &#63;</span>
@@ -82,6 +80,7 @@
 			</p>
 
 			<br/>
+			<p> (1) Please enter to-dos for each stakeholder. You can enter new stakeholders here too. /p>
 			<label for="stakeholdertype"> <strong> Stakeholder: </strong> </label>
 			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="stakeholder">
@@ -92,7 +91,7 @@
 			</datalist>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
-			<p>Below are some examples we provide:</p>
+			<p>(2) We have provided some suggestions for you from other people who have received similar types of harm.</p>
 			<label for="prestakeholdertype"> <strong> Stakeholder: </strong> </label>
 			<input id="prestakeholdertype" name="prestakeholdertype" type="text" list="prestakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="prestakeholder">
