@@ -28,7 +28,7 @@ let nextCounter=2;
 let backCounter =1;
 let _counter = 1;
 let flag = 0;
-let myOption='action';
+let myOption='stakeholder';
 var jsonObj = {};
 jsonObj['userid'];
 jsonObj['stakeholder'] = new Array();
@@ -117,7 +117,7 @@ function clickFunc(event, d, x){
 
     if(_counter==1){
         donebtn.style.visibility = 'hidden';
-        let type = 'action';
+        let type = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
 
@@ -132,8 +132,8 @@ function clickFunc(event, d, x){
     else if(_counter==3){
         nxtbtn.style.visibility = 'hidden';
         donebtn.style.visibility = 'visible';
-        let type = 'stakeholder';
-        myOption = 'stakeholder';
+        let type = 'action';
+        myOption = 'action';
         d3.select("#question")
             .text(data.questions[type]);
     }
@@ -168,7 +168,7 @@ function backClick(event, d){
     if(_counter==1){
         donebtn.style.visibility = 'hidden';
         bkbtn.style.visibility = 'hidden';
-        let type = 'action';
+        let type = 'stakeholder';
         myOption = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);

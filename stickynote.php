@@ -32,30 +32,34 @@
 
 		<div class="container">
 			<p>Imagine that you have been through the following situation and answer the following questions accordingly.</p>
-			<p> <em> You and your friend are messaging privately about a sensitive political issue. Your friend posts your conversation publicly on a social media platform without your consent. You received messages from strangers that are vulgar. Eventually, someone posts your phone number and home address online, and you start to receive threatening messages</em></p>
+			<p> <em> You and your friend are messaging privately about an issue that is sensitive to you. Your friend shares the conversation publicly on a social media account.</em></p>
 
 			<div style="margin-top:2%">
-				<p>Please describe your feelings after the event (fear, anger, shame, embarrassment, etc).</p>
-				<textarea id="feeling"name="feeling"rows="10"cols="55"></textarea>
+				<p>Please describe some impact that this event may cause to you. For example,</p>
+				<p>(1) Feelings (fear, anger, shame, embarrassment, etc)</p>
+				<p>(2) Social impact (people’s reaction, etc)</p>
+				<textarea id="feeling"name="feeling"rows="8"cols="31"></textarea>
 			</div>
 			<button style="float:right; margin-top:15%; background-color:lightblue; " id="go_to_createnote">Next question</button>
 		</div>
-		<div class="container" id="createnotes" style="visibility:hidden; margin-top: 20px">
+		<div class="container" id="createnotes" style="visibility:hidden">
 			<div style="position:absolute;margin-left:27%;width:60%">
 				<p><span class="dot"> &nbsp &#63;</span> <span style="color: blue">Double click to delete the note. </span></p>
 			</div>
 			<div id="category_title" style="position:absolute;margin-top:2%;margin-left:27%;width:60%;display:flex;font-size:18px">
-				<p style="margin-left:4%">1) stakeholder</p>
+				<p style="margin-left:4%">1) stakeholders</p>
 				<p style="margin-left:13%">2) needs</p>
-				<p style="margin-left:16%">3) impact</p>
+				<p style="margin-left:16%">3) impacts</p>
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position:absolute;font-size:15px;width:20%;">
-				<p id="note_type"> In this step, we will reflect on the impact, needs and people relevant to the harm you've experienced.</p>
-				<p> You will first create sticky notes, and then move them around to explore their relationships.</p>
-				<strong> <p id="question">(1) What are some potential impact of the harm? Enter one type of impact at a time. Some potential impact areas include: emotional, psychological, physical, financial, etc.
+				<p id="note_type"> In this step, we will brainstorm the people, needs and actions that are related to the harm you have experienced.</p>
+				<p> We will guide you through the process step by step by creating sticky notes. In the next step, you will link the stakeholders, needs and actions together.</p>
+				<strong> <p id="question"> 1) Stakeholder: Who do you think can help you mitigate the impact?
+					Who do you think has responsibility responsbility to mitigate the impact?</strong>
+				<br>
+				Write down one name at a time (e.g. offender) and click “create a sticky note.”
 				</p>
-				</strong>
 				<br>
 				<textarea id="text_on_note" name = "stakeholder" style="height: 70px; width: auto;"></textarea>
 				<br><br>
