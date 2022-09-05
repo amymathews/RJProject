@@ -303,7 +303,7 @@ function main() {
             stickyNoteCount[new_note["type"]] += 1;
             new_note["content"] = document.getElementById("text_on_note").value;
             notes.push(new_note);
-            note = d3.select('#action')
+            note = d3.select('#stakeholder')
                 .selectAll("textarea")
                 .data(notes)
                 .enter()
