@@ -30,7 +30,7 @@
 	</div>
 	<div class="content">
 
-		<div class="container" style = "margin-top:-100px">
+		<div class="container" >
 			<p>Imagine that you have been through the following situation and answer the following questions accordingly.</p>
 			<p> <em> You and your friend are messaging privately about a sensitive political issue. Your friend posts your conversation publicly on a social media platform without your consent. You received messages from strangers that are vulgar. Eventually, someone posts your phone number and home address online, and you start to receive threatening messages</em></p>
 
