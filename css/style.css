@@ -61,7 +61,7 @@ textarea {
     padding-right: 10%;
     position: relative;
     overflow: auto;
-    height: 75%;
+    height: 100%;
     padding-bottom:5%;
 }
 .startdiv {
@@ -70,8 +70,7 @@ textarea {
     padding-right: 10%;
     position: relative;
     overflow: auto;
-    height: 100%;
-    padding-bottom:5%;
+    height: 65%;
 }
 #events{
     position: absolute;
