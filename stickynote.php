@@ -80,7 +80,7 @@
 			</p>
 
 			<br/>
-			<p> (1) Please enter to-dos for each stakeholder. You can enter new stakeholders here too. /p>
+			<p> (1) Please enter to-dos for each stakeholder. You can enter new stakeholders here too. </p>
 			<label for="stakeholdertype"> <strong> Stakeholder: </strong> </label>
 			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="stakeholder">
@@ -91,7 +91,7 @@
 			</datalist>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
-			<p>(2) We have provided some suggestions for you from other people who have received similar types of harm.</p>
+			<p> (2) We have provided some suggestions for you from other people who have received similar types of harm.</p>
 			<label for="prestakeholdertype"> <strong> Stakeholder: </strong> </label>
 			<input id="prestakeholdertype" name="prestakeholdertype" type="text" list="prestakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="prestakeholder">
