@@ -103,17 +103,17 @@
 			<button id="combine2" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
 			<br/>
-			<button id="next" style="margin-top:2%;float:right" type="button">Next question</button>
+			<!-- <button id="next" style="margin-top:2%;float:right" type="button">Next question</button> -->
 			<br/>
 			<div id="events"></div>
-			<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			<p>Below, the long arrow represents a timeline from right to left starting from the time that harm has happened.</p>
 			<p>Put the sticky notes onto the timeline one by one to illustrate the time order you hope to achieve the needs.</p>
 			<p>
 				<span class="dot"> &nbsp &#63;</span>
 				Tips: Tips: drag to put them onto the timeline one by one.
-			</p>
+			</p> -->
 			<div id="timelines"></div>
 			<div style="margin-top:103px;display:flex">
 				<HR width="80%" style="margin-top:27px;border:3px solid grey">
