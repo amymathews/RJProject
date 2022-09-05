@@ -9,9 +9,9 @@ let stickyNoteTypes = ['action','feeling','stakeholder','stakeholder_individual'
 //stakeholder_individual not in use; need & action combined
 let stickyNoteColors = ['#fcb6d0','#ffdee1','#f8dda9','#b6dcb6','#d9f1f1'];
 let stickyNoteCount = {
-    'stakeholder':0,
-    'feeling':0,
     'action':0,
+    'feeling':0,
+    'stakeholder':0,
     'event':0,
 }
 let stickyNoteId = 0;
