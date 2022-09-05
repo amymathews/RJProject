@@ -58,7 +58,8 @@
 				</p>
 				</strong>
 				<br>
-				<textarea id="text_on_note" name = "action" style="height: 150px; width: 150px"></textarea>
+				<textarea id="text_on_note" name = "action" style="height: 150px; width:200px"></textarea>
+				<br><br>
 				<br><br>
 				<br><br>
 				<br><br>
