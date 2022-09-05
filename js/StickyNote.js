@@ -37,29 +37,8 @@ jsonObj['action'] = new Array();
 
 // double click deletion function on the sticky note
 function double_click(event, d){
-    var cutindex;
-    
     let r=confirm("Do you want to delete this sticky note?");
     if (r==true){
-        for (let index = 0; index < jsonObj['stakeholder'].length; index++) {
-            if(jsonObj['stakeholder'][index] == d.content){
-                cutindex = jsonObj['stakeholder'].indexOf(d.content);
-                jsonObj['stakeholder'].splice(cutindex,1);
-            }
-        }
-        for (let index = 0; index < jsonObj['feeling'].length; index++){
-            if(jsonObj['feeling'][index] == d.content){
-                cutindex = jsonObj['feeling'].indexOf(d.content);
-                jsonObj['feeling'].splice(cutindex,1);
-    
-            }
-        }
-        for (let index = 0; index < jsonObj['action'].length; index++){
-            if(jsonObj['action'][index] == d.content){
-                cutindex = jsonObj['action'].indexOf(d.content);
-                jsonObj['action'].splice(cutindex,1);
-        }      
-        }
         d3.select(this)
             .text((s) => {
                 //delete the sticky note from "notes" list
@@ -79,23 +58,6 @@ function double_click(event, d){
             })
             .remove();
     }
-}
-
-function initial(event, d) {
-
-    var feelingval = document.getElementById("feeling").value;
-    $.ajax({
-        url: './feelinginitial.php',    //the page containing php script
-        type: 'POST',    //request type,
-        // dataType: 'json',
-        data: feelingval,
-        success:function(output){
-            console.log('success in intial '+output);
-        },
-        error:function(error){
-            console.log('The error is--> '+JSON.stringify(error));
-        }
-        });
 }
 
 //frontclick function to go foward questions
@@ -240,23 +202,6 @@ function draw(notes) {
 
 // combine stakeholder with feeling & action
 function pairing() {
-    //old  code
-    outcomes = Array.from(
-        new Set(
-            notes.map( (s) => {
-                if (s.type == "feeling" || s.type == "action") return s.content;
-                else return;
-            }).concat(data.prompts.outcomes)
-        )
-    ).sort().filter(d=>{return d});
-   
-    d3.select('#outcome')
-       .selectAll('option')
-       .data(outcomes)
-       .enter()
-       .append('option')
-       .text(d=>d);
-    // end old code
     stakeholders = Array.from(
         new Set(
             notes.map( (s) => {

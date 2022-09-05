@@ -1,6 +1,5 @@
 {
     "notes": [
-       
     ],
     "questions": {
         "stakeholder": "1) Stakeholders: \n Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? ",
@@ -8,31 +7,25 @@
         "action": "3) Desired outcomes: \n What are some desired outcome for addressing the harm (e.g., I hope the offender can be banned)?"
     },
     "prompts": {
-        "stakeholders": [
-            "offender",
-            "online platform",
-            "online community member",
-            "family and friends",
-            "school"
-        ],
-        "outcomes": [
-            "Acknowledge wrong-doing and issue apology",
+        "offender": [
             "Seek information on offenders’ motives for conducting harm",
+            "Acknowledge wrong-doing and issue apology"
+        ],
+        "family and friends": [
             "Seek advice on how to address the harm",
+            "Emotional support"
+        ],
+        "online platform": [
+            "Seek advice on how to address the harm",
+            "Show stance against harm",
+            "Content moderation",
+            "Improve design and moderation"
+        ],
+        "online community members": [
             "Emotional support",
             "Show stance against harm",
-            "Ban offender",
-            "Remove offensive content",
-            "Give warning to offenders",
             "Report or call out offenders",
-            "In-school repercussion",
-            "Improve design and moderation",
-            "Raise public awareness",
-            "I need to make sense of what has happened",
-            "I need emotional support",
-            "I hope to do justice to the offenders",
-            "I hope to be safe",
-            "I hope to transform the online environment"
+            "Raise public awareness"
         ]
     },
     "discarded" : {
