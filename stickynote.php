@@ -45,21 +45,20 @@
 				<p><span class="dot"> &nbsp &#63;</span> <span style="color: blue">Double click to delete the note. </span></p>
 			</div>
 			<div id="category_title" style="position:absolute;margin-top:2%;margin-left:27%;width:60%;display:flex;font-size:18px">
-				<p style="margin-left:4%">1) stakeholders</p>
+				<p style="margin-left:4%">1) impacts</p>
 				<p style="margin-left:13%">2) needs</p>
-				<p style="margin-left:16%">3) impacts</p>
+				<p style="margin-left:16%">3) stakeholder</p>
 			</div>
 			<div id='stickynotes'></div>
 			<div id='selector' style="position:absolute;font-size:15px;width:20%;">
 				<p id="note_type"> In this step, we will reflect on the impact, needs and people relevant to the harm you've experienced.</p>
 				<p>You will first create sticky notes, and then move them around to explore their relationships.</p>
-				<strong> <p id="question"> 1) Stakeholder: Who do you think can help you mitigate the impact?
-					Who do you think has responsibility responsbility to mitigate the impact?</strong>
+				<strong> <p id="question"> (1) What are some potential impact of the harm? Enter one type of impact at a time. Some potential impact areas include: emotional, psychological, physical, financial, etc.
+				</strong>
 				<br>
-				Write down one name at a time (e.g. offender) and click “create a sticky note.”
 				</p>
 				<br>
-				<textarea id="text_on_note" name = "stakeholder" style="height: 70px; width: auto;"></textarea>
+				<textarea id="text_on_note" name = "action" style="height: 70px; width: auto;"></textarea>
 				<br><br>
 				<br><br>
 				<button id="create" type="button">create a sticky note</button>

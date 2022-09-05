@@ -2,9 +2,9 @@
     "notes": [
     ],
     "questions": {
-        "stakeholder": "1) Stakeholders: \n Who do you think can help you address the harm? Who do you think has responsibility for helping you address the harm? ",
-        "feeling": "2) Feelings: \n How do you want to feel? (e.g., I want to feel safe)",
-        "action": "3) Desired outcomes: \n What are some desired outcome for addressing the harm (e.g., I hope the offender can be banned)?"
+        "stakeholder": "(3) Who can meet those needs? Enter one stakeholder at a time. Some potential stakeholders include: your friend; online community members; online platform; family and friends; etc.",
+        "feeling": "(2) What do you need for addressing the harm? Some potential needs include: I want to feel safe; I want to feel heard; I want justice; etc.",
+        "action": "(1) What are some potential impact of the harm? Enter one type of impact at a time. Some potential impact areas include: emotional, psychological, physical, financial, etc."
     },
     "prompts": {
         "offender": [

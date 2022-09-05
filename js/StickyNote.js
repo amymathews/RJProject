@@ -5,13 +5,13 @@ let height = 0.96 * _height;
 let padding = {'left': 0.25*width, 'bottom': 0.1*height, 'top': 0.1*height, 'right': 0.1*width};
 let data = null;// object parsed from the json file
 let data_file = './data/data.json';// data path
-let stickyNoteTypes = ['stakeholder','feeling','action','stakeholder_individual','event'];
+let stickyNoteTypes = ['action','feeling','stakeholder','stakeholder_individual','event'];
 //stakeholder_individual not in use; need & action combined
 let stickyNoteColors = ['#fcb6d0','#ffdee1','#f8dda9','#b6dcb6','#d9f1f1'];
 let stickyNoteCount = {
-    'stakeholder':0,
-    'feeling':0,
     'action':0,
+    'feeling':0,
+    'stakeholder':0,
     'event':0,
 }
 let stickyNoteId = 0;
@@ -28,7 +28,7 @@ let nextCounter=2;
 let backCounter =1;
 let _counter = 1;
 let flag = 0;
-let myOption='stakeholder';
+let myOption='action';
 var jsonObj = {};
 jsonObj['userid'];
 jsonObj['stakeholder'] = new Array();
@@ -79,7 +79,7 @@ function clickFunc(event, d, x){
 
     if(_counter==1){
         donebtn.style.visibility = 'hidden';
-        let type = 'stakeholder';
+        let type = 'action';
         d3.select("#question")
             .text(data.questions[type]);
 
@@ -94,8 +94,8 @@ function clickFunc(event, d, x){
     else if(_counter==3){
         nxtbtn.style.visibility = 'hidden';
         donebtn.style.visibility = 'visible';
-        let type = 'action';
-        myOption = 'action';
+        let type = 'stakeholder';
+        myOption = 'stakeholder';
         d3.select("#question")
             .text(data.questions[type]);
     }
@@ -130,8 +130,8 @@ function backClick(event, d){
     if(_counter==1){
         donebtn.style.visibility = 'hidden';
         bkbtn.style.visibility = 'hidden';
-        let type = 'stakeholder';
-        myOption = 'stakeholder';
+        let type = 'action';
+        myOption = 'action';
         d3.select("#question")
             .text(data.questions[type]);
     }
