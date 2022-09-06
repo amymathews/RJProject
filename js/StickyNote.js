@@ -298,7 +298,7 @@ function main() {
             combined.push(new_note);
             eventxScale = d3.scaleLinear()
                         .domain([0,3])
-                        .range([0, width*5/8]);
+                        .range([0, width*9/16]);
             eventyScale = d3.scaleLinear()
                         .domain([0,4])
                         .range([height*1/15,height*7/8]);
@@ -338,7 +338,7 @@ function main() {
             combined.push(new_note);
             eventxScale = d3.scaleLinear()
                         .domain([0,3])
-                        .range([0, width*5/8]);
+                        .range([0, width*9/16]);
             eventyScale = d3.scaleLinear()
                         .domain([0,4])
                         .range([height*1/15,height*7/8]);
