@@ -130,7 +130,10 @@
 		<div class="startdiv" id= 'last' style="visibility: hidden">
 			<p>Take a screenshot of your timline and then press Download test data. We will ask you to upload those to the follow-up survey afterwards.</p>
 			
-			<button id = "done" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Download test data </button>		</div>
+			<button id = "done" class = "button" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;"onClick="window.open('https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea');" >Download test data 	
+     			<span class="icon">Open</span>
+			</button>
+		</div>
 	</div>
 
 <script src="js/StickyNote.js"></script>
