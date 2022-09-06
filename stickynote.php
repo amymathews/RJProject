@@ -124,7 +124,7 @@
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
 			<input type="hidden" name="stickypos" id ="stickypos" value="" />
-			<button id="next" style="margin-top:2%;float:right" type="button">Next question</button>
+			<button id="next" style="margin-top:2%;float:right;background-color:lightblue;" type="button">Next question</button>
 			<br><br><br>
 		</div>
 		<div class="startdiv" id= 'last' style="visibility: hidden">
