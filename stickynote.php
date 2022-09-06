@@ -89,7 +89,7 @@
 			<datalist id="stakeholder">
 			</datalist>
 			<label for="outcometype"> <strong> To do: </strong></label>
-			<textarea id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width: 32%;height: 10%;"></textarea>
+			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width: 32%;height: 10%;"/>
 			<datalist id="outcome">
 			</datalist>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
@@ -101,7 +101,7 @@
 			<datalist id="prestakeholder">
 			</datalist>
 			<label for="preoutcometype"> <strong> To do: </strong></label>
-			<textarea id="preoutcometype" name="preoutcometype" type="text" list="preoutcome" onclick="this.select()" style="width: 32%;height: 10%;"></textarea>
+			<input id="preoutcometype" name="preoutcometype" type="text" list="preoutcome" onclick="this.select()" style="width: 32%;height: 10%;"/>
 			<datalist id="preoutcome">
 			</datalist>
 			<button id="combine2" style="margin-top:1%;float:right" type="button">create</button>
@@ -125,9 +125,13 @@
 				<button id="extend" type="button" style="margin-left:50px">extend timeline</button>
 			</div>
 			<input type="hidden" name="stickypos" id ="stickypos" value="" />
-			<button id = "done" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Download Test data</button>
+			<button id="next" style="margin-top:2%;float:right" type="button">Next question</button>
 			<br><br><br>
 		</div>
+		<div class="startdiv" id= 'last' style="visibility: hidden">
+			<p>Take a screenshot of your timline and then press Download test data. We will ask you to upload those to the follow-up survey afterwards.</p>
+			
+			<button id = "done" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;" >Download test data </button>		</div>
 	</div>
 
 <script src="js/StickyNote.js"></script>

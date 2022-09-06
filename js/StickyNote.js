@@ -377,7 +377,7 @@ function main() {
                 .classed("completed", true);
             d3.select("#five")
                 .classed("active", true);
-            d3.select("#timelineSection")
+            d3.select("#last")
                 .style("visibility","visible")
                 .style("margin-top", eventyScale(Math.floor(stickyNoteCount['event']/4)+1)+'px');
         })
