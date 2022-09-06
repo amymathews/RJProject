@@ -85,7 +85,7 @@
 			<br/>
 			<p> (1) Please enter to-dos for each stakeholder. You can enter new stakeholders here too. </p>
 			<label for="stakeholdertype"> <strong> Stakeholder: </strong> </label>
-			<textarea id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"></textarea>
+			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%">
 			<datalist id="stakeholder">
 			</datalist>
 			<label for="outcometype"> <strong> To do: </strong></label>
