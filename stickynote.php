@@ -85,11 +85,11 @@
 			<br/>
 			<p> (1) Please enter to-dos for each stakeholder. You can enter new stakeholders here too. </p>
 			<label for="stakeholdertype"> <strong> Stakeholder: </strong> </label>
-			<input id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"/>
+			<textarea id="stakeholdertype" name="stakeholdertype" type="text" list="stakeholder" onclick="this.select()" style="width:21%"></textarea>
 			<datalist id="stakeholder">
 			</datalist>
 			<label for="outcometype"> <strong> To do: </strong></label>
-			<input id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width: 32%;height: 10%;"/>
+			<textarea id="outcometype" name="outcometype" type="text" list="outcome" onclick="this.select()" style="width: 32%;height: 10%;"></textarea>
 			<datalist id="outcome">
 			</datalist>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
