@@ -32,7 +32,7 @@
 
 		<div class="startdiv" >
 			<p>Imagine that you have been through the following situation and answer the following questions accordingly.</p>
-			<p style="background-color:blue;"> <em> You and your friend are messaging privately about a sensitive political issue. Your friend posts your conversation publicly on a social media platform without your consent. You received messages from strangers that are vulgar. Eventually, someone posts your phone number and home address online, and you start to receive threatening messages</em></p>
+			<p style="color:blue;"> <em> You and your friend are messaging privately about a sensitive political issue. Your friend posts your conversation publicly on a social media platform without your consent. You received messages from strangers that are vulgar. Eventually, someone posts your phone number and home address online, and you start to receive threatening messages</em></p>
 
 			<div style="margin-top:2%">
 				<p>Please describe your feelings after the event (fear, anger, shame, embarrassment, etc).</p>
