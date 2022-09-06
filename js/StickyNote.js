@@ -372,6 +372,7 @@ function main() {
             alert("if you don’t see the next question, please scroll down");
         })
         d3.select('#next').on("click",()=>{
+            alert("if you don't see the next question, please scroll down");
             d3.select("#four")
                 .classed("active", false)
                 .classed("completed", true);
@@ -380,7 +381,6 @@ function main() {
             d3.select("#last")
                 .style("visibility","visible")
                 .style("margin-top", eventyScale(Math.floor(stickyNoteCount['event']/4)+1)+'px');
-            alert("if you don't see the next question, please scroll down");
         })
         d3.select('#extend').on("click",()=>{
             d3.select('#timelines')
