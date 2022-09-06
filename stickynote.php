@@ -32,7 +32,7 @@
 
 		<div class="startdiv" >
 			<p>Imagine that you have been through the following situation and answer the following questions accordingly.</p>
-			<p> <em> You and your friend are messaging privately about a sensitive political issue. Your friend posts your conversation publicly on a social media platform without your consent. You received messages from strangers that are vulgar. Eventually, someone posts your phone number and home address online, and you start to receive threatening messages</em></p>
+			<p style="background-color:blue;"> <em> You and your friend are messaging privately about a sensitive political issue. Your friend posts your conversation publicly on a social media platform without your consent. You received messages from strangers that are vulgar. Eventually, someone posts your phone number and home address online, and you start to receive threatening messages</em></p>
 
 			<div style="margin-top:2%">
 				<p>Please describe your feelings after the event (fear, anger, shame, embarrassment, etc).</p>
@@ -128,7 +128,7 @@
 			<br><br><br>
 		</div>
 		<div class="startdiv" id= 'last' style="visibility: hidden">
-			<p>Take a screenshot of your timline and then press Download test data. We will ask you to upload those to the follow-up survey afterwards.</p>
+			<p>Take a screenshot of your timeline and then press "Download test data". This will open up a follow-up survey</p>
 			
 			<button id = "done" class = "button" name="complete" type = "submit" style="margin-right:1px; margin-bottom: 25px; float: right; margin-top: 20px; background-color:lightblue;"onClick="window.open('https://berkeley.qualtrics.com/jfe/form/SV_9AHgW4zjmeAV4ea');" >Download test data 	
      			<span class="icon">Open</span>
