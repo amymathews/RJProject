@@ -380,7 +380,7 @@ function main() {
             d3.select("#last")
                 .style("visibility","visible")
                 .style("margin-top", eventyScale(Math.floor(stickyNoteCount['event']/4)+1)+'px');
-            alert("if you don't see the next question. please scroll down");
+            alert("if you don't see the next question, please scroll down");
         })
         d3.select('#extend').on("click",()=>{
             d3.select('#timelines')
