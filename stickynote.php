@@ -94,13 +94,14 @@
 			</datalist>
 			<button id="combine" style="margin-top:1%;float:right" type="button">create</button>
 			<br/>
+			<br> <br>
 			<p> (2) We have provided some suggestions for you from other people who have received similar types of harm.</p>
 			<label for="prestakeholdertype"> <strong> Stakeholder: </strong> </label>
 			<input id="prestakeholdertype" name="prestakeholdertype" type="text" list="prestakeholder" onclick="this.select()" style="width:21%"/>
 			<datalist id="prestakeholder">
 			</datalist>
 			<label for="preoutcometype"> <strong> To do: </strong></label>
-			<input id="preoutcometype" name="preoutcometype" type="text" list="preoutcome" onclick="this.select()" style="width: 32%;height: 10%;"/>
+			<textarea id="preoutcometype" name="preoutcometype" type="text" list="preoutcome" onclick="this.select()" style="width: 32%;height: 10%;"></textarea>
 			<datalist id="preoutcome">
 			</datalist>
 			<button id="combine2" style="margin-top:1%;float:right" type="button">create</button>
